@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm i *)",
+      "Bash(cmd *)",
+      "Bash(curl -sL \"https://gitee.com/chatops01/oh-my-claudecode/raw/main/.claude-plugin/marketplace.json\")"
+    ]
+  }
+}
