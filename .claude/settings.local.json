@@ -3,7 +3,16 @@
     "allow": [
       "Bash(npm i *)",
       "Bash(cmd *)",
-      "Bash(curl -sL \"https://gitee.com/chatops01/oh-my-claudecode/raw/main/.claude-plugin/marketplace.json\")"
+      "Bash(curl -sL \"https://gitee.com/chatops01/oh-my-claudecode/raw/main/.claude-plugin/marketplace.json\")",
+      "Bash(mkdir -p ~/.claude/commands)",
+      "Bash(cp ~/.claude/plugins/marketplaces/khazix-skills/neat-freak/SKILL.md ~/.claude/commands/neat-freak.md)",
+      "Bash(echo \"EXIT:$?\")",
+      "WebFetch(domain:github.com)",
+      "Bash(gh repo *)",
+      "WebSearch",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(curl -sL --connect-timeout 10 \"https://gitee.com/chatops01/oh-my-claudecode/raw/main/.claude-plugin/marketplace.json\")",
+      "Bash(git clone *)"
     ]
   }
 }

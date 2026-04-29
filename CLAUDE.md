@@ -40,6 +40,11 @@ DST (Don't Starve Together) Lua 层 mod 异常诊断工具项目。
 - 产物: `dist/CrashTraceViewer.exe`
 - 依赖: 无第三方 Python 依赖，仅标准库
 
+## Git 配置
+
+- 远程仓库: `git@github.com:weijie321/dst-mods.git`（SSH 认证）
+- 主分支: `main`（2026-04-29 从 master 重命名）
+
 ## 注意事项
 
 - `dst-inspect/scripts/` 下的 Lua 文件是从 DST 的 `scripts.zip` 提取的原生脚本，仅作开发参考，不要修改
