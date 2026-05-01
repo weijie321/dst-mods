@@ -1,7 +1,6 @@
 local Config = require("crashtrace.config")
 local Logger = require("crashtrace.logger")
 local RuntimeHooks = require("crashtrace.runtime_hooks")
-local Wrappers = require("crashtrace.wrappers")
 
 local function bootstrap()
     if type(GetModConfigData) == "function" then
@@ -9,7 +8,6 @@ local function bootstrap()
     end
 
     Logger.Info(string.format("%s v%s lang=%s", Config.GetText("bootstrap_start"), Config.GetVersion(), Config.GetLanguage()))
-    Wrappers.Install()
     if type(AddPrefabPostInitAny) == "function" then
         RuntimeHooks.Install(AddPrefabPostInitAny)
     else

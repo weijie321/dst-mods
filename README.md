@@ -4,18 +4,15 @@
 
 当前包含：
 
-- `dst-mod-crash-tracer`：Lua 层 mod 异常诊断 mod
-- `dst-mod-crash-tracer-test`：用于验证诊断能力的故意抛错测试 mod
-- `dst-mod-crash-tracer-event-test`：事件监听异常测试 mod
-- `dst-mod-crash-tracer-task-test`：延时任务异常测试 mod
-- `dst-mod-crash-tracer-periodic-test`：周期任务异常测试 mod
-- `dst-mod-crash-tracer-grass-test`：采集动作异常测试 mod（草、树枝苗、芦苇、浆果丛）
-- `sync_dst_mods.bat`：同步开发 mod 到游戏 `mods` 目录
-- `view_crashtrace_report.py`：CrashTrace 查看器源码
-- `查看最新CrashTrace报告.bat`：中文入口，一键生成并打开诊断报告
-- `view_latest_crashtrace_report.bat`：英文文件名的同功能入口
-- `build_crashtrace_viewer.bat`：将查看器打包成 `CrashTraceViewer.exe`
-- `CrashTraceViewer.spec`：PyInstaller 打包配置
+- `dst-mod-crash-tracer/`：Lua 层 mod 异常诊断 mod
+- `dst-mod-crash-tracer-test/`：用于验证诊断能力的故意抛错测试 mod
+- `dst-mod-crash-tracer-event-test/`：事件监听异常测试 mod
+- `dst-mod-crash-tracer-task-test/`：延时任务异常测试 mod
+- `dst-mod-crash-tracer-periodic-test/`：周期任务异常测试 mod
+- `dst-mod-crash-tracer-grass-test/`：采集动作异常测试 mod（草、树枝苗、芦苇、浆果丛）
+- `tools/`：开发工具（同步脚本、查看器源码和打包产物）
+  - `sync_dst_mods.bat`：同步开发 mod 到游戏 `mods` 目录
+  - `crashtrace-viewer/`：查看器源码、打包配置、启动脚本、exe 产物
 - `latest_crashtrace_report.txt`：查看器最近一次生成的报告
 - `使用说明.txt`：给普通用户的使用说明
 - `CrashTrace_workshop_description.md`：创意工坊发布文案草稿
@@ -34,7 +31,7 @@ CrashTrace 现在按两部分交付：
 
 ## 本地开发使用方式
 
-1. 双击或执行 `sync_dst_mods.bat`
+1. 双击或执行 `tools/sync_dst_mods.bat`
 2. 打开游戏并启用：
    - `DST Mod Crash Tracer`
    - `DST Mod Crash Tracer Test`
@@ -44,7 +41,7 @@ CrashTrace 现在按两部分交付：
    - `Crash Tracer Pick Test / 采集动作异常测试`
 3. 确保诊断 mod 先于测试 mod 加载
 4. 进入世界，等待或主动触发测试异常
-5. 运行 `查看最新CrashTrace报告.bat` 或 `view_latest_crashtrace_report.bat`
+5. 运行 `tools/crashtrace-viewer/查看最新CrashTrace报告.bat`
 6. 查看器会自动生成并打开 `latest_crashtrace_report.txt`
 
 ## 面向创意工坊用户的使用方式
@@ -106,16 +103,15 @@ CrashTrace 现在按两部分交付：
 如果你要重新生成 Windows 查看器：
 
 1. 确认当前机器可用 `pyinstaller`
-2. 运行 `build_crashtrace_viewer.bat`
-3. 产物位于 `dist/CrashTraceViewer.exe`
+2. 运行 `tools/crashtrace-viewer/build_crashtrace_viewer.bat`
+3. 产物位于 `tools/crashtrace-viewer/dist/CrashTraceViewer.exe`
 
 ## 小白查看方式
 
 优先使用：
 
-- `CrashTraceViewer.exe`
-- `查看最新CrashTrace报告.bat`
-- `view_latest_crashtrace_report.bat`
+- `tools/crashtrace-viewer/dist/CrashTraceViewer.exe`
+- `tools/crashtrace-viewer/查看最新CrashTrace报告.bat`
 
 它会自动读取 `Documents\\Klei\\DoNotStarveTogether` 下的日志，并提取最近一次 `CrashTrace` 报告块。
 如果当前日志已被 DST 轮转，它也会自动扫描 `backup/client_log` 里的最近一次客户端报错。
@@ -126,6 +122,6 @@ CrashTrace 现在按两部分交付：
 如果你要对外发布，建议至少准备：
 
 - 创意工坊 mod：`dst-mod-crash-tracer`
-- 独立查看器：`dist/CrashTraceViewer.exe`
+- 独立查看器：`tools/crashtrace-viewer/dist/CrashTraceViewer.exe`
 - 玩家说明：`使用说明.txt`
 - 创意工坊介绍文案：`CrashTrace_workshop_description.md`

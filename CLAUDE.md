@@ -10,23 +10,22 @@ DST (Don't Starve Together) Lua 层 mod 异常诊断工具项目。
 - `dst-mod-crash-tracer-task-test/` — 测试 mod（延时任务异常）
 - `dst-mod-crash-tracer-periodic-test/` — 测试 mod（周期任务异常）
 - `dst-mod-crash-tracer-grass-test/` — 测试 mod（采集动作异常）
-- `view_crashtrace_report.py` — Python 报告查看器源码
-- `CrashTraceViewer.spec` — PyInstaller 打包配置
-- `dist/CrashTraceViewer.exe` — 打包产物
+- `tools/crashtrace-viewer/` — 查看器相关（源码、打包配置、启动脚本）
+- `tools/sync_dst_mods.bat` — 同步 mod 到 DST 游戏目录
 - `dst-inspect/` — DST 原生脚本提取（开发参考）
 
 ## 关键技术点
 
 - Mod 入口: `dst-mod-crash-tracer/modmain.lua` → `scripts/crashtrace/bootstrap.lua`
-- 核心模块: `wrappers.lua`（API 劫持）、`runtime_hooks.lua`（实例方法钩子）、`safe_call.lua`（xpcall 包装）
-- Mod 优先级: `priority = 1000000`（确保先于其他 mod 加载）
+- 核心模块: `runtime_hooks.lua`（实例方法钩子）、`safe_call.lua`（xpcall 包装）
+- 捕获范围: ListenForEvent、DoTaskInTime、DoPeriodicTask（通过 AddPrefabPostInitAny 注册）
 - 语言配置: `modinfo.lua` 中 `language` 选项，`config.lua` 管理中英文文本
 
 ## 开发工作流
 
-1. `sync_dst_mods.bat` — 同步 mod 到 DST 游戏目录（robocopy）
-2. `build_crashtrace_viewer.bat` — 打包 Python 查看器为 exe
-3. `view_latest_crashtrace_report.bat` / `查看最新CrashTrace报告.bat` — 运行查看器
+1. `tools/sync_dst_mods.bat` — 同步 mod 到 DST 游戏目录（robocopy）
+2. `tools/crashtrace-viewer/build_crashtrace_viewer.bat` — 打包 Python 查看器为 exe
+3. `tools/crashtrace-viewer/查看最新CrashTrace报告.bat` — 运行查看器
 
 ## 日志路径
 
@@ -36,8 +35,8 @@ DST (Don't Starve Together) Lua 层 mod 异常诊断工具项目。
 
 ## 打包规范
 
-- Python 查看器用 PyInstaller 打包，spec 文件: `CrashTraceViewer.spec`
-- 产物: `dist/CrashTraceViewer.exe`
+- Python 查看器用 PyInstaller 打包，spec 文件: `tools/crashtrace-viewer/CrashTraceViewer.spec`
+- 产物: `tools/crashtrace-viewer/dist/CrashTraceViewer.exe`
 - 依赖: 无第三方 Python 依赖，仅标准库
 
 ## Git 配置

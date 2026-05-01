@@ -31,7 +31,6 @@ dst-mods/
 │       ├── logger.lua             # 日志输出（格式化 CrashTrace 日志块）
 │       ├── context.lua            # 调用上下文栈（追踪嵌套调用链）
 │       ├── safe_call.lua          # 安全调用包装器（xpcall + 错误报告）
-│       ├── wrappers.lua           # 环境 API 钩子（劫持 mod 注册函数）
 │       ├── runtime_hooks.lua      # 运行时钩子（ListenForEvent/DoTaskInTime/DoPeriodicTask）
 │       ├── report_builder.lua     # 报告构建器（结构化摘要行）
 │       ├── i18n.lua               # 国际化（中英文术语翻译 + 触发摘要生成）
@@ -43,6 +42,16 @@ dst-mods/
 ├── dst-mod-crash-tracer-periodic-test/# 测试 mod：周期任务异常
 ├── dst-mod-crash-tracer-grass-test/   # 测试 mod：采集动作异常
 │
+├── tools/                             # 开发工具
+│   ├── sync_dst_mods.bat              # 同步脚本（复制 mod 到游戏目录）
+│   └── crashtrace-viewer/             # 查看器相关
+│       ├── view_crashtrace_report.py  # CrashTrace 报告查看器（Python 源码）
+│       ├── CrashTraceViewer.spec      # PyInstaller 打包配置
+│       ├── build_crashtrace_viewer.bat # 打包脚本（生成 CrashTraceViewer.exe）
+│       ├── 查看最新CrashTrace报告.bat  # 一键运行查看器
+│       └── dist/
+│           └── CrashTraceViewer.exe   # 打包产物
+│
 ├── dst-inspect/                       # DST 原生脚本提取（开发参考）
 │   ├── extract_dst_scripts.py         # 从 scripts.zip 提取指定脚本
 │   └── scripts/                       # 提取出的 DST 原生脚本
@@ -51,12 +60,6 @@ dst-mods/
 │       ├── strict.lua                 # 全局变量严格模式
 │       └── util.lua                   # 通用工具函数
 │
-├── view_crashtrace_report.py      # CrashTrace 报告查看器（Python 源码）
-├── CrashTraceViewer.spec          # PyInstaller 打包配置
-├── build_crashtrace_viewer.bat    # 打包脚本（生成 CrashTraceViewer.exe）
-├── sync_dst_mods.bat              # 开发同步脚本（复制 mod 到游戏目录）
-├── view_latest_crashtrace_report.bat   # 一键运行查看器（英文入口）
-├── 查看最新CrashTrace报告.bat          # 一键运行查看器（中文入口）
 ├── 使用说明.txt                        # 面向普通用户的使用说明
 ├── CrashTrace_workshop_description.md  # 创意工坊发布文案
 └── latest_crashtrace_report.txt        # 最近一次生成的报告
@@ -72,7 +75,6 @@ dst-mods/
 modmain.lua
   └─ modimport("scripts/crashtrace/bootstrap.lua")
        ├─ Config.SetLanguage(...)        # 从 modinfo 读取语言配置
-       ├─ Wrappers.Install()             # 劫持已加载 mod 的环境 API
        └─ RuntimeHooks.Install(...)      # 注册 AddPrefabPostInitAny 钩子
 ```
 
@@ -108,34 +110,9 @@ SafeCall.Run(meta, fn, ...)
 - 异常时通过 `debug.traceback` 获取完整调用栈
 - 通过 `should_skip_nested_report` 避免重复报告（如 `prefab_post_init_any` 在 `player_post_init` 内部时）
 
-#### 4. `wrappers.lua` — 环境 API 钩子
+#### 4. `runtime_hooks.lua` — 运行时钩子
 
-**Phase 1 钩子**：劫持每个 mod 环境中的注册 API，将用户回调包装为带异常捕获的版本。
-
-被劫持的 API：
-
-| API | hook_type | action |
-|-----|-----------|--------|
-| `AddPrefabPostInit` | `AddPrefabPostInit` | `prefab_post_init` |
-| `AddPrefabPostInitAny` | `AddPrefabPostInitAny` | `prefab_post_init_any` |
-| `AddPlayerPostInit` | `AddPlayerPostInit` | `player_post_init` |
-| `AddComponentPostInit` | `AddComponentPostInit` | `component_post_init` |
-| `AddGamePostInit` | `AddGamePostInit` | `game_post_init` |
-| `AddSimPostInit` | `AddSimPostInit` | `sim_post_init` |
-
-工作原理：
-
-1. 遍历 `ModManager.mods` 中所有已加载的 mod 环境
-2. 跳过自身（`dst-mod-crash-tracer`）
-3. 对每个环境，使用 `rawget/rawset` 替换上述 API
-4. 替换后的 API 会识别回调函数，用 `wrap_callback` 包装
-5. 包装后的回调在执行时通过 `SafeCall.Run` 运行，异常时自动报告
-
-`build_env_identity(env)` 函数从 mod 环境中提取 `mod_id`、`mod_name`、`source` 等身份信息。
-
-#### 5. `runtime_hooks.lua` — 运行时钩子
-
-**Phase 2 钩子**：通过 `AddPrefabPostInitAny` 注册回调，在每个实体实例上安装运行时方法钩子。
+通过 `AddPrefabPostInitAny` 注册回调，在每个实体实例上安装运行时方法钩子。
 
 被钩住的实例方法：
 
@@ -152,7 +129,7 @@ SafeCall.Run(meta, fn, ...)
 - 只对非自身 mod 的回调进行包装（`should_instrument` 检查）
 - 使用 `_crashtrace_listen_wrapped` 等标志避免重复包装
 
-#### 6. `mod_identity.lua` — Mod 身份识别
+#### 5. `mod_identity.lua` — Mod 身份识别
 
 通过分析调用栈中的文件路径来推断调用者属于哪个 mod：
 
@@ -162,7 +139,7 @@ ModIdentity.CaptureCallerIdentity()
 -- 返回 { mod_id, mod_name, source }
 ```
 
-#### 7. `logger.lua` — 日志输出
+#### 6. `logger.lua` — 日志输出
 
 将结构化报告输出为 DST 日志中的格式化文本块：
 
@@ -179,7 +156,7 @@ ModIdentity.CaptureCallerIdentity()
 [CrashTrace][ERROR] report_end
 ```
 
-#### 8. `report_builder.lua` — 报告构建器
+#### 7. `report_builder.lua` — 报告构建器
 
 将报告表转换为 `key=value` 格式的摘要行数组。包含：
 
@@ -190,7 +167,7 @@ ModIdentity.CaptureCallerIdentity()
 - 触发摘要（trigger_summary）
 - 错误原因、来源文件
 
-#### 9. `i18n.lua` — 国际化
+#### 8. `i18n.lua` — 国际化
 
 提供中英文术语映射，覆盖：
 
@@ -295,7 +272,7 @@ Hook 类型: 事件监听
 
 ## 工具脚本
 
-### `sync_dst_mods.bat`
+### `tools/sync_dst_mods.bat`
 
 将开发目录中的所有 mod 同步到 DST 游戏的 `mods` 目录。使用 `robocopy` 进行增量复制。
 
@@ -304,11 +281,11 @@ Hook 类型: 事件监听
 目标: S:\game\steam\steamapps\common\Don't Starve Together\mods\<mod-name>
 ```
 
-### `build_crashtrace_viewer.bat`
+### `tools/crashtrace-viewer/build_crashtrace_viewer.bat`
 
 使用 PyInstaller 将 `view_crashtrace_report.py` 打包为独立的 `CrashTraceViewer.exe`。自动检测并安装 PyInstaller。
 
-### `view_latest_crashtrace_report.bat` / `查看最新CrashTrace报告.bat`
+### `tools/crashtrace-viewer/查看最新CrashTrace报告.bat`
 
 一键运行 Python 查看器，生成并打开 `latest_crashtrace_report.txt`。优先使用 `py -3`，回退到 `python`。
 
@@ -323,17 +300,12 @@ Hook 类型: 事件监听
 ### 异常捕获链路
 
 ```
-1. mod 调用 AddPlayerPostInit(fn)
-   └─ Wrappers 劫持 → 包装 fn 为 wrapped_fn
-       └─ wrapped_fn 内部调用 SafeCall.Run(meta, fn, inst)
-           └─ xpcall(fn, error_handler)
-               ├─ 成功: 正常返回
-               └─ 失败: 构建 report → Logger.Report(report)
-
-2. mod 调用 inst:ListenForEvent(event, fn)
-   └─ RuntimeHooks 劫持 → 包装 fn 为 wrapped_fn
-       └─ wrapped_fn 内部调用 SafeCall.Run(meta, fn, inst, data)
-           └─ 同上
+mod 调用 inst:ListenForEvent(event, fn) / DoTaskInTime(delay, fn) / DoPeriodicTask(interval, fn)
+  └─ RuntimeHooks 劫持 → 包装 fn 为 wrapped_fn
+      └─ wrapped_fn 内部调用 SafeCall.Run(meta, fn, ...)
+          └─ xpcall(fn, error_handler)
+              ├─ 成功: 正常返回
+              └─ 失败: 构建 report → Logger.Report(report)
 ```
 
 ### Mod 身份推断
@@ -351,7 +323,7 @@ debug.getinfo(level, "S").source
 
 ### 优先级
 
-`dst-mod-crash-tracer` 的 `priority = 1000000`（极高），确保它在所有其他 mod 之前加载，从而能劫持后续 mod 的 API 注册。
+`dst-mod-crash-tracer` 的 `priority = 0`（默认），使用 `AddPrefabPostInitAny` 注册钩子，不依赖加载顺序。
 
 ---
 
@@ -359,14 +331,9 @@ debug.getinfo(level, "S").source
 
 | 链路 | 状态 |
 |------|------|
-| `AddPlayerPostInit` | 已验证 |
 | `ListenForEvent` | 已验证 |
 | `DoTaskInTime` | 已验证 |
 | `DoPeriodicTask` | 已验证 |
-| `AddPrefabPostInit` | 已实现 |
-| `AddComponentPostInit` | 已实现 |
-| `AddGamePostInit` | 已实现 |
-| `AddSimPostInit` | 已实现 |
 | DST 原生日志回退解析 | 已实现 |
 
 ## 已知边界

@@ -8,7 +8,7 @@ Version: 0.2.0
 版本: 0.2.0]]
 author = "Cursor + User"
 version = "0.2.0"
-priority = 1000000
+priority = 0
 
 forumthread = ""
 
