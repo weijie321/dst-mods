@@ -13,6 +13,12 @@ DST (Don't Starve Together) Lua 层 mod 异常诊断工具项目。
 - `tools/crashtrace-viewer/` — 查看器相关（源码、打包配置、启动脚本）
 - `tools/sync_dst_mods.bat` — 同步 mod 到 DST 游戏目录
 - `dst-inspect/` — DST 原生脚本提取（开发参考）
+- `wanda-skilltree/` — 旺达技能树扩展 mod（五栏技能树 + 怀表 Hook + 时光贮匣）
+
+## 相关工作区
+
+- `E:\work\code\ai-generated\dst-original-analysis\` — DST 原版代码和创意工坊模组分析工作区。这里存放从 `scripts.zip` 解压出的完整只读副本、`reports/*.csv` 索引、模组 ID 映射和混淆/可读性记录。
+- `dst-inspect/` 只保留少量关键原版脚本提取结果；需要完整原版源码索引时不要继续扩展它，优先使用 `dst-original-analysis`。
 
 ## 关键技术点
 

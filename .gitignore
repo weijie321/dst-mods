@@ -1,2 +1,6 @@
 .idea/
 .omc/
+/dst_workshop_322330_mods_mapping.md
+tools/crashtrace-viewer/build/
+tools/crashtrace-viewer/latest_crashtrace_report.txt
+tools/crashtrace-viewer/dist/latest_crashtrace_report.txt

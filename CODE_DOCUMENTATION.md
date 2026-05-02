@@ -62,7 +62,7 @@ dst-mods/
 │
 ├── 使用说明.txt                        # 面向普通用户的使用说明
 ├── CrashTrace_workshop_description.md  # 创意工坊发布文案
-└── latest_crashtrace_report.txt        # 最近一次生成的报告
+└── latest_crashtrace_report.txt        # 查看器生成的当前报告文件
 ```
 
 ---
@@ -215,7 +215,7 @@ ModIdentity.CaptureCallerIdentity()
 ### 报告输出格式
 
 ```
-=== CrashTrace 最近一次诊断 ===
+=== CrashTrace 当前诊断 ===
 
 结论:
 最可疑 mod: <mod_name>
@@ -340,5 +340,5 @@ debug.getinfo(level, "S").source
 
 - 主要覆盖 Lua 层 mod 异常，不保证捕获引擎层或进程级闪退
 - 某些 very early frontend 阶段可能回退到 DST 原生日志
-- 查看器默认只展示最近一条报告
+- 查看器按日志修改时间选择第一条可用报告
 - 创意工坊不适合直接分发 exe，查看器需通过外部下载提供

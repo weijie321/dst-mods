@@ -13,9 +13,13 @@
 - `tools/`：开发工具（同步脚本、查看器源码和打包产物）
   - `sync_dst_mods.bat`：同步开发 mod 到游戏 `mods` 目录
   - `crashtrace-viewer/`：查看器源码、打包配置、启动脚本、exe 产物
-- `latest_crashtrace_report.txt`：查看器最近一次生成的报告
+- `latest_crashtrace_report.txt`：查看器生成的当前报告文件
 - `使用说明.txt`：给普通用户的使用说明
 - `CrashTrace_workshop_description.md`：创意工坊发布文案草稿
+
+相关分析工作区：
+
+- `..\dst-original-analysis\`：DST 原版 `scripts.zip` 的只读解压副本、索引报告和创意工坊模组可读性记录。需要查原版 Hook、Prefab、组件、状态机或模组 ID 映射时优先看这里。
 
 ## 交付模型
 
@@ -95,7 +99,7 @@ CrashTrace 现在按两部分交付：
 - 主要覆盖 Lua 层 mod 异常，不保证捕获引擎层或进程级闪退
 - 某些 very early frontend 阶段或特殊加载阶段，可能还会回退到 DST 原生日志
 - 若多个测试 mod 同时启用，较早触发的异常可能会打断后续测试链路
-- 查看器默认展示最近一条可用报告；若没有结构化报告，则回退解析 DST 原生日志
+- 查看器按日志修改时间选择第一条可用报告；若没有结构化报告，则回退解析 DST 原生日志
 - 创意工坊本身不适合直接分发 exe，查看器需要通过外部下载地址提供
 
 ## 打包查看器
@@ -113,8 +117,8 @@ CrashTrace 现在按两部分交付：
 - `tools/crashtrace-viewer/dist/CrashTraceViewer.exe`
 - `tools/crashtrace-viewer/查看最新CrashTrace报告.bat`
 
-它会自动读取 `Documents\\Klei\\DoNotStarveTogether` 下的日志，并提取最近一次 `CrashTrace` 报告块。
-如果当前日志已被 DST 轮转，它也会自动扫描 `backup/client_log` 里的最近一次客户端报错。
+它会自动读取 `Documents\\Klei\\DoNotStarveTogether` 下的日志，并提取按日志修改时间排序后的第一条 `CrashTrace` 报告块。
+如果当前日志已被 DST 轮转，它也会自动扫描 `backup/client_log` 中按修改时间排序的客户端报错。
 报告会尽量直接给出最可疑 mod、疑似出错文件以及修复建议。
 
 ## 建议发布物

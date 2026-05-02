@@ -35,6 +35,9 @@ if errorlevel 1 exit /b 1
 call :sync_one "dst-mod-crash-tracer-grass-test"
 if errorlevel 1 exit /b 1
 
+call :sync_one "wanda-skilltree"
+if errorlevel 1 exit /b 1
+
 echo [sync] done
 exit /b 0
 
