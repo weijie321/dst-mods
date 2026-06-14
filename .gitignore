@@ -1,5 +1,9 @@
 .idea/
 .omc/
+.venv/
+__pycache__/
+*.pyc
+test-reports/
 /dst_workshop_322330_mods_mapping.md
 tools/crashtrace-viewer/build/
 tools/crashtrace-viewer/latest_crashtrace_report.txt

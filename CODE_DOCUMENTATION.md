@@ -277,7 +277,7 @@ Hook 类型: 事件监听
 将开发目录中的所有 mod 同步到 DST 游戏的 `mods` 目录。使用 `robocopy` 进行增量复制。
 
 ```
-源: E:\work\code\ai-generated\dst-mods\<mod-name>
+源: E:\work\code\dst-mods\<mod-name>
 目标: S:\game\steam\steamapps\common\Don't Starve Together\mods\<mod-name>
 ```
 

@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set "DEV_ROOT=E:\work\code\ai-generated\dst-mods"
+set "DEV_ROOT=E:\work\code\dst-mods"
 set "GAME_MODS=S:\game\steam\steamapps\common\Don't Starve Together\mods"
 
 echo [sync] dev root  : %DEV_ROOT%

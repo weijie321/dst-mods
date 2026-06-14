@@ -17,7 +17,7 @@ DST (Don't Starve Together) Lua 层 mod 异常诊断工具项目。
 
 ## 相关工作区
 
-- `E:\work\code\ai-generated\dst-original-analysis\` — DST 原版代码和创意工坊模组分析工作区。这里存放从 `scripts.zip` 解压出的完整只读副本、`reports/*.csv` 索引、模组 ID 映射和混淆/可读性记录。
+- `E:\work\code\dst-original-analysis\` — DST 原版代码和创意工坊模组分析工作区。这里存放从 `scripts.zip` 解压出的完整只读副本、`reports/*.csv` 索引、模组 ID 映射和混淆/可读性记录。
 - `dst-inspect/` 只保留少量关键原版脚本提取结果；需要完整原版源码索引时不要继续扩展它，优先使用 `dst-original-analysis`。
 
 ## 关键技术点
