@@ -38,7 +38,7 @@ local function MakeTimeBox(name, required_skill)
         MakeInventoryPhysics(inst)
 
         inst.AnimState:SetBank("pocketwatch")
-        inst.AnimState:SetBuild("pocketwatch")
+        inst.AnimState:SetBuild("pocketwatch_marble")
         inst.AnimState:PlayAnimation("idle")
 
         inst:AddTag("wanda_timebox")

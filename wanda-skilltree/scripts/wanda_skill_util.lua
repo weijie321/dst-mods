@@ -18,7 +18,7 @@ function WandaSkillUtil.HasAnySkill(inst, skills)
     return false
 end
 
-function WandaSkillUtil.GetAgeMax(inst)
+function WandaSkillUtil.GetAgeDisplayMax(inst)
     if WandaSkillUtil.HasSkill(inst, "wanda_age_max_3") then
         return 150
     elseif WandaSkillUtil.HasSkill(inst, "wanda_age_max_2") then
@@ -26,7 +26,11 @@ function WandaSkillUtil.GetAgeMax(inst)
     elseif WandaSkillUtil.HasSkill(inst, "wanda_age_max_1") then
         return 100
     end
-    return TUNING.WANDA_OLDAGER
+    return TUNING.WANDA_MAX_YEARS_OLD
+end
+
+function WandaSkillUtil.GetAgeHealthMax(inst)
+    return WandaSkillUtil.GetAgeDisplayMax(inst) - TUNING.WANDA_MIN_YEARS_OLD
 end
 
 function WandaSkillUtil.GetHealBonus(inst)

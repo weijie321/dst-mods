@@ -8,7 +8,6 @@ PrefabFiles = {
     "wanda_timebox",
     "wanda_time_decoy",
     "desperate_pocketwatch_weapon",
-    "wanda_time_shard",
 }
 
 Assets = {
@@ -59,25 +58,13 @@ local Ingredient = GLOBAL.Ingredient
 local TECH = GLOBAL.TECH
 
 AddRecipe2(
-    "wanda_time_shard",
-    { Ingredient("pocketwatch_parts", 1), Ingredient("nightmarefuel", 1) },
-    TECH.SCIENCE_TWO,
-    {
-        atlas = "images/inventoryimages.xml",
-        image = "pocketwatch_parts.tex",
-        builder_skill = "wanda_timebox_1",
-    },
-    { "REFINE", "MAGIC" }
-)
-
-AddRecipe2(
     "wanda_timebox_1",
-    { Ingredient("wanda_time_shard", 1), Ingredient("boards", 2), Ingredient("nightmarefuel", 2) },
-    TECH.SCIENCE_TWO,
+    { Ingredient("pocketwatch_parts", 1), Ingredient("boards", 2), Ingredient("nightmarefuel", 2) },
+    TECH.SCIENCE_ONE,
     {
         atlas = "images/inventoryimages.xml",
         image = "pocketwatch_parts.tex",
-        builder_skill = "wanda_timebox_1",
+        builder_tag = "clockmaker",
     },
     { "TOOLS", "MAGIC" }
 )
@@ -89,6 +76,7 @@ AddRecipe2(
     {
         atlas = "images/inventoryimages.xml",
         image = "pocketwatch_parts.tex",
+        builder_tag = "clockmaker",
         builder_skill = "wanda_timebox_2",
     },
     { "TOOLS", "MAGIC" }
@@ -101,6 +89,7 @@ AddRecipe2(
     {
         atlas = "images/inventoryimages.xml",
         image = "pocketwatch_parts.tex",
+        builder_tag = "clockmaker",
         builder_skill = "wanda_timebox_3",
     },
     { "TOOLS", "MAGIC" }
