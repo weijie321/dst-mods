@@ -110,6 +110,9 @@ def main():
             if not images.is_dir():
                 continue
             for atlas in images.rglob('*.xml'):
+                # 同名地图、特效和百科图不能作为地皮物品图标候选。
+                if {'mapicons', 'map_icons', 'fx', 'ui'} & set(atlas.relative_to(images).parts):
+                    continue
                 doc = ET.fromstring(atlas.read_bytes())
                 for element in doc.findall('./Elements/Element'):
                     atlas_elements.setdefault(Path(element.attrib['name']).stem, (atlas, element))
@@ -166,10 +169,16 @@ def main():
             else:
                 assert (args.dst_root/'data'/'anim'/f'{animzip}.zip').is_file(), f'物品动画缺失: {mid}/{animzip}'
             candidates = list(dict.fromkeys(filter(None, [
+                turf.get('invicon_override'),
                 'turf_'+original_turf if original_turf else None, original_turf,
                 (original_turf+'_turf') if original_turf else None,
-                turf.get('anim'), turf.get('invicon_override'), original_name.lower(),
+                turf.get('anim'), original_name.lower(),
             ])))
+            # 睡莲平台的地纹全透明，普通地皮物品明确借用其可拾取猫叶图标。
+            if mid == '3544387985' and original_name == 'TBAT_TURF_WATER_LILY_CAT':
+                candidates.insert(0, 'tbat_turf_water_lily_cat_leaf')
+            if turf.get('invicon_override'):
+                assert turf['invicon_override'] in atlas_elements, f'声明图标缺失: {mid}/{turf["invicon_override"]}'
             found_icon = next((atlas_elements[name] for name in candidates if name in atlas_elements), None)
             icon = found_icon[0] if found_icon else None
             if found_icon:
@@ -185,6 +194,11 @@ def main():
                     texture = args.dst_root/'data/levels/textures'/f'{Path(noise).stem}.tex'
                 attrs = dict(u1='0',u2='1',v1='0',v2='1')
             name = 'turf_'+key
+            icon_source = dict(file=texture.relative_to(root).as_posix() if texture.is_relative_to(root) else None,
+                atlas=icon.relative_to(root).as_posix() if icon else None,
+                element=attrs.get('name'), declared=turf.get('invicon_override'))
+            if mid == '3544387985' and original_name == 'TBAT_TURF_WATER_LILY_CAT':
+                icon_source['replacement'] = 'platform_leaf'
             icon_bytes, attrs = inventory_icon(texture, attrs)
             texture_name = f'tc_{mid}_' + hashlib.sha256(icon_bytes).hexdigest()[:16] + '.tex'
             doc = ET.Element('Atlas')
@@ -202,7 +216,7 @@ def main():
                 tile=key.upper(), name=key, display=display, ground=ground, mini=tile['mini'],
                 turf=dict(name=key, bank_build=build, bank_override=bank, build_override=build,
                     animzip_override=animzip, anim=animation, invicon_override=key, pickupsound=turf.get('pickupsound','cloth')),
-                adjusted=adjusted, fallback_item=fallback, icon_preview=icon is None)
+                adjusted=adjusted, fallback_item=fallback, icon_preview=icon is None, icon_source=icon_source)
             entries.append(entry)
         info = root/'modinfo.lua'
         info_text = info.read_text(encoding='utf-8-sig',errors='replace')
@@ -230,7 +244,7 @@ def main():
             old = output/rel
             if old.exists():
                 assert output.resolve() in old.resolve().parents
-                assert hashlib.sha256(old.read_bytes()).hexdigest() == info['sha256'], f'保留手工改动：{rel}'
+                assert hashlib.sha256(old.read_bytes()).hexdigest() == info.get('output_sha256', info['sha256']), f'保留手工改动：{rel}'
                 old.unlink()
     for source in summary:
         print(source['name'],source['count'])

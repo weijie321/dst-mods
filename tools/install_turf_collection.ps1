@@ -47,7 +47,7 @@ try {
     Write-Host '完成：运行文件已同步并通过哈希校验。'
     if ($Result.backup_dir) { Write-Host "备份：$($Result.backup_dir)" }
     Write-Host "部署报告：$($Result.evidence_dir)"
-    Write-Host '客户端：重启游戏，在“创建世界 → 模组 → 服务器模组”中启用“地皮合集”。'
+    Write-Host '客户端：重启游戏，在“创建世界 → 模组 → 服务器模组”中启用“321自用dp”。'
     Write-Host '独立专服：在对应分片的 modoverrides.lua 中启用 turf-collection，重启服务器加载。'
     exit 0
 }

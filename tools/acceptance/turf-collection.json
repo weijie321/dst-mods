@@ -7,6 +7,22 @@
   "client_script": "tools/scenarios/turf-collection-client.lua",
   "requirements": [
     {
+      "id": "display-name",
+      "description": "客户端制作分类显示用户指定名称321自用dp",
+      "stage": "client",
+      "assertions": ["client_display_name"]
+    },
+    {
+      "id": "corrected-icon-sources",
+      "description": "樱花、樱草使用原作者指定地皮图标，睡莲猫猫明确借用其可拾取猫叶背包图标，远端客户端加载对应图集",
+      "stage": "client",
+      "assertions": [
+        "tc_3609964985_hmr_cherry_flower.client_icon_source",
+        "tc_3609964985_hmr_cherry_grass.client_icon_source",
+        "tc_3544387985_tbat_turf_water_lily_cat.client_icon_source"
+      ]
+    },
+    {
       "id": "source-coverage",
       "description": "11个来源共130种地皮全部独立注册",
       "stage": "server",

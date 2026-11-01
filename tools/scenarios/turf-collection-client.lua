@@ -1,6 +1,12 @@
 return function(t)
     local catalog = require("turf_collection_catalog")
+    local corrected_icons = {
+        tc_3609964985_hmr_cherry_flower = "images/inventoryimages/hmr_cherry_flower_turf.tex",
+        tc_3609964985_hmr_cherry_grass = "images/inventoryimages/hmr_cherry_grass_turf.tex",
+        tc_3544387985_tbat_turf_water_lily_cat = "atbooks1/images/inventoryimages/tbat_turf_water_lily_cat_leaf.tex",
+    }
     t.Assert("client_catalog_130", #catalog == 130)
+    t.Assert("client_display_name", STRINGS.UI.CRAFTING_FILTERS.TURF_COLLECTION == "321自用dp")
     t.After(4, function()
         local x, _, z = ThePlayer.Transform:GetWorldPosition()
         local entities = TheSim:FindEntities(x, 0, z, 20)
@@ -24,6 +30,11 @@ return function(t)
                 and atlas_matches and image_matches and contains,
                 {atlas = actual_atlas, image = actual_image, expected_atlas = atlas,
                     atlas_hash = hash(atlas), image_hash = hash(image), contains = contains})
+            if corrected_icons[key] ~= nil then
+                t.Assert(key .. ".client_icon_source", contains and atlas_matches and image_matches
+                    and entry.icon_source ~= nil and entry.icon_source.file == corrected_icons[key]
+                    and not entry.icon_preview, entry.icon_source)
+            end
             t.Assert(key .. ".client_anim", item ~= nil and item.AnimState:IsCurrentAnimation(entry.turf.anim))
             local col, row = (index - 1) % 13, math.floor((index - 1) / 13)
             t.Assert(key .. ".client_tile", TheWorld.Map:GetTileAtPoint(x + (col - 6) * 4, 0, z + (row - 4) * 4) == WORLD_TILES[entry.tile])

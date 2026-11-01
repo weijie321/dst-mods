@@ -337,7 +337,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lg_turf1.tex",
+        "atlas": "images/inventoryimages/turf_lg_turf1.xml",
+        "element": "turf_lg_turf1.tex",
+        "declared": null
+      }
     },
     {
       "source": "2979177306",
@@ -373,7 +379,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lg_turf10.tex",
+        "atlas": "images/inventoryimages/turf_lg_turf10.xml",
+        "element": "turf_lg_turf10.tex",
+        "declared": null
+      }
     },
     {
       "source": "2979177306",
@@ -413,7 +425,13 @@
         "istemptile"
       ],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lg_turf11.tex",
+        "atlas": "images/inventoryimages/turf_lg_turf11.xml",
+        "element": "turf_lg_turf11.tex",
+        "declared": null
+      }
     },
     {
       "source": "2979177306",
@@ -450,7 +468,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lg_turf2.tex",
+        "atlas": "images/inventoryimages/turf_lg_turf2.xml",
+        "element": "turf_lg_turf2.tex",
+        "declared": null
+      }
     },
     {
       "source": "2979177306",
@@ -486,7 +510,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lg_turf3.tex",
+        "atlas": "images/inventoryimages/turf_lg_turf3.xml",
+        "element": "turf_lg_turf3.tex",
+        "declared": null
+      }
     },
     {
       "source": "2979177306",
@@ -523,7 +553,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lg_turf4.tex",
+        "atlas": "images/inventoryimages/turf_lg_turf4.xml",
+        "element": "turf_lg_turf4.tex",
+        "declared": null
+      }
     },
     {
       "source": "2979177306",
@@ -560,7 +596,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lg_turf5.tex",
+        "atlas": "images/inventoryimages/turf_lg_turf5.xml",
+        "element": "turf_lg_turf5.tex",
+        "declared": null
+      }
     },
     {
       "source": "2979177306",
@@ -597,7 +639,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lg_turf6.tex",
+        "atlas": "images/inventoryimages/turf_lg_turf6.xml",
+        "element": "turf_lg_turf6.tex",
+        "declared": null
+      }
     },
     {
       "source": "2979177306",
@@ -634,7 +682,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lg_turf7.tex",
+        "atlas": "images/inventoryimages/turf_lg_turf7.xml",
+        "element": "turf_lg_turf7.tex",
+        "declared": null
+      }
     },
     {
       "source": "2979177306",
@@ -670,7 +724,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lg_turf8.tex",
+        "atlas": "images/inventoryimages/turf_lg_turf8.xml",
+        "element": "turf_lg_turf8.tex",
+        "declared": null
+      }
     },
     {
       "source": "2979177306",
@@ -707,7 +767,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lg_turf9.tex",
+        "atlas": "images/inventoryimages/turf_lg_turf9.xml",
+        "element": "turf_lg_turf9.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -750,7 +816,13 @@
         "nogroundoverlays"
       ],
       "fallback_item": true,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/lz_bridge.tex",
+        "atlas": "images/inventoryimages/lz_bridge.xml",
+        "element": "lz_bridge.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -793,7 +865,13 @@
         "nogroundoverlays"
       ],
       "fallback_item": true,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/lz_bridgethree.tex",
+        "atlas": "images/inventoryimages/lz_bridgethree.xml",
+        "element": "lz_bridgethree.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -836,7 +914,13 @@
         "nogroundoverlays"
       ],
       "fallback_item": true,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/lz_bridgethree_red.tex",
+        "atlas": "images/inventoryimages/lz_bridgethree_red.xml",
+        "element": "lz_bridgethree_red.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -879,7 +963,13 @@
         "nogroundoverlays"
       ],
       "fallback_item": true,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/lz_bridgetwo.tex",
+        "atlas": "images/inventoryimages/lz_bridgetwo.xml",
+        "element": "lz_bridgetwo.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -922,7 +1012,13 @@
         "nogroundoverlays"
       ],
       "fallback_item": true,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/lz_bridgetwo_red.tex",
+        "atlas": "images/inventoryimages/lz_bridgetwo_red.xml",
+        "element": "lz_bridgetwo_red.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -965,7 +1061,13 @@
         "nogroundoverlays"
       ],
       "fallback_item": true,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/lz_bridge_red.tex",
+        "atlas": "images/inventoryimages/lz_bridge_red.xml",
+        "element": "lz_bridge_red.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1008,7 +1110,13 @@
         "nogroundoverlays"
       ],
       "fallback_item": true,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/lz_bridge_shuilian.tex",
+        "atlas": "images/inventoryimages/lz_bridge_shuilian.xml",
+        "element": "lz_bridge_shuilian.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1044,7 +1152,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf1.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf1.xml",
+        "element": "turf_lz_turf1.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1081,7 +1195,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf10.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf10.xml",
+        "element": "turf_lz_turf10.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1118,7 +1238,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf11.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf11.xml",
+        "element": "turf_lz_turf11.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1154,7 +1280,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf12.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf12.xml",
+        "element": "turf_lz_turf12.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1190,7 +1322,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf13.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf13.xml",
+        "element": "turf_lz_turf13.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1226,7 +1364,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf14.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf14.xml",
+        "element": "turf_lz_turf14.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1262,7 +1406,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf15.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf15.xml",
+        "element": "turf_lz_turf15.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1298,7 +1448,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf16.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf16.xml",
+        "element": "turf_lz_turf16.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1334,7 +1490,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf2.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf2.xml",
+        "element": "turf_lz_turf2.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1370,7 +1532,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf3.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf3.xml",
+        "element": "turf_lz_turf3.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1406,7 +1574,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf4.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf4.xml",
+        "element": "turf_lz_turf4.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1442,7 +1616,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf5.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf5.xml",
+        "element": "turf_lz_turf5.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1478,7 +1658,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf6.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf6.xml",
+        "element": "turf_lz_turf6.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1514,7 +1700,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf7.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf7.xml",
+        "element": "turf_lz_turf7.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1550,7 +1742,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf8.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf8.xml",
+        "element": "turf_lz_turf8.tex",
+        "declared": null
+      }
     },
     {
       "source": "3349143694",
@@ -1587,7 +1785,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_lz_turf9.tex",
+        "atlas": "images/inventoryimages/turf_lz_turf9.xml",
+        "element": "turf_lz_turf9.tex",
+        "declared": null
+      }
     },
     {
       "source": "3609964985",
@@ -1626,7 +1830,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/hmr_cherry_flower_turf.tex",
+        "atlas": "images/inventoryimages/hmr_cherry_flower_turf.xml",
+        "element": "hmr_cherry_flower_turf.tex",
+        "declared": "hmr_cherry_flower_turf"
+      }
     },
     {
       "source": "3609964985",
@@ -1665,7 +1875,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/hmr_cherry_grass_turf.tex",
+        "atlas": "images/inventoryimages/hmr_cherry_grass_turf.xml",
+        "element": "hmr_cherry_grass_turf.tex",
+        "declared": "hmr_cherry_grass_turf"
+      }
     },
     {
       "source": "3609964985",
@@ -1704,7 +1920,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/hmr_cherry_mystery_turf.tex",
+        "atlas": "images/inventoryimages/hmr_cherry_mystery_turf.xml",
+        "element": "hmr_cherry_mystery_turf.tex",
+        "declared": "hmr_cherry_mystery_turf"
+      }
     },
     {
       "source": "3609964985",
@@ -1743,7 +1965,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/hmr_cherry_road_turf.tex",
+        "atlas": "images/inventoryimages/hmr_cherry_road_turf.xml",
+        "element": "hmr_cherry_road_turf.tex",
+        "declared": "hmr_cherry_road_turf"
+      }
     },
     {
       "source": "3609964985",
@@ -1782,7 +2010,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/hmr_cherry_xmm_turf.tex",
+        "atlas": "images/inventoryimages/hmr_cherry_xmm_turf.xml",
+        "element": "hmr_cherry_xmm_turf.tex",
+        "declared": "hmr_cherry_xmm_turf"
+      }
     },
     {
       "source": "3288149713",
@@ -1818,7 +2052,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf1.tex",
+        "atlas": "images/inventoryimages/ft_turf1.xml",
+        "element": "ft_turf1.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -1854,7 +2094,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf10.tex",
+        "atlas": "images/inventoryimages/ft_turf10.xml",
+        "element": "ft_turf10.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -1890,7 +2136,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf11.tex",
+        "atlas": "images/inventoryimages/ft_turf11.xml",
+        "element": "ft_turf11.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -1926,7 +2178,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf12.tex",
+        "atlas": "images/inventoryimages/ft_turf12.xml",
+        "element": "ft_turf12.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -1964,7 +2222,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf13.tex",
+        "atlas": "images/inventoryimages/ft_turf13.xml",
+        "element": "ft_turf13.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -2000,7 +2264,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf14.tex",
+        "atlas": "images/inventoryimages/ft_turf14.xml",
+        "element": "ft_turf14.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -2036,7 +2306,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf15.tex",
+        "atlas": "images/inventoryimages/ft_turf15.xml",
+        "element": "ft_turf15.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -2072,7 +2348,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf2.tex",
+        "atlas": "images/inventoryimages/ft_turf2.xml",
+        "element": "ft_turf2.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -2108,7 +2390,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf3.tex",
+        "atlas": "images/inventoryimages/ft_turf3.xml",
+        "element": "ft_turf3.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -2144,7 +2432,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf4.tex",
+        "atlas": "images/inventoryimages/ft_turf4.xml",
+        "element": "ft_turf4.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -2182,7 +2476,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf5.tex",
+        "atlas": "images/inventoryimages/ft_turf5.xml",
+        "element": "ft_turf5.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -2220,7 +2520,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf6.tex",
+        "atlas": "images/inventoryimages/ft_turf6.xml",
+        "element": "ft_turf6.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -2256,7 +2562,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf7.tex",
+        "atlas": "images/inventoryimages/ft_turf7.xml",
+        "element": "ft_turf7.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -2292,7 +2604,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf8.tex",
+        "atlas": "images/inventoryimages/ft_turf8.xml",
+        "element": "ft_turf8.tex",
+        "declared": null
+      }
     },
     {
       "source": "3288149713",
@@ -2328,7 +2646,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/ft_turf9.tex",
+        "atlas": "images/inventoryimages/ft_turf9.xml",
+        "element": "ft_turf9.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2366,7 +2690,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_checkerboard_road.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_checkerboard_road.xml",
+        "element": "tbat_checkerboard_road.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2403,7 +2733,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks2/images/tbat_inventoryimages.tex",
+        "atlas": "atbooks2/images/tbat_inventoryimages.xml",
+        "element": "turf_tbat_cloud.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2440,7 +2776,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks2/images/tbat_inventoryimages.tex",
+        "atlas": "atbooks2/images/tbat_inventoryimages.xml",
+        "element": "turf_tbat_forest.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2478,7 +2820,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_herringbone_road.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_herringbone_road.xml",
+        "element": "tbat_herringbone_road.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2514,7 +2862,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_milkyway_cloud.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_milkyway_cloud.xml",
+        "element": "tbat_milkyway_cloud.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2550,7 +2904,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_miragewood_floor_blue.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_miragewood_floor_blue.xml",
+        "element": "tbat_miragewood_floor_blue.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2586,7 +2946,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_miragewood_floor_orange.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_miragewood_floor_orange.xml",
+        "element": "tbat_miragewood_floor_orange.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2622,7 +2988,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_miragewood_floor_purple.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_miragewood_floor_purple.xml",
+        "element": "tbat_miragewood_floor_purple.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2658,7 +3030,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_miragewood_floor_yellow.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_miragewood_floor_yellow.xml",
+        "element": "tbat_miragewood_floor_yellow.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2695,7 +3073,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks2/images/tbat_inventoryimages.tex",
+        "atlas": "atbooks2/images/tbat_inventoryimages.xml",
+        "element": "turf_tbat_psylocke.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2731,7 +3115,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_redautumn_maplepath.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_redautumn_maplepath.xml",
+        "element": "tbat_redautumn_maplepath.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2768,7 +3158,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks2/images/tbat_inventoryimages.tex",
+        "atlas": "atbooks2/images/tbat_inventoryimages.xml",
+        "element": "turf_tbat_snowfall.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2806,7 +3202,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_terracotta_road.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_terracotta_road.xml",
+        "element": "tbat_terracotta_road.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2842,7 +3244,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_turf_checkerfloor_blue.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_turf_checkerfloor_blue.xml",
+        "element": "tbat_turf_checkerfloor_blue.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2878,7 +3286,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_turf_checkerfloor_orange.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_turf_checkerfloor_orange.xml",
+        "element": "tbat_turf_checkerfloor_orange.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2914,7 +3328,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_turf_checkerfloor_pink.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_turf_checkerfloor_pink.xml",
+        "element": "tbat_turf_checkerfloor_pink.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2950,7 +3370,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_turf_clover_butterfly.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_turf_clover_butterfly.xml",
+        "element": "tbat_turf_clover_butterfly.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -2986,7 +3412,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_turf_emerald_feather_leaves.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_turf_emerald_feather_leaves.xml",
+        "element": "tbat_turf_emerald_feather_leaves.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -3022,7 +3454,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_turf_fake_ocean_deep.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_turf_fake_ocean_deep.xml",
+        "element": "tbat_turf_fake_ocean_deep.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -3058,7 +3496,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_turf_fake_ocean_middle.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_turf_fake_ocean_middle.xml",
+        "element": "tbat_turf_fake_ocean_middle.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -3094,7 +3538,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_turf_fake_ocean_shallow.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_turf_fake_ocean_shallow.xml",
+        "element": "tbat_turf_fake_ocean_shallow.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -3130,7 +3580,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_turf_fallen_cherry_blossoms.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_turf_fallen_cherry_blossoms.xml",
+        "element": "tbat_turf_fallen_cherry_blossoms.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -3166,7 +3622,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_turf_lavender_dusk.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_turf_lavender_dusk.xml",
+        "element": "tbat_turf_lavender_dusk.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -3202,7 +3664,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_turf_pearblossom_brewed_with_snow.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_turf_pearblossom_brewed_with_snow.xml",
+        "element": "tbat_turf_pearblossom_brewed_with_snow.tex",
+        "declared": null
+      }
     },
     {
       "source": "3544387985",
@@ -3245,7 +3713,14 @@
         "nogroundoverlays"
       ],
       "fallback_item": true,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_turf_water_lily_cat_leaf.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_turf_water_lily_cat_leaf.xml",
+        "element": "tbat_turf_water_lily_cat_leaf.tex",
+        "declared": null,
+        "replacement": "platform_leaf"
+      }
     },
     {
       "source": "3544387985",
@@ -3281,7 +3756,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "atbooks1/images/inventoryimages/tbat_turf_water_sparkles.tex",
+        "atlas": "atbooks1/images/inventoryimages/tbat_turf_water_sparkles.xml",
+        "element": "tbat_turf_water_sparkles.tex",
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3319,7 +3800,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jx_inventoryimages1.tex",
+        "atlas": "images/inventoryimages/jx_inventoryimages1.xml",
+        "element": "turf_corridor.tex",
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3357,7 +3844,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jx_inventoryimages1.tex",
+        "atlas": "images/inventoryimages/jx_inventoryimages1.xml",
+        "element": "turf_granite.tex",
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3396,7 +3889,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jx_inventoryimages1.tex",
+        "atlas": "images/inventoryimages/jx_inventoryimages1.xml",
+        "element": "turf_jx_asphalt_road.tex",
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3435,7 +3934,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jx_inventoryimages1.tex",
+        "atlas": "images/inventoryimages/jx_inventoryimages1.xml",
+        "element": "turf_jx_asphalt_road2.tex",
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3473,7 +3978,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jx_inventoryimages1.tex",
+        "atlas": "images/inventoryimages/jx_inventoryimages1.xml",
+        "element": "turf_bath.tex",
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3512,7 +4023,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jx_inventoryimages1.tex",
+        "atlas": "images/inventoryimages/jx_inventoryimages1.xml",
+        "element": "turf_jx_courtyard.tex",
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3551,7 +4068,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jx_inventoryimages1.tex",
+        "atlas": "images/inventoryimages/jx_inventoryimages1.xml",
+        "element": "turf_jx_courtyard2.tex",
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3592,7 +4115,13 @@
         "istemptile"
       ],
       "fallback_item": false,
-      "icon_preview": true
+      "icon_preview": true,
+      "icon_source": {
+        "file": "levels/textures/noise_jx_dock.tex",
+        "atlas": null,
+        "element": null,
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3631,7 +4160,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jx_inventoryimages1.tex",
+        "atlas": "images/inventoryimages/jx_inventoryimages1.xml",
+        "element": "turf_jx_greendiamond.tex",
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3670,7 +4205,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jx_inventoryimages1.tex",
+        "atlas": "images/inventoryimages/jx_inventoryimages1.xml",
+        "element": "turf_jx_mansion.tex",
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3709,7 +4250,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jx_inventoryimages1.tex",
+        "atlas": "images/inventoryimages/jx_inventoryimages1.xml",
+        "element": "turf_jx_whitesquare.tex",
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3747,7 +4294,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jx_inventoryimages1.tex",
+        "atlas": "images/inventoryimages/jx_inventoryimages1.xml",
+        "element": "turf_jx_wood.tex",
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3785,7 +4338,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jx_inventoryimages1.tex",
+        "atlas": "images/inventoryimages/jx_inventoryimages1.xml",
+        "element": "turf_jx_wood2.tex",
+        "declared": null
+      }
     },
     {
       "source": "3597024951",
@@ -3823,7 +4382,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jx_inventoryimages1.tex",
+        "atlas": "images/inventoryimages/jx_inventoryimages1.xml",
+        "element": "turf_reddish_brown.tex",
+        "declared": null
+      }
     },
     {
       "source": "3361615927",
@@ -3861,7 +4426,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/jt_turfs_inv.tex",
+        "atlas": "images/inventoryimages/jt_turfs_inv.xml",
+        "element": "jt_turfs01.tex",
+        "declared": null
+      }
     },
     {
       "source": "3393876841",
@@ -3901,7 +4472,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_wanyuan_cherry.tex",
+        "atlas": "images/inventoryimages/turf_wanyuan_cherry.xml",
+        "element": "turf_wanyuan_cherry.tex",
+        "declared": null
+      }
     },
     {
       "source": "3393876841",
@@ -3941,7 +4518,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_wanyuan_fantasy_color_1.tex",
+        "atlas": "images/inventoryimages/turf_wanyuan_fantasy_color_1.xml",
+        "element": "turf_wanyuan_fantasy_color_1.tex",
+        "declared": null
+      }
     },
     {
       "source": "3393876841",
@@ -3981,7 +4564,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_wanyuan_fantasy_color_2.tex",
+        "atlas": "images/inventoryimages/turf_wanyuan_fantasy_color_2.xml",
+        "element": "turf_wanyuan_fantasy_color_2.tex",
+        "declared": null
+      }
     },
     {
       "source": "3393876841",
@@ -4021,7 +4610,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_wanyuan_fantasy_color_3.tex",
+        "atlas": "images/inventoryimages/turf_wanyuan_fantasy_color_3.xml",
+        "element": "turf_wanyuan_fantasy_color_3.tex",
+        "declared": null
+      }
     },
     {
       "source": "3393876841",
@@ -4061,7 +4656,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_wanyuan_fantasy_color_4.tex",
+        "atlas": "images/inventoryimages/turf_wanyuan_fantasy_color_4.xml",
+        "element": "turf_wanyuan_fantasy_color_4.tex",
+        "declared": null
+      }
     },
     {
       "source": "3393876841",
@@ -4101,7 +4702,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_wanyuan_fenhua.tex",
+        "atlas": "images/inventoryimages/turf_wanyuan_fenhua.xml",
+        "element": "turf_wanyuan_fenhua.tex",
+        "declared": null
+      }
     },
     {
       "source": "3393876841",
@@ -4141,7 +4748,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_wanyuan_haian.tex",
+        "atlas": "images/inventoryimages/turf_wanyuan_haian.xml",
+        "element": "turf_wanyuan_haian.tex",
+        "declared": null
+      }
     },
     {
       "source": "3393876841",
@@ -4181,7 +4794,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_wanyuan_night.tex",
+        "atlas": "images/inventoryimages/turf_wanyuan_night.xml",
+        "element": "turf_wanyuan_night.tex",
+        "declared": null
+      }
     },
     {
       "source": "3393876841",
@@ -4221,7 +4840,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_wanyuan_qishui.tex",
+        "atlas": "images/inventoryimages/turf_wanyuan_qishui.xml",
+        "element": "turf_wanyuan_qishui.tex",
+        "declared": null
+      }
     },
     {
       "source": "3393876841",
@@ -4261,7 +4886,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_wanyuan_xialian.tex",
+        "atlas": "images/inventoryimages/turf_wanyuan_xialian.xml",
+        "element": "turf_wanyuan_xialian.tex",
+        "declared": null
+      }
     },
     {
       "source": "3393876841",
@@ -4301,7 +4932,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_wanyuan_xunyicao.tex",
+        "atlas": "images/inventoryimages/turf_wanyuan_xunyicao.xml",
+        "element": "turf_wanyuan_xunyicao.tex",
+        "declared": null
+      }
     },
     {
       "source": "3393876841",
@@ -4341,7 +4978,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/turf_wanyuan_yingguang.tex",
+        "atlas": "images/inventoryimages/turf_wanyuan_yingguang.xml",
+        "element": "turf_wanyuan_yingguang.tex",
+        "declared": null
+      }
     },
     {
       "source": "1289779251",
@@ -4380,7 +5023,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/cherryimages.tex",
+        "atlas": "images/cherryimages.xml",
+        "element": "turf_bismuthbrick.tex",
+        "declared": null
+      }
     },
     {
       "source": "1289779251",
@@ -4421,7 +5070,13 @@
         "colors"
       ],
       "fallback_item": true,
-      "icon_preview": true
+      "icon_preview": true,
+      "icon_source": {
+        "file": "levels/textures/noise_cherrift.tex",
+        "atlas": null,
+        "element": null,
+        "declared": null
+      }
     },
     {
       "source": "1289779251",
@@ -4459,7 +5114,13 @@
         "colors"
       ],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/cherryimages.tex",
+        "atlas": "images/cherryimages.xml",
+        "element": "turf_cherry.tex",
+        "declared": null
+      }
     },
     {
       "source": "1289779251",
@@ -4497,7 +5158,13 @@
         "colors"
       ],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/cherryimages.tex",
+        "atlas": "images/cherryimages.xml",
+        "element": "turf_cherry2.tex",
+        "declared": null
+      }
     },
     {
       "source": "1289779251",
@@ -4535,7 +5202,13 @@
         "colors"
       ],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/cherryimages.tex",
+        "atlas": "images/cherryimages.xml",
+        "element": "turf_cherry3.tex",
+        "declared": null
+      }
     },
     {
       "source": "1289779251",
@@ -4573,7 +5246,13 @@
         "colors"
       ],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/cherryimages.tex",
+        "atlas": "images/cherryimages.xml",
+        "element": "turf_cherry4.tex",
+        "declared": null
+      }
     },
     {
       "source": "1289779251",
@@ -4611,7 +5290,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/cherryimages.tex",
+        "atlas": "images/cherryimages.xml",
+        "element": "turf_cherrygem.tex",
+        "declared": null
+      }
     },
     {
       "source": "1289779251",
@@ -4649,7 +5334,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/cherryimages.tex",
+        "atlas": "images/cherryimages.xml",
+        "element": "turf_cherryruins.tex",
+        "declared": null
+      }
     },
     {
       "source": "1289779251",
@@ -4687,7 +5378,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/cherryimages.tex",
+        "atlas": "images/cherryimages.xml",
+        "element": "turf_cherrywood.tex",
+        "declared": null
+      }
     },
     {
       "source": "3626093627",
@@ -4723,7 +5420,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/niao_blue_grey_checkered_pattern_turf.tex",
+        "atlas": "images/inventoryimages/niao_blue_grey_checkered_pattern_turf.xml",
+        "element": "niao_blue_grey_checkered_pattern_turf.tex",
+        "declared": null
+      }
     },
     {
       "source": "3626093627",
@@ -4759,7 +5462,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/niao_brown_pattern_turf.tex",
+        "atlas": "images/inventoryimages/niao_brown_pattern_turf.xml",
+        "element": "niao_brown_pattern_turf.tex",
+        "declared": null
+      }
     },
     {
       "source": "3626093627",
@@ -4795,7 +5504,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/niao_brown_tile_turf.tex",
+        "atlas": "images/inventoryimages/niao_brown_tile_turf.xml",
+        "element": "niao_brown_tile_turf.tex",
+        "declared": null
+      }
     },
     {
       "source": "3626093627",
@@ -4831,7 +5546,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/niao_dark_brown_wooden_turf.tex",
+        "atlas": "images/inventoryimages/niao_dark_brown_wooden_turf.xml",
+        "element": "niao_dark_brown_wooden_turf.tex",
+        "declared": null
+      }
     },
     {
       "source": "3626093627",
@@ -4867,7 +5588,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/niao_dark_brown_woven_turf.tex",
+        "atlas": "images/inventoryimages/niao_dark_brown_woven_turf.xml",
+        "element": "niao_dark_brown_woven_turf.tex",
+        "declared": null
+      }
     },
     {
       "source": "3626093627",
@@ -4903,7 +5630,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/niao_green_floral_turf.tex",
+        "atlas": "images/inventoryimages/niao_green_floral_turf.xml",
+        "element": "niao_green_floral_turf.tex",
+        "declared": null
+      }
     },
     {
       "source": "3626093627",
@@ -4939,7 +5672,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/niao_green_orange_checkered_pattern_turf.tex",
+        "atlas": "images/inventoryimages/niao_green_orange_checkered_pattern_turf.xml",
+        "element": "niao_green_orange_checkered_pattern_turf.tex",
+        "declared": null
+      }
     },
     {
       "source": "3626093627",
@@ -4975,7 +5714,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/niao_leaf_orange_point_turf.tex",
+        "atlas": "images/inventoryimages/niao_leaf_orange_point_turf.xml",
+        "element": "niao_leaf_orange_point_turf.tex",
+        "declared": null
+      }
     },
     {
       "source": "3626093627",
@@ -5011,7 +5756,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/niao_light_brown_wooden_turf.tex",
+        "atlas": "images/inventoryimages/niao_light_brown_wooden_turf.xml",
+        "element": "niao_light_brown_wooden_turf.tex",
+        "declared": null
+      }
     },
     {
       "source": "3626093627",
@@ -5047,7 +5798,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/niao_light_brown_woven_turf.tex",
+        "atlas": "images/inventoryimages/niao_light_brown_woven_turf.xml",
+        "element": "niao_light_brown_woven_turf.tex",
+        "declared": null
+      }
     },
     {
       "source": "3626093627",
@@ -5083,7 +5840,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/inventoryimages/niao_small_green_leaf_turf.tex",
+        "atlas": "images/inventoryimages/niao_small_green_leaf_turf.xml",
+        "element": "niao_small_green_leaf_turf.tex",
+        "declared": null
+      }
     },
     {
       "source": "3283650699",
@@ -5122,7 +5885,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/gentleness_image/turf_gentleness_green.tex",
+        "atlas": "images/gentleness_image/turf_gentleness_green.xml",
+        "element": "turf_gentleness_green.tex",
+        "declared": null
+      }
     },
     {
       "source": "3283650699",
@@ -5161,7 +5930,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/gentleness_image/turf_gentleness_star.tex",
+        "atlas": "images/gentleness_image/turf_gentleness_star.xml",
+        "element": "turf_gentleness_star.tex",
+        "declared": null
+      }
     },
     {
       "source": "3283650699",
@@ -5200,7 +5975,13 @@
       },
       "adjusted": [],
       "fallback_item": false,
-      "icon_preview": false
+      "icon_preview": false,
+      "icon_source": {
+        "file": "images/gentleness_image/turf_gentleness_strawberry.tex",
+        "atlas": "images/gentleness_image/turf_gentleness_strawberry.xml",
+        "element": "turf_gentleness_strawberry.tex",
+        "declared": null
+      }
     }
   ],
   "resources": {
@@ -5764,22 +6545,22 @@
       "file": "anim/hmr_turfs.zip",
       "sha256": "5bf2c0e484f560df9108fa7bd0456999324c047ca72650c75f273e3b6efe3bc0"
     },
-    "images/inventoryimages/tc_3609964985_2739af0082e6938b.tex": {
+    "images/inventoryimages/tc_3609964985_b148a1f99cfdb8a7.tex": {
       "source_id": "3609964985",
-      "file": "images/fx/hmr_cherry_flower.tex",
-      "sha256": "ad39ed19278f369dce432ab4bdd894abd1fe66319db77757d556da52b36feeb4",
-      "output_sha256": "2739af0082e6938bd06c6067d0cf99e3f947b7a052e6329243f9119b9b7f4357"
+      "file": "images/inventoryimages/hmr_cherry_flower_turf.tex",
+      "sha256": "b148a1f99cfdb8a7d94dfb626c97198ca2a93286b0b6e725d03f44bcd9ccd5e6",
+      "output_sha256": "b148a1f99cfdb8a7d94dfb626c97198ca2a93286b0b6e725d03f44bcd9ccd5e6"
     },
     "levels/textures/tc_3609964985_hmr_cherry_grass_noise.tex": {
       "source_id": "3609964985",
       "file": "levels/textures/hmr_cherry_grass_noise.tex",
       "sha256": "65a25a9927e3e57b74e7586d62cf1e9cd6a6b02c2f1eeaeceb3546ab6ef61f6a"
     },
-    "images/inventoryimages/tc_3609964985_8b7f5aa95e84b3db.tex": {
+    "images/inventoryimages/tc_3609964985_982e4e42e1a45203.tex": {
       "source_id": "3609964985",
-      "file": "images/mapicons/hmr_cherry_grass.tex",
-      "sha256": "8b7f5aa95e84b3dbff3ec480c76d1aedf5ab1f005ae5e0d6d73be47369f1de6b",
-      "output_sha256": "8b7f5aa95e84b3dbff3ec480c76d1aedf5ab1f005ae5e0d6d73be47369f1de6b"
+      "file": "images/inventoryimages/hmr_cherry_grass_turf.tex",
+      "sha256": "982e4e42e1a45203afb46aceabd1615ca54959263010d50ff98883cc7c264897",
+      "output_sha256": "982e4e42e1a45203afb46aceabd1615ca54959263010d50ff98883cc7c264897"
     },
     "levels/textures/tc_3609964985_hmr_cherry_mystery_noise.tex": {
       "source_id": "3609964985",
@@ -6553,11 +7334,11 @@
       "file": "atbooks1/levels/textures/tbat_turf_water_lily_cat_mini.tex",
       "sha256": "16112c89a138a9bb9a21e9a377ca454abaf6ac29e9dab2131d56444c06b3e5c0"
     },
-    "images/inventoryimages/tc_3544387985_3d7718ee894d9bbc.tex": {
+    "images/inventoryimages/tc_3544387985_3db263e396f0ce56.tex": {
       "source_id": "3544387985",
-      "file": "atbooks1/images/map_icons/tbat_turf_water_lily_cat.tex",
-      "sha256": "3d7718ee894d9bbc4539080dcd2a28d1a2451d864829b661d5100290bc10075d",
-      "output_sha256": "3d7718ee894d9bbc4539080dcd2a28d1a2451d864829b661d5100290bc10075d"
+      "file": "atbooks1/images/inventoryimages/tbat_turf_water_lily_cat_leaf.tex",
+      "sha256": "3db263e396f0ce56b85ae5782e7b533fec7b5b9495c53a946152da8907bcc3c7",
+      "output_sha256": "3db263e396f0ce56b85ae5782e7b533fec7b5b9495c53a946152da8907bcc3c7"
     },
     "levels/textures/tc_3544387985_tbat_turf_water_sparkles.tex": {
       "source_id": "3544387985",

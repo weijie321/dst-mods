@@ -14,8 +14,12 @@ python tools/turf-collection/validate.py --workshop-root <steamapps/workshop/con
 
 `build.py` 复制所需纹理、边缘遮罩、动画和图标；对自定义图集与地形命名加来源命名空间，复用共用图集纹理，生成中文目录和来源指纹。特殊平台/临时地形转为普通可铺挖地纹，悠使用其真实自定义物品动画契约。实际调整记录在 `SOURCES.json`。重建应在无手工修改的生成目标中执行。
 
+物品图标优先采用地皮声明的 `invicon_override`，明确声明缺失时停止构建；地图图、特效和百科 UI 图不参与普通物品图标匹配。每项 `icon_source` 记录实际来源文件、图集、元素及声明，校验器禁止这几类误选。睡莲猫猫的地纹近乎全透明、没有专用普通地皮物品图，明确借用原模组可拾取猫叶的背包图标，并记录 `replacement=platform_leaf`；无图标的码头和裂隙仍使用对应地纹缩略图。
+
 图标的图集区域不得超过 64×64：原版配方详情和制作动画按其原尺寸显示。`icons.py` 将超大区域裁切、等比缩入 64×64 RGBA 图标，保留地面纹理；转换后的指纹另记为 `output_sha256`，`sha256` 仍指向来源字节。KTEX 位域与 mip 表依据 [ktools specs.cpp](https://github.com/nsimplex/ktools/blob/master/src/common/ktex/specs.cpp) 和 [ktex.cpp](https://github.com/nsimplex/ktools/blob/master/src/common/ktex/ktex.cpp) 核对，仅处理当前来源所需的 DXT1/3/5、RGB/RGBA 编码，不新增游戏 UI Hook。
 
-`validate.py` 校验 11 个来源、130 项完整性、源/输出文件指纹、全部本地资源与图集依赖、图标区域尺寸，并直接读取 `ANIM/BILD` 验证 bank、build、animation 三者匹配。它不替代专服或真实客户端验收。
+`validate.py` 校验 11 个来源、130 项完整性、源/输出文件指纹、图标用途与声明、全部本地资源与图集依赖、图标区域尺寸，并直接读取 `ANIM/BILD` 验证 bank、build、animation 三者匹配。它不替代专服或真实客户端验收。
 
 之后按 `check → test → verify` 完整验收；计划为 `tools/acceptance/turf-collection.json`。客户端夹具由客户端桥接器在本轮完成事件到达后结束，不能在准备好测试物品时提前 `TEST.Done`。部署遵守统一入口的成功完整 `verify` 报告门禁。
+
+Steam 自动更新来源副本后，元数据、声明或资源指纹可能与 `SOURCES.json` 不同。校验失败时先列明具体差异，保留抽取时指纹；不要仅覆盖哈希让结果通过。重新抽取新来源版本须重新完整验收，既有已验收合集不因来源目录变化自动改写。

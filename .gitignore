@@ -12,3 +12,4 @@ wanda-skilltree/selftest-*-report.json
 tools/crashtrace-viewer/build/
 tools/crashtrace-viewer/latest_crashtrace_report.txt
 tools/crashtrace-viewer/dist/latest_crashtrace_report.txt
+/workshop-upload/

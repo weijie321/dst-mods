@@ -6,7 +6,7 @@ Assets = require("turf_collection_assets")
 modimport("scripts/turf_collection_icons.lua")
 
 local first = "turf_" .. catalog[1].name
-G.STRINGS.UI.CRAFTING_FILTERS.TURF_COLLECTION = "地皮合集"
+G.STRINGS.UI.CRAFTING_FILTERS.TURF_COLLECTION = "321自用dp"
 AddRecipeFilter({name = "TURF_COLLECTION", atlas = "images/inventoryimages/" .. first .. ".xml", image = first .. ".tex"})
 
 for _, tile in ipairs(catalog) do
