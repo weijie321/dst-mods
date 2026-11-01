@@ -1,65 +1,10 @@
 @echo off
 setlocal
 
-set "DEV_ROOT=E:\work\code\dst-mods"
-set "GAME_MODS=S:\game\steam\steamapps\common\Don't Starve Together\mods"
-
-echo [sync] dev root  : %DEV_ROOT%
-echo [sync] game mods : %GAME_MODS%
-
-if not exist "%DEV_ROOT%" (
-    echo [sync][error] dev root does not exist
-    exit /b 1
+rem 无参数仅预览旺达；部署需要 --mod NAME --apply --verified RESULT_JSON。
+if "%~1"=="" (
+    pwsh -NoProfile -ExecutionPolicy Bypass -File "%~dp0dst.ps1" deploy --mod wanda-skilltree
+) else (
+    pwsh -NoProfile -ExecutionPolicy Bypass -File "%~dp0dst.ps1" deploy %*
 )
-
-if not exist "%GAME_MODS%" (
-    echo [sync][error] game mods directory does not exist
-    exit /b 1
-)
-
-call :sync_one "dst-mod-crash-tracer"
-if errorlevel 1 exit /b 1
-
-call :sync_one "dst-mod-crash-tracer-test"
-if errorlevel 1 exit /b 1
-
-call :sync_one "dst-mod-crash-tracer-event-test"
-if errorlevel 1 exit /b 1
-
-call :sync_one "dst-mod-crash-tracer-task-test"
-if errorlevel 1 exit /b 1
-
-call :sync_one "dst-mod-crash-tracer-periodic-test"
-if errorlevel 1 exit /b 1
-
-call :sync_one "dst-mod-crash-tracer-grass-test"
-if errorlevel 1 exit /b 1
-
-call :sync_one "wanda-skilltree"
-if errorlevel 1 exit /b 1
-
-echo [sync] done
-exit /b 0
-
-:sync_one
-set "MOD_NAME=%~1"
-set "SRC=%DEV_ROOT%\%MOD_NAME%"
-set "DST=%GAME_MODS%\%MOD_NAME%"
-
-if not exist "%SRC%" (
-    echo [sync][warn] skip missing mod: %MOD_NAME%
-    exit /b 0
-)
-
-if not exist "%DST%" mkdir "%DST%"
-
-echo [sync] copying %MOD_NAME%
-robocopy "%SRC%" "%DST%" /E /R:1 /W:1 /NFL /NDL /NJH /NJS /NP >nul
-set "ROBOCODE=%ERRORLEVEL%"
-
-if %ROBOCODE% GEQ 8 (
-    echo [sync][error] robocopy failed for %MOD_NAME% with code %ROBOCODE%
-    exit /b %ROBOCODE%
-)
-
-exit /b 0
+exit /b %ERRORLEVEL%

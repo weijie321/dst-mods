@@ -43,7 +43,8 @@ dst-mods/
 ├── dst-mod-crash-tracer-grass-test/   # 测试 mod：采集动作异常
 │
 ├── tools/                             # 开发工具
-│   ├── sync_dst_mods.bat              # 同步脚本（复制 mod 到游戏目录）
+│   ├── dst.ps1                       # 统一检查、验收与部署入口
+│   ├── sync_dst_mods.bat              # 兼容部署入口，默认只预览
 │   └── crashtrace-viewer/             # 查看器相关
 │       ├── view_crashtrace_report.py  # CrashTrace 报告查看器（Python 源码）
 │       ├── CrashTraceViewer.spec      # PyInstaller 打包配置
@@ -274,12 +275,10 @@ Hook 类型: 事件监听
 
 ### `tools/sync_dst_mods.bat`
 
-将开发目录中的所有 mod 同步到 DST 游戏的 `mods` 目录。使用 `robocopy` 进行增量复制。
-
-```
-源: E:\work\code\dst-mods\<mod-name>
-目标: S:\game\steam\steamapps\common\Don't Starve Together\mods\<mod-name>
-```
+转发到 `tools/dst.ps1 deploy`，无参数时仅预览旺达模组。实际写入需要
+`--mod <模组名> --apply --verified <成功verify的result.json>`，并核对源码、游戏、工具、
+计划和场景仍与验收报告匹配。部署会备份、镜像运行文件、验证哈希，失败自动回滚。
+环境路径从本机配置读取，完整命令和边界见 [开发与验收说明](tools/DST_TESTING.md)。
 
 ### `tools/crashtrace-viewer/build_crashtrace_viewer.bat`
 
@@ -291,7 +290,8 @@ Hook 类型: 事件监听
 
 ### `dst-inspect/extract_dst_scripts.py`
 
-从 DST 安装目录的 `scripts.zip` 中提取指定的原生脚本文件，用于开发时参考 DST 的 mod 加载机制。
+从 DST 安装目录的 `scripts.zip` 中提取指定的原生脚本文件。现有提取结果仅作历史参考；
+日常 API 和资源核对以本机配置所指安装目录的当前 `scripts.zip` 为准。
 
 ---
 

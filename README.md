@@ -4,14 +4,16 @@
 
 当前包含：
 
+- `wanda-skilltree/`：旺达技能树、怀表机制与时光贮匣，状态见其 `DEVELOPMENT_STATUS.md`
 - `dst-mod-crash-tracer/`：Lua 层 mod 异常诊断 mod
 - `dst-mod-crash-tracer-test/`：用于验证诊断能力的故意抛错测试 mod
 - `dst-mod-crash-tracer-event-test/`：事件监听异常测试 mod
 - `dst-mod-crash-tracer-task-test/`：延时任务异常测试 mod
 - `dst-mod-crash-tracer-periodic-test/`：周期任务异常测试 mod
 - `dst-mod-crash-tracer-grass-test/`：采集动作异常测试 mod（草、树枝苗、芦苇、浆果丛）
-- `tools/`：开发工具（同步脚本、查看器源码和打包产物）
-  - `sync_dst_mods.bat`：同步开发 mod 到游戏 `mods` 目录
+- `tools/`：开发工具（验收、部署、查看器源码和打包产物）
+  - `dst.ps1`：统一的 `doctor/check/test/verify/deploy` 入口
+  - `sync_dst_mods.bat`：兼容部署入口，无参数只预览旺达模组
   - `crashtrace-viewer/`：查看器源码、打包配置、启动脚本、exe 产物
 - `latest_crashtrace_report.txt`：查看器生成的当前报告文件
 - `使用说明.txt`：给普通用户的使用说明
@@ -19,7 +21,24 @@
 
 相关分析工作区：
 
-- `..\dst-original-analysis\`：DST 原版 `scripts.zip` 的只读解压副本、索引报告和创意工坊模组可读性记录。需要查原版 Hook、Prefab、组件、状态机或模组 ID 映射时优先看这里。
+- `..\dst-original-analysis\` 和 `dst-inspect/`：历史原版解压副本、索引报告和模组可读性记录，可用于查找线索。当前 Hook、Prefab、组件、状态机和资源契约必须回到配置安装目录的 `data/databundles/scripts.zip` 核对。
+
+## 模组开发与验收
+
+在仓库根目录运行下列入口；环境恢复、计划格式、场景协议和部署回滚详见 [tools/DST_TESTING.md](tools/DST_TESTING.md)。
+
+```powershell
+& ./tools/dst.ps1 doctor
+& ./tools/dst.ps1 check --mod wanda-skilltree
+& ./tools/dst.ps1 test --mod wanda-skilltree
+& ./tools/dst.ps1 verify --mod wanda-skilltree
+& ./tools/dst.ps1 deploy --mod wanda-skilltree
+& ./tools/dst.ps1 deploy --mod wanda-skilltree --apply --verified '<成功verify的result.json完整路径>'
+```
+
+每个新需求先写对应的验收要求和具名断言，再循环实现、测试、修复。`verify` 默认使用 `tools/acceptance/<模组名>.json`；既有基线只覆盖计划声明的范围，不能证明新功能完成。报告和日志写入本机配置的项目外 `evidence_root`，实际部署只接受输入版本仍匹配的成功 `verify` 报告。
+
+本轮旺达 `verify` 已通过：静态检查 83 个直接调用、0 个待查调用，服务端 34 条断言及真实客户端 7 条基础断言全部通过，清理通过。这只覆盖核心服务端与客户端 HUD/Replica 基线，未覆盖技能点击、重连重生、像素/声音等，也不代表全部技能完成。报告及详细边界见 [旺达开发状态](wanda-skilltree/DEVELOPMENT_STATUS.md)。
 
 ## 交付模型
 
@@ -33,17 +52,11 @@ CrashTrace 现在按两部分交付：
 - 诊断 mod 不负责提供 Python 运行环境，也不负责启动桌面工具
 - 查看器不参与游戏运行时逻辑，只消费已经写入本机日志的内容
 
-## 本地开发使用方式
+## CrashTrace 专项诊断手工回归
 
-1. 双击或执行 `tools/sync_dst_mods.bat`
-2. 打开游戏并启用：
-   - `DST Mod Crash Tracer`
-   - `DST Mod Crash Tracer Test`
-   - `DST Mod Crash Tracer Event Test`
-   - `DST Mod Crash Tracer Task Test`
-   - `DST Mod Crash Tracer Periodic Test`
-   - `Crash Tracer Pick Test / 采集动作异常测试`
-3. 确保诊断 mod 先于测试 mod 加载
+1. 按上述统一入口为待测模组准备相应验收计划、验证并部署；旺达计划不覆盖 CrashTrace。
+2. 打开游戏，启用 `DST Mod Crash Tracer`，每次只选择一个故意抛错测试 mod：`DST Mod Crash Tracer Test`、`DST Mod Crash Tracer Event Test`、`DST Mod Crash Tracer Task Test`、`DST Mod Crash Tracer Periodic Test` 或 `Crash Tracer Pick Test / 采集动作异常测试`。
+3. 确保诊断 mod 先于测试 mod 加载；不要让前一个异常中断其它测试链路。
 4. 进入世界，等待或主动触发测试异常
 5. 运行 `tools/crashtrace-viewer/查看最新CrashTrace报告.bat`
 6. 查看器会自动生成并打开 `latest_crashtrace_report.txt`

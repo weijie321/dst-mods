@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "mod": "wanda-skilltree",
+  "scope": "现有旺达核心服务端行为及独立客户端 HUD/Replica 基线，不代表所有技能完成",
+  "server_script": "tools/scenarios/wanda-server.lua",
+  "client_script": "tools/scenarios/wanda-client.lua",
+  "requirements": [
+    {
+      "id": "timebox",
+      "description": "一阶时光贮匣使用原版材料、科学机器、旺达身份和独立装备槽",
+      "stage": "server",
+      "assertions": ["timebox_1_recipe_exists", "timebox_1_uses_vanilla_time_shard", "timebox_1_no_custom_time_shard", "timebox_1_no_builder_skill", "timebox_1_clockmaker_only", "timebox_1_science_machine", "custom_time_shard_recipe_removed", "timebox_equip_slot_registered", "timebox_1_equips_custom_slot"]
+    },
+    {
+      "id": "rename-watch",
+      "description": "羽毛笔改名动作、目标怀表组件和默认书写限制正确注册",
+      "stage": "server",
+      "assertions": ["rename_action_registered", "rename_action_right_click", "featherpencil_has_drawingtool", "featherpencil_tagged_for_watch_rename", "recall_watch_has_writeable", "portal_watch_has_writeable", "recall_watch_not_default_writeable", "portal_watch_not_default_writeable"]
+    },
+    {
+      "id": "age-cap",
+      "description": "年龄上限计算保留当前年龄，并写入服务端 classified",
+      "stage": "server",
+      "assertions": ["spawn_wanda_for_skill_checks", "age_max_1_internal_span", "age_max_1_preserves_current_age", "age_max_1_syncs_classified_max"]
+    },
+    {
+      "id": "old-calm",
+      "description": "老年技能启用搬运、工作效率与划船效果",
+      "stage": "server",
+      "assertions": ["old_calm_adds_mighty_tag", "old_calm_removes_slowbuilder", "old_calm_allows_heavy_lifting", "old_calm_hammer_mighty_mult", "old_calm_efficientuser_mighty_mult", "old_calm_sailing_mighty_mult"]
+    },
+    {
+      "id": "heal",
+      "description": "不老表施法成功且治疗加成使用年龄单位",
+      "stage": "server",
+      "assertions": ["heal_bonus_cast_success", "heal_bonus_uses_age_units"]
+    },
+    {
+      "id": "remote-client",
+      "description": "独立客户端进入旺达角色，创建HUD，health Replica与专服数值一致",
+      "stage": "client",
+      "assertions": ["client_is_remote", "client_hud_ready", "client_server_identity", "client_health_replica_present", "client_health_max_matches_server", "wanda_age_badge_present", "wanda_client_character"]
+    }
+  ],
+  "uncovered": ["技能树点击与实际激活链路", "重连、死亡重生与保存重启", "洞穴切换", "第三方状态栏兼容", "像素外观和声音", "未完成技能的设计验收"]
+}

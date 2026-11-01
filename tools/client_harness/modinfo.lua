@@ -1,0 +1,9 @@
+name = "DST 隔离客户端验证"
+description = "仅在独立开发测试世界启用，自动选角并收集客户端断言。"
+author = "local"
+version = "1.0"
+api_version_dst = 10
+dst_compatible = true
+all_clients_require_mod = true
+client_only_mod = false
+priority = -1000000

@@ -1,9 +1,13 @@
 .idea/
 .omc/
 .venv/
+.venv-dst/
+.codegraph/
 __pycache__/
 *.pyc
 test-reports/
+tools/ui-tests/output/
+wanda-skilltree/selftest-*-report.json
 /dst_workshop_322330_mods_mapping.md
 tools/crashtrace-viewer/build/
 tools/crashtrace-viewer/latest_crashtrace_report.txt

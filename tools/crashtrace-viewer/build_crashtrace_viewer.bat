@@ -18,7 +18,7 @@ if %ERRORLEVEL% EQU 0 (
     set "PYTHON=py -3"
 ) else (
     where python >nul 2>&1
-    if %ERRORLEVEL% EQU 0 (
+    if not errorlevel 1 (
         set "PYTHON=python"
     ) else (
         echo [CrashTrace] Python 3 was not found.
@@ -50,7 +50,7 @@ if not exist "%SPEC_FILE%" (
 )
 
 :run_build
-call %BUILDER% --noconfirm --clean "%SPEC_FILE%"
+call %BUILDER% --noconfirm --clean --distpath "%SCRIPT_DIR%dist" --workpath "%SCRIPT_DIR%build" "%SPEC_FILE%"
 if errorlevel 1 (
     echo [CrashTrace] Build failed.
     exit /b 1
