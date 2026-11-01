@@ -5,6 +5,7 @@ import hashlib
 import json
 import xml.etree.ElementTree as ET
 from animation import inspect_animation
+from icons import region_size
 
 
 def main():
@@ -27,8 +28,8 @@ def main():
         assert hashlib.sha256(source.read_bytes()).hexdigest() == origin['sha256'], source
         dest = args.mod/rel
         assert dest.is_file(), dest
-        if dest.suffix != '.xml':
-            assert hashlib.sha256(dest.read_bytes()).hexdigest() == origin['sha256'], dest
+        if dest.suffix != '.xml' or 'output_sha256' in origin:
+            assert hashlib.sha256(dest.read_bytes()).hexdigest() == origin.get('output_sha256', origin['sha256']), dest
     for atlas in args.mod.rglob('*.xml'):
         doc = ET.fromstring(atlas.read_bytes())
         name = doc.find('Texture').attrib['filename']
@@ -44,6 +45,10 @@ def main():
                 assert (args.mod/rel).is_file() or (args.dst_root/'data'/rel).is_file(), rel
         atlas = args.mod/'images/inventoryimages'/('turf_'+tile['name']+'.xml')
         assert ET.parse(atlas).find('./Elements/Element').attrib['name'] == 'turf_'+tile['name']+'.tex'
+        doc = ET.parse(atlas)
+        texture = atlas.with_name(doc.find('Texture').attrib['filename'])
+        width, height = region_size(texture, doc.find('./Elements/Element').attrib)
+        assert 0 < width <= 64 and 0 < height <= 64, (tile['name'], width, height)
         turf = tile['turf']
         anim = args.mod/'anim'/(turf['animzip_override']+'.zip')
         if not anim.is_file():

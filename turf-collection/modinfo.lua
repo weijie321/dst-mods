@@ -1,7 +1,7 @@
 name = "地皮合集"
 description = "汇集海洋传说、荔只只、丰耘秘境、童话世界、万物书、景熹家居、田园物语、花仙子、新版樱花林、炊烟袅袅、悠的地面纹理。独立运行，所有角色均可在地皮合集分类中制作。特殊平台仅保留地纹。"
 author = "地皮合集整理；原资源作者见来源清单"
-version = "0.1.0"
+version = "0.1.1"
 api_version = 10
 dst_compatible = true
 all_clients_require_mod = true

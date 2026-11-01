@@ -1,4 +1,6 @@
 import json
+from contextlib import redirect_stdout
+from io import StringIO
 from pathlib import Path
 import sys
 import tempfile
@@ -10,6 +12,40 @@ import dst_workflow as workflow
 
 
 class WorkflowTests(unittest.TestCase):
+    def test_alternate_deploy_target_still_requires_verified_report(self):
+        import dst_deploy
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            game, server = root / "game", root / "server"
+            archive = game / "data/databundles/scripts.zip"
+            archive.parent.mkdir(parents=True)
+            archive.write_bytes(b"fixture")
+            mod = root / "workspace/turf-collection"
+            mod.mkdir(parents=True)
+            (mod / "modinfo.lua").write_text('name="fixture"')
+            (mod / "modmain.lua").write_text('-- fixture')
+            config = {"workspace": str(mod.parent), "dst_root": str(game),
+                      "evidence_root": str(root / "evidence")}
+            config_file = root / "config.json"
+            workflow.write_json(config_file, config)
+            argv = ["dst_workflow.py", "deploy", "--config", str(config_file),
+                    "--mod", "turf-collection", "--target-root", str(server),
+                    "--apply", "--verified", "chosen-result.json"]
+            with patch.object(sys, "argv", argv), patch.object(workflow, "validate_config"), \
+                    patch.object(workflow, "require_verified", side_effect=ValueError("expired")) as gate, \
+                    patch.object(dst_deploy, "deploy_mod") as deploy, redirect_stdout(StringIO()):
+                self.assertEqual(workflow.cli(), 2)
+                gate.assert_called_once_with(config, mod, "chosen-result.json")
+                deploy.assert_not_called()
+            (server / "mods").mkdir(parents=True)
+            output = StringIO()
+            with patch.object(sys, "argv", argv), patch.object(workflow, "validate_config"), \
+                    patch.object(workflow, "require_verified") as gate, redirect_stdout(output):
+                self.assertEqual(workflow.cli(), 0, output.getvalue())
+                gate.assert_called_once()
+            self.assertEqual((server / "mods/turf-collection/modmain.lua").read_bytes(), b"-- fixture")
+            self.assertFalse((game / "mods").exists())
+
     def test_old_or_failed_assertions_cannot_pass(self):
         log = "[DSTWF:abcd:ASSERT:PASS] feature\n[DSTWF:abcd:ASSERT:FAIL] feature\n[DSTWF:abcd:ASSERT:PASS] feature"
         self.assertEqual(workflow.collect_assertions(log, "abcd"), {"feature": False})

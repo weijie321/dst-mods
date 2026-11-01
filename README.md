@@ -15,6 +15,7 @@
 - `tools/`：开发工具（验收、部署、查看器源码和打包产物）
   - `dst.ps1`：统一的 `doctor/check/test/verify/deploy` 入口
   - `sync_dst_mods.bat`：兼容部署入口，无参数只预览旺达模组
+  - [install_turf_collection.bat](tools/install_turf_collection.bat)：地皮合集一键复制入口，目标由本机配置确定，仍校验完整验收报告
   - `crashtrace-viewer/`：查看器源码、打包配置、启动脚本、exe 产物
 - `latest_crashtrace_report.txt`：查看器生成的当前报告文件
 - `使用说明.txt`：给普通用户的使用说明

@@ -150,6 +150,8 @@ def _save_manifest(backup: Path, manifest: dict) -> None:
 
 
 def _remove_empty_dirs(root: Path, keep: set[Path]) -> None:
+    if not root.exists():
+        return
     for current, _, _ in os.walk(root, topdown=False, followlinks=False, onerror=_walk_error):
         path = Path(current)
         if path not in keep and not any(path.iterdir()):

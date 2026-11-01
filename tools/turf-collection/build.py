@@ -8,6 +8,7 @@ import re
 import xml.etree.ElementTree as ET
 
 from extract import decode_source
+from icons import inventory_icon
 
 
 def lua(value):
@@ -57,6 +58,8 @@ def main():
             raw = source.read_bytes()
             manifest[dest] = {'source_id':mid, 'file':source.relative_to(root).as_posix(),
                               'sha256':hashlib.sha256(raw).hexdigest()}
+            if content is not None:
+                manifest[dest]['output_sha256'] = hashlib.sha256(content).hexdigest()
             write(dest, content if content is not None else raw)
 
         def surface(name, folder, ext):
@@ -182,15 +185,16 @@ def main():
                     texture = args.dst_root/'data/levels/textures'/f'{Path(noise).stem}.tex'
                 attrs = dict(u1='0',u2='1',v1='0',v2='1')
             name = 'turf_'+key
-            texture_name = f'tc_{mid}_' + hashlib.sha256(texture.read_bytes()).hexdigest()[:16] + '.tex'
+            icon_bytes, attrs = inventory_icon(texture, attrs)
+            texture_name = f'tc_{mid}_' + hashlib.sha256(icon_bytes).hexdigest()[:16] + '.tex'
             doc = ET.Element('Atlas')
             ET.SubElement(doc,'Texture',filename=texture_name)
             attrs['name'] = name+'.tex'
             ET.SubElement(ET.SubElement(doc,'Elements'),'Element',attrs)
             if texture.is_relative_to(root):
-                record(texture, f'images/inventoryimages/{texture_name}')
+                record(texture, f'images/inventoryimages/{texture_name}', icon_bytes)
             else:
-                write(f'images/inventoryimages/{texture_name}',texture.read_bytes())
+                write(f'images/inventoryimages/{texture_name}',icon_bytes)
             write(f'images/inventoryimages/{name}.xml',ET.tostring(doc,encoding='utf-8'))
             assets.add(('ATLAS',f'images/inventoryimages/{name}.xml'))
             assets.add(('IMAGE',f'images/inventoryimages/{texture_name}'))

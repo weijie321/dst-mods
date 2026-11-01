@@ -386,6 +386,7 @@ def cli():
         if name == "deploy":
             p.add_argument("--apply", action="store_true")
             p.add_argument("--verified")
+            p.add_argument("--target-root", help="另一套本地专服安装目录；验收仍以配置的游戏版本为准")
     args = parser.parse_args()
     out, result = None, None
     try:
@@ -415,7 +416,7 @@ def cli():
                 from dst_deploy import deploy_mod
                 if args.apply:
                     require_verified(config, mod, args.verified)
-                result = deploy_mod(config["workspace"], config["dst_root"], args.mod,
+                result = deploy_mod(config["workspace"], args.target_root or config["dst_root"], args.mod,
                                     config["evidence_root"], apply=args.apply)
             if before != source_manifest(mod):
                 result.update(status="failed", reason="执行期间源码改变，结果不能归属当前源码")

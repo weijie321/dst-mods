@@ -5212,7 +5212,8 @@
     "levels/tiles/tc_2979177306_cobbleroad.xml": {
       "source_id": "2979177306",
       "file": "levels/tiles/cobbleroad.xml",
-      "sha256": "e59257695f7df919f6fbde08e8ddb51fd80af52435f33cc31ad800c5f23a1a3b"
+      "sha256": "e59257695f7df919f6fbde08e8ddb51fd80af52435f33cc31ad800c5f23a1a3b",
+      "output_sha256": "2659f4e19db0bde18098fc19d2784b39907f392fabf6d741582655f65abb346d"
     },
     "levels/textures/tc_2979177306_lg_turf1.tex": {
       "source_id": "2979177306",
@@ -5232,7 +5233,8 @@
     "images/inventoryimages/tc_2979177306_7fe7ad0bede81f64.tex": {
       "source_id": "2979177306",
       "file": "images/inventoryimages/turf_lg_turf1.tex",
-      "sha256": "7fe7ad0bede81f64b1b91852f441925cf6ca4de9f5e3fd3dd8e16d76bb20b6ed"
+      "sha256": "7fe7ad0bede81f64b1b91852f441925cf6ca4de9f5e3fd3dd8e16d76bb20b6ed",
+      "output_sha256": "7fe7ad0bede81f64b1b91852f441925cf6ca4de9f5e3fd3dd8e16d76bb20b6ed"
     },
     "levels/tiles/tc_2979177306_jungle.tex": {
       "source_id": "2979177306",
@@ -5242,7 +5244,8 @@
     "levels/tiles/tc_2979177306_jungle.xml": {
       "source_id": "2979177306",
       "file": "levels/tiles/jungle.xml",
-      "sha256": "6dd306b862e16b4ef7734a0db738bbc8c5098ac87834a5caf51691e08c95a0c1"
+      "sha256": "6dd306b862e16b4ef7734a0db738bbc8c5098ac87834a5caf51691e08c95a0c1",
+      "output_sha256": "a9e063992aea90a11548662629e0bfd5f78d4051b9d40196a87b6e96e07f1898"
     },
     "levels/textures/tc_2979177306_lg_turf10.tex": {
       "source_id": "2979177306",
@@ -5257,7 +5260,8 @@
     "images/inventoryimages/tc_2979177306_8c420c3c611984dd.tex": {
       "source_id": "2979177306",
       "file": "images/inventoryimages/turf_lg_turf10.tex",
-      "sha256": "8c420c3c611984ddd1cb1d6956e34cd9fc75294b2e9a36859bfd976f32b82a0c"
+      "sha256": "8c420c3c611984ddd1cb1d6956e34cd9fc75294b2e9a36859bfd976f32b82a0c",
+      "output_sha256": "8c420c3c611984ddd1cb1d6956e34cd9fc75294b2e9a36859bfd976f32b82a0c"
     },
     "levels/textures/tc_2979177306_lg_turf11.tex": {
       "source_id": "2979177306",
@@ -5272,7 +5276,8 @@
     "images/inventoryimages/tc_2979177306_34d26c9b5dd39871.tex": {
       "source_id": "2979177306",
       "file": "images/inventoryimages/turf_lg_turf11.tex",
-      "sha256": "34d26c9b5dd39871cfa89e996261c43a6491e25f9a2840729eb4db28a32edcda"
+      "sha256": "34d26c9b5dd39871cfa89e996261c43a6491e25f9a2840729eb4db28a32edcda",
+      "output_sha256": "34d26c9b5dd39871cfa89e996261c43a6491e25f9a2840729eb4db28a32edcda"
     },
     "levels/textures/tc_2979177306_lg_turf2.tex": {
       "source_id": "2979177306",
@@ -5287,7 +5292,8 @@
     "images/inventoryimages/tc_2979177306_4cd06052e71948bd.tex": {
       "source_id": "2979177306",
       "file": "images/inventoryimages/turf_lg_turf2.tex",
-      "sha256": "4cd06052e71948bd5c57ccda978ee4dfa395eb15d83ff9f3ec67fbf1bafcc980"
+      "sha256": "4cd06052e71948bd5c57ccda978ee4dfa395eb15d83ff9f3ec67fbf1bafcc980",
+      "output_sha256": "4cd06052e71948bd5c57ccda978ee4dfa395eb15d83ff9f3ec67fbf1bafcc980"
     },
     "levels/textures/tc_2979177306_lg_turf3.tex": {
       "source_id": "2979177306",
@@ -5302,7 +5308,8 @@
     "images/inventoryimages/tc_2979177306_04ddb662c664a412.tex": {
       "source_id": "2979177306",
       "file": "images/inventoryimages/turf_lg_turf3.tex",
-      "sha256": "04ddb662c664a4121cb7b09b850aa30987e5d73bf7abac31ecaf2ac8db3e10cc"
+      "sha256": "04ddb662c664a4121cb7b09b850aa30987e5d73bf7abac31ecaf2ac8db3e10cc",
+      "output_sha256": "04ddb662c664a4121cb7b09b850aa30987e5d73bf7abac31ecaf2ac8db3e10cc"
     },
     "levels/textures/tc_2979177306_lg_turf4.tex": {
       "source_id": "2979177306",
@@ -5317,7 +5324,8 @@
     "images/inventoryimages/tc_2979177306_df530cc591dec1dd.tex": {
       "source_id": "2979177306",
       "file": "images/inventoryimages/turf_lg_turf4.tex",
-      "sha256": "df530cc591dec1ddb8b1d8f106d7701102801985a72662a1455e231499979750"
+      "sha256": "df530cc591dec1ddb8b1d8f106d7701102801985a72662a1455e231499979750",
+      "output_sha256": "df530cc591dec1ddb8b1d8f106d7701102801985a72662a1455e231499979750"
     },
     "levels/textures/tc_2979177306_lg_turf5.tex": {
       "source_id": "2979177306",
@@ -5332,7 +5340,8 @@
     "images/inventoryimages/tc_2979177306_79e181cd1298b16e.tex": {
       "source_id": "2979177306",
       "file": "images/inventoryimages/turf_lg_turf5.tex",
-      "sha256": "79e181cd1298b16e94950843d10d67ca4738fd11d2c80b4f0ea01bc6aaf899c6"
+      "sha256": "79e181cd1298b16e94950843d10d67ca4738fd11d2c80b4f0ea01bc6aaf899c6",
+      "output_sha256": "79e181cd1298b16e94950843d10d67ca4738fd11d2c80b4f0ea01bc6aaf899c6"
     },
     "levels/textures/tc_2979177306_lg_turf6.tex": {
       "source_id": "2979177306",
@@ -5347,7 +5356,8 @@
     "images/inventoryimages/tc_2979177306_7324f7a47c8c3dbf.tex": {
       "source_id": "2979177306",
       "file": "images/inventoryimages/turf_lg_turf6.tex",
-      "sha256": "7324f7a47c8c3dbf011b8cdfc6cb66c24dba4e5c3717cd4c258c10bb6cc469c5"
+      "sha256": "7324f7a47c8c3dbf011b8cdfc6cb66c24dba4e5c3717cd4c258c10bb6cc469c5",
+      "output_sha256": "7324f7a47c8c3dbf011b8cdfc6cb66c24dba4e5c3717cd4c258c10bb6cc469c5"
     },
     "levels/textures/tc_2979177306_lg_turf7.tex": {
       "source_id": "2979177306",
@@ -5362,7 +5372,8 @@
     "images/inventoryimages/tc_2979177306_366a21b66fc3fdec.tex": {
       "source_id": "2979177306",
       "file": "images/inventoryimages/turf_lg_turf7.tex",
-      "sha256": "366a21b66fc3fdecfb0c7266fcdc0f827f87a4c17c6a7994a2232ae22e9517bb"
+      "sha256": "366a21b66fc3fdecfb0c7266fcdc0f827f87a4c17c6a7994a2232ae22e9517bb",
+      "output_sha256": "366a21b66fc3fdecfb0c7266fcdc0f827f87a4c17c6a7994a2232ae22e9517bb"
     },
     "levels/textures/tc_2979177306_lg_turf8.tex": {
       "source_id": "2979177306",
@@ -5377,7 +5388,8 @@
     "images/inventoryimages/tc_2979177306_785db36629cb0e52.tex": {
       "source_id": "2979177306",
       "file": "images/inventoryimages/turf_lg_turf8.tex",
-      "sha256": "785db36629cb0e52c5ef4436c209f3e45594217137953b6fd7c916c1d1b3dea0"
+      "sha256": "785db36629cb0e52c5ef4436c209f3e45594217137953b6fd7c916c1d1b3dea0",
+      "output_sha256": "785db36629cb0e52c5ef4436c209f3e45594217137953b6fd7c916c1d1b3dea0"
     },
     "levels/textures/tc_2979177306_lg_turf9.tex": {
       "source_id": "2979177306",
@@ -5392,42 +5404,50 @@
     "images/inventoryimages/tc_2979177306_38e543a420afa759.tex": {
       "source_id": "2979177306",
       "file": "images/inventoryimages/turf_lg_turf9.tex",
-      "sha256": "38e543a420afa7590fb9f9ab6350974b67332928c1ebe8a85db091942e00673a"
+      "sha256": "38e543a420afa7590fb9f9ab6350974b67332928c1ebe8a85db091942e00673a",
+      "output_sha256": "38e543a420afa7590fb9f9ab6350974b67332928c1ebe8a85db091942e00673a"
     },
     "images/inventoryimages/tc_3349143694_0b2d39c989e38bb0.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/lz_bridge.tex",
-      "sha256": "0b2d39c989e38bb0c28d6ba2dab4af73cd354de7407a1bc2e677b610d5b00538"
+      "sha256": "0b2d39c989e38bb0c28d6ba2dab4af73cd354de7407a1bc2e677b610d5b00538",
+      "output_sha256": "0b2d39c989e38bb0c28d6ba2dab4af73cd354de7407a1bc2e677b610d5b00538"
     },
     "images/inventoryimages/tc_3349143694_32926577163e77a7.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/lz_bridgethree.tex",
-      "sha256": "32926577163e77a7f080a526c69df2a73ea0b3af59ef087e0e2b59597fa4425a"
+      "sha256": "32926577163e77a7f080a526c69df2a73ea0b3af59ef087e0e2b59597fa4425a",
+      "output_sha256": "32926577163e77a7f080a526c69df2a73ea0b3af59ef087e0e2b59597fa4425a"
     },
     "images/inventoryimages/tc_3349143694_0163d3a092c32028.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/lz_bridgethree_red.tex",
-      "sha256": "0163d3a092c32028c75a687bf0a9a068bc4edc2bddc78dd1c1b728dc75e99f52"
+      "sha256": "0163d3a092c32028c75a687bf0a9a068bc4edc2bddc78dd1c1b728dc75e99f52",
+      "output_sha256": "0163d3a092c32028c75a687bf0a9a068bc4edc2bddc78dd1c1b728dc75e99f52"
     },
     "images/inventoryimages/tc_3349143694_abdfc16b59697dfd.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/lz_bridgetwo.tex",
-      "sha256": "abdfc16b59697dfdd305d6974e1be280ad046499972bbaae8e5cfac02a90e523"
+      "sha256": "abdfc16b59697dfdd305d6974e1be280ad046499972bbaae8e5cfac02a90e523",
+      "output_sha256": "abdfc16b59697dfdd305d6974e1be280ad046499972bbaae8e5cfac02a90e523"
     },
     "images/inventoryimages/tc_3349143694_c18be89e54d0a1c1.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/lz_bridgetwo_red.tex",
-      "sha256": "c18be89e54d0a1c1326213ff70ec0212b224b6281590acaad9376b5e2c827d66"
+      "sha256": "c18be89e54d0a1c1326213ff70ec0212b224b6281590acaad9376b5e2c827d66",
+      "output_sha256": "c18be89e54d0a1c1326213ff70ec0212b224b6281590acaad9376b5e2c827d66"
     },
     "images/inventoryimages/tc_3349143694_7fcbd0922718c07e.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/lz_bridge_red.tex",
-      "sha256": "7fcbd0922718c07e0f76ce72d8895ae1d491c09b4d5abec823bacbc12d2d36b4"
+      "sha256": "7fcbd0922718c07e0f76ce72d8895ae1d491c09b4d5abec823bacbc12d2d36b4",
+      "output_sha256": "7fcbd0922718c07e0f76ce72d8895ae1d491c09b4d5abec823bacbc12d2d36b4"
     },
     "images/inventoryimages/tc_3349143694_6ad03c641de4deba.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/lz_bridge_shuilian.tex",
-      "sha256": "6ad03c641de4deba4bc74d9877c91af7c89fb29613352f9eaf456f7f1447626b"
+      "sha256": "6ad03c641de4deba4bc74d9877c91af7c89fb29613352f9eaf456f7f1447626b",
+      "output_sha256": "6ad03c641de4deba4bc74d9877c91af7c89fb29613352f9eaf456f7f1447626b"
     },
     "levels/tiles/tc_3349143694_jungle.tex": {
       "source_id": "3349143694",
@@ -5437,7 +5457,8 @@
     "levels/tiles/tc_3349143694_jungle.xml": {
       "source_id": "3349143694",
       "file": "levels/tiles/jungle.xml",
-      "sha256": "6dd306b862e16b4ef7734a0db738bbc8c5098ac87834a5caf51691e08c95a0c1"
+      "sha256": "6dd306b862e16b4ef7734a0db738bbc8c5098ac87834a5caf51691e08c95a0c1",
+      "output_sha256": "a3886d42c5d841065ef55ccc65dd2a5a5795c495d8fbb4180cf25e5b2b3524b2"
     },
     "levels/textures/tc_3349143694_lz_turf1.tex": {
       "source_id": "3349143694",
@@ -5457,7 +5478,8 @@
     "images/inventoryimages/tc_3349143694_0ff4c0ea39fcdf8c.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf1.tex",
-      "sha256": "0ff4c0ea39fcdf8cde6a73343920e2bac256a317b0e1e3714638c1f91e88d206"
+      "sha256": "0ff4c0ea39fcdf8cde6a73343920e2bac256a317b0e1e3714638c1f91e88d206",
+      "output_sha256": "0ff4c0ea39fcdf8cde6a73343920e2bac256a317b0e1e3714638c1f91e88d206"
     },
     "levels/tiles/tc_3349143694_cobbleroad.tex": {
       "source_id": "3349143694",
@@ -5467,7 +5489,8 @@
     "levels/tiles/tc_3349143694_cobbleroad.xml": {
       "source_id": "3349143694",
       "file": "levels/tiles/cobbleroad.xml",
-      "sha256": "e59257695f7df919f6fbde08e8ddb51fd80af52435f33cc31ad800c5f23a1a3b"
+      "sha256": "e59257695f7df919f6fbde08e8ddb51fd80af52435f33cc31ad800c5f23a1a3b",
+      "output_sha256": "ee2adf4f71b2e5a760821b361816d165cc26fb74f327000f098f15ce1578dbd1"
     },
     "levels/textures/tc_3349143694_lz_turf10.tex": {
       "source_id": "3349143694",
@@ -5482,7 +5505,8 @@
     "images/inventoryimages/tc_3349143694_1e98ba0dc98829b6.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf10.tex",
-      "sha256": "1e98ba0dc98829b6fa637ef04bf9ccff2dcc709d1909a2db7596d8c88140a808"
+      "sha256": "1e98ba0dc98829b6fa637ef04bf9ccff2dcc709d1909a2db7596d8c88140a808",
+      "output_sha256": "1e98ba0dc98829b6fa637ef04bf9ccff2dcc709d1909a2db7596d8c88140a808"
     },
     "levels/textures/tc_3349143694_lz_turf11.tex": {
       "source_id": "3349143694",
@@ -5497,7 +5521,8 @@
     "images/inventoryimages/tc_3349143694_7bec6ea0efba7187.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf11.tex",
-      "sha256": "7bec6ea0efba7187ad09f030bfb0181171f513647585f312e3a6614a6ec77f25"
+      "sha256": "7bec6ea0efba7187ad09f030bfb0181171f513647585f312e3a6614a6ec77f25",
+      "output_sha256": "7bec6ea0efba7187ad09f030bfb0181171f513647585f312e3a6614a6ec77f25"
     },
     "levels/textures/tc_3349143694_lz_turf12.tex": {
       "source_id": "3349143694",
@@ -5512,7 +5537,8 @@
     "images/inventoryimages/tc_3349143694_04fd4d0d78af619f.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf12.tex",
-      "sha256": "04fd4d0d78af619f1c7735dfc0c1134a561264830d1d09a60cccd415c79800cb"
+      "sha256": "04fd4d0d78af619f1c7735dfc0c1134a561264830d1d09a60cccd415c79800cb",
+      "output_sha256": "04fd4d0d78af619f1c7735dfc0c1134a561264830d1d09a60cccd415c79800cb"
     },
     "levels/textures/tc_3349143694_lz_turf13.tex": {
       "source_id": "3349143694",
@@ -5527,7 +5553,8 @@
     "images/inventoryimages/tc_3349143694_8efb8eb7f7e62461.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf13.tex",
-      "sha256": "8efb8eb7f7e624617ae095c6295b300b4b3a25cd266f30ba4d2d439cefe16d15"
+      "sha256": "8efb8eb7f7e624617ae095c6295b300b4b3a25cd266f30ba4d2d439cefe16d15",
+      "output_sha256": "8efb8eb7f7e624617ae095c6295b300b4b3a25cd266f30ba4d2d439cefe16d15"
     },
     "levels/tiles/tc_3349143694_carpet.tex": {
       "source_id": "3349143694",
@@ -5537,7 +5564,8 @@
     "levels/tiles/tc_3349143694_carpet.xml": {
       "source_id": "3349143694",
       "file": "levels/tiles/carpet.xml",
-      "sha256": "305d9b1dbce9a8da525cb9cf69fdb7058da19b5ceb8b66804d94ee176700c025"
+      "sha256": "305d9b1dbce9a8da525cb9cf69fdb7058da19b5ceb8b66804d94ee176700c025",
+      "output_sha256": "0502ba5548691c4244d40c00d2f24efd822d850625356eccc5b7c341321262a8"
     },
     "levels/textures/tc_3349143694_lz_turf14.tex": {
       "source_id": "3349143694",
@@ -5552,7 +5580,8 @@
     "images/inventoryimages/tc_3349143694_d55efd1153f8a334.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf14.tex",
-      "sha256": "d55efd1153f8a33401b169b10efac0c5231ca66495380d155a847599f8586f5c"
+      "sha256": "d55efd1153f8a33401b169b10efac0c5231ca66495380d155a847599f8586f5c",
+      "output_sha256": "d55efd1153f8a33401b169b10efac0c5231ca66495380d155a847599f8586f5c"
     },
     "levels/textures/tc_3349143694_lz_turf15.tex": {
       "source_id": "3349143694",
@@ -5567,7 +5596,8 @@
     "images/inventoryimages/tc_3349143694_43350b5661e48b28.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf15.tex",
-      "sha256": "43350b5661e48b28c07116738886af6a847b5d868dd576a83b0d4335b978c4b4"
+      "sha256": "43350b5661e48b28c07116738886af6a847b5d868dd576a83b0d4335b978c4b4",
+      "output_sha256": "43350b5661e48b28c07116738886af6a847b5d868dd576a83b0d4335b978c4b4"
     },
     "levels/textures/tc_3349143694_lz_turf16.tex": {
       "source_id": "3349143694",
@@ -5582,7 +5612,8 @@
     "images/inventoryimages/tc_3349143694_b3a0b07e0eaadc0a.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf16.tex",
-      "sha256": "b3a0b07e0eaadc0a0e9f2e0eb102623c316ea9b9323ad6e524290acbb9ed7e43"
+      "sha256": "b3a0b07e0eaadc0a0e9f2e0eb102623c316ea9b9323ad6e524290acbb9ed7e43",
+      "output_sha256": "b3a0b07e0eaadc0a0e9f2e0eb102623c316ea9b9323ad6e524290acbb9ed7e43"
     },
     "levels/textures/tc_3349143694_lz_turf2.tex": {
       "source_id": "3349143694",
@@ -5597,7 +5628,8 @@
     "images/inventoryimages/tc_3349143694_02e0d2590bf4e467.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf2.tex",
-      "sha256": "02e0d2590bf4e46772f9766b9ab835f2687d238519d5e0eeb4e02091da3ada9b"
+      "sha256": "02e0d2590bf4e46772f9766b9ab835f2687d238519d5e0eeb4e02091da3ada9b",
+      "output_sha256": "02e0d2590bf4e46772f9766b9ab835f2687d238519d5e0eeb4e02091da3ada9b"
     },
     "levels/textures/tc_3349143694_lz_turf3.tex": {
       "source_id": "3349143694",
@@ -5612,7 +5644,8 @@
     "images/inventoryimages/tc_3349143694_c362416c5d462377.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf3.tex",
-      "sha256": "c362416c5d462377b2a8d58680f987ee02b49d8cd71ab22939afffbd51d23ed9"
+      "sha256": "c362416c5d462377b2a8d58680f987ee02b49d8cd71ab22939afffbd51d23ed9",
+      "output_sha256": "c362416c5d462377b2a8d58680f987ee02b49d8cd71ab22939afffbd51d23ed9"
     },
     "levels/textures/tc_3349143694_lz_turf4.tex": {
       "source_id": "3349143694",
@@ -5627,7 +5660,8 @@
     "images/inventoryimages/tc_3349143694_a8acbba7a7f3a41a.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf4.tex",
-      "sha256": "a8acbba7a7f3a41a2b61cf1e2822446df854997769af43a24f2b695e7583df74"
+      "sha256": "a8acbba7a7f3a41a2b61cf1e2822446df854997769af43a24f2b695e7583df74",
+      "output_sha256": "a8acbba7a7f3a41a2b61cf1e2822446df854997769af43a24f2b695e7583df74"
     },
     "levels/textures/tc_3349143694_lz_turf5.tex": {
       "source_id": "3349143694",
@@ -5642,7 +5676,8 @@
     "images/inventoryimages/tc_3349143694_d6c5abb1bcab23e0.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf5.tex",
-      "sha256": "d6c5abb1bcab23e0adce80a9b1a3c946d840fa16b55ea02ed1b004df0839e524"
+      "sha256": "d6c5abb1bcab23e0adce80a9b1a3c946d840fa16b55ea02ed1b004df0839e524",
+      "output_sha256": "d6c5abb1bcab23e0adce80a9b1a3c946d840fa16b55ea02ed1b004df0839e524"
     },
     "levels/textures/tc_3349143694_lz_turf6.tex": {
       "source_id": "3349143694",
@@ -5657,7 +5692,8 @@
     "images/inventoryimages/tc_3349143694_8aeb810017c599fd.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf6.tex",
-      "sha256": "8aeb810017c599fdccc32613dff66d1299a9a1f49a6504b5d8fd50caa7a9ce6f"
+      "sha256": "8aeb810017c599fdccc32613dff66d1299a9a1f49a6504b5d8fd50caa7a9ce6f",
+      "output_sha256": "8aeb810017c599fdccc32613dff66d1299a9a1f49a6504b5d8fd50caa7a9ce6f"
     },
     "levels/textures/tc_3349143694_lz_turf7.tex": {
       "source_id": "3349143694",
@@ -5672,7 +5708,8 @@
     "images/inventoryimages/tc_3349143694_5ad9dd42108da78c.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf7.tex",
-      "sha256": "5ad9dd42108da78ce3ed9c927997c6c3674daf4844cfbd34d2dc27e2ab54342a"
+      "sha256": "5ad9dd42108da78ce3ed9c927997c6c3674daf4844cfbd34d2dc27e2ab54342a",
+      "output_sha256": "5ad9dd42108da78ce3ed9c927997c6c3674daf4844cfbd34d2dc27e2ab54342a"
     },
     "levels/textures/tc_3349143694_lz_turf8.tex": {
       "source_id": "3349143694",
@@ -5687,7 +5724,8 @@
     "images/inventoryimages/tc_3349143694_0b0f29eca98f08d1.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf8.tex",
-      "sha256": "0b0f29eca98f08d1b951f969da9b4e3bd94c78e82abaf72ee0ba9245fcacec96"
+      "sha256": "0b0f29eca98f08d1b951f969da9b4e3bd94c78e82abaf72ee0ba9245fcacec96",
+      "output_sha256": "0b0f29eca98f08d1b951f969da9b4e3bd94c78e82abaf72ee0ba9245fcacec96"
     },
     "levels/textures/tc_3349143694_lz_turf9.tex": {
       "source_id": "3349143694",
@@ -5702,7 +5740,8 @@
     "images/inventoryimages/tc_3349143694_3b26b92bf4640784.tex": {
       "source_id": "3349143694",
       "file": "images/inventoryimages/turf_lz_turf9.tex",
-      "sha256": "3b26b92bf4640784bd86f0ef8d30e74e421426a73b743ed1eff5849c436cc546"
+      "sha256": "3b26b92bf4640784bd86f0ef8d30e74e421426a73b743ed1eff5849c436cc546",
+      "output_sha256": "3b26b92bf4640784bd86f0ef8d30e74e421426a73b743ed1eff5849c436cc546"
     },
     "levels/tiles/tc_3609964985_hmr_cherry_grass.tex": {
       "source_id": "3609964985",
@@ -5712,7 +5751,8 @@
     "levels/tiles/tc_3609964985_hmr_cherry_grass.xml": {
       "source_id": "3609964985",
       "file": "levels/tiles/hmr_cherry_grass.xml",
-      "sha256": "f76bafa2fbf86f482beeec59657ce580e7a27c900844b191a89d34c16a520fff"
+      "sha256": "f76bafa2fbf86f482beeec59657ce580e7a27c900844b191a89d34c16a520fff",
+      "output_sha256": "87c16f437d79cf588ed9639c42e749d9871b27ce37c835aaca7a5a245ec09467"
     },
     "levels/textures/tc_3609964985_hmr_cherry_flower_noise.tex": {
       "source_id": "3609964985",
@@ -5724,10 +5764,11 @@
       "file": "anim/hmr_turfs.zip",
       "sha256": "5bf2c0e484f560df9108fa7bd0456999324c047ca72650c75f273e3b6efe3bc0"
     },
-    "images/inventoryimages/tc_3609964985_ad39ed19278f369d.tex": {
+    "images/inventoryimages/tc_3609964985_2739af0082e6938b.tex": {
       "source_id": "3609964985",
       "file": "images/fx/hmr_cherry_flower.tex",
-      "sha256": "ad39ed19278f369dce432ab4bdd894abd1fe66319db77757d556da52b36feeb4"
+      "sha256": "ad39ed19278f369dce432ab4bdd894abd1fe66319db77757d556da52b36feeb4",
+      "output_sha256": "2739af0082e6938bd06c6067d0cf99e3f947b7a052e6329243f9119b9b7f4357"
     },
     "levels/textures/tc_3609964985_hmr_cherry_grass_noise.tex": {
       "source_id": "3609964985",
@@ -5737,7 +5778,8 @@
     "images/inventoryimages/tc_3609964985_8b7f5aa95e84b3db.tex": {
       "source_id": "3609964985",
       "file": "images/mapicons/hmr_cherry_grass.tex",
-      "sha256": "8b7f5aa95e84b3dbff3ec480c76d1aedf5ab1f005ae5e0d6d73be47369f1de6b"
+      "sha256": "8b7f5aa95e84b3dbff3ec480c76d1aedf5ab1f005ae5e0d6d73be47369f1de6b",
+      "output_sha256": "8b7f5aa95e84b3dbff3ec480c76d1aedf5ab1f005ae5e0d6d73be47369f1de6b"
     },
     "levels/textures/tc_3609964985_hmr_cherry_mystery_noise.tex": {
       "source_id": "3609964985",
@@ -5747,7 +5789,8 @@
     "images/inventoryimages/tc_3609964985_88b94b7d0b73caa0.tex": {
       "source_id": "3609964985",
       "file": "images/inventoryimages/hmr_cherry_mystery_turf.tex",
-      "sha256": "88b94b7d0b73caa0a17a2ffcb082ccccda6d5b00b7d42aec1b0af7f531f4d9c2"
+      "sha256": "88b94b7d0b73caa0a17a2ffcb082ccccda6d5b00b7d42aec1b0af7f531f4d9c2",
+      "output_sha256": "88b94b7d0b73caa0a17a2ffcb082ccccda6d5b00b7d42aec1b0af7f531f4d9c2"
     },
     "levels/textures/tc_3609964985_hmr_cherry_road_noise.tex": {
       "source_id": "3609964985",
@@ -5757,7 +5800,8 @@
     "images/inventoryimages/tc_3609964985_6164e7aa69652d8c.tex": {
       "source_id": "3609964985",
       "file": "images/inventoryimages/hmr_cherry_road_turf.tex",
-      "sha256": "6164e7aa69652d8c725a51f13946860a1d01964129f3d8038ef297efbb117929"
+      "sha256": "6164e7aa69652d8c725a51f13946860a1d01964129f3d8038ef297efbb117929",
+      "output_sha256": "6164e7aa69652d8c725a51f13946860a1d01964129f3d8038ef297efbb117929"
     },
     "levels/textures/tc_3609964985_hmr_cherry_xmm_noise.tex": {
       "source_id": "3609964985",
@@ -5767,7 +5811,8 @@
     "images/inventoryimages/tc_3609964985_b36805ec59b5ba9a.tex": {
       "source_id": "3609964985",
       "file": "images/inventoryimages/hmr_cherry_xmm_turf.tex",
-      "sha256": "b36805ec59b5ba9a291ea766a431c22d8fb963c594ce8fce23b7a197d008b833"
+      "sha256": "b36805ec59b5ba9a291ea766a431c22d8fb963c594ce8fce23b7a197d008b833",
+      "output_sha256": "b36805ec59b5ba9a291ea766a431c22d8fb963c594ce8fce23b7a197d008b833"
     },
     "levels/tiles/tc_3288149713_ft_stoneroad.tex": {
       "source_id": "3288149713",
@@ -5777,7 +5822,8 @@
     "levels/tiles/tc_3288149713_ft_stoneroad.xml": {
       "source_id": "3288149713",
       "file": "levels/tiles/ft_stoneroad.xml",
-      "sha256": "58f8aa378c77f4bfc5a70ea98ef0c19488020754481e1d498ef9e939c41194ed"
+      "sha256": "58f8aa378c77f4bfc5a70ea98ef0c19488020754481e1d498ef9e939c41194ed",
+      "output_sha256": "fa734bcc3e50751f344f9062ecc37dfbd364c9e736b880a25ed0e85fa7e67b27"
     },
     "levels/textures/tc_3288149713_ft_ground1.tex": {
       "source_id": "3288149713",
@@ -5797,7 +5843,8 @@
     "images/inventoryimages/tc_3288149713_36487cbb0c3a5b0c.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf1.tex",
-      "sha256": "36487cbb0c3a5b0c450bf620cb84fb56b1a0be9fc5de1713490f5f08d7e1c7c0"
+      "sha256": "36487cbb0c3a5b0c450bf620cb84fb56b1a0be9fc5de1713490f5f08d7e1c7c0",
+      "output_sha256": "36487cbb0c3a5b0c450bf620cb84fb56b1a0be9fc5de1713490f5f08d7e1c7c0"
     },
     "levels/textures/tc_3288149713_ft_ground10.tex": {
       "source_id": "3288149713",
@@ -5812,7 +5859,8 @@
     "images/inventoryimages/tc_3288149713_c1d5e51469b5b24c.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf10.tex",
-      "sha256": "c1d5e51469b5b24c49169bce774de78b7ee5a1a9567e639142225ebaf52afbb6"
+      "sha256": "c1d5e51469b5b24c49169bce774de78b7ee5a1a9567e639142225ebaf52afbb6",
+      "output_sha256": "c1d5e51469b5b24c49169bce774de78b7ee5a1a9567e639142225ebaf52afbb6"
     },
     "levels/textures/tc_3288149713_ft_ground11.tex": {
       "source_id": "3288149713",
@@ -5827,7 +5875,8 @@
     "images/inventoryimages/tc_3288149713_f6f8bf2a9fbde944.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf11.tex",
-      "sha256": "f6f8bf2a9fbde944c07ddf2a3fa10b053a8dd9bf6af58433eeb5c9f071a65ff8"
+      "sha256": "f6f8bf2a9fbde944c07ddf2a3fa10b053a8dd9bf6af58433eeb5c9f071a65ff8",
+      "output_sha256": "f6f8bf2a9fbde944c07ddf2a3fa10b053a8dd9bf6af58433eeb5c9f071a65ff8"
     },
     "levels/textures/tc_3288149713_ft_ground12.tex": {
       "source_id": "3288149713",
@@ -5842,7 +5891,8 @@
     "images/inventoryimages/tc_3288149713_ca70d3977adf2d19.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf12.tex",
-      "sha256": "ca70d3977adf2d19c51e59e8f3c401675f4b1e45a4220c36b57aadd94348da62"
+      "sha256": "ca70d3977adf2d19c51e59e8f3c401675f4b1e45a4220c36b57aadd94348da62",
+      "output_sha256": "ca70d3977adf2d19c51e59e8f3c401675f4b1e45a4220c36b57aadd94348da62"
     },
     "levels/textures/tc_3288149713_ft_ground13.tex": {
       "source_id": "3288149713",
@@ -5857,7 +5907,8 @@
     "images/inventoryimages/tc_3288149713_488893d99fc7c372.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf13.tex",
-      "sha256": "488893d99fc7c3720b0ed297ded7b824c106cca65b52785e1b60688e8b783639"
+      "sha256": "488893d99fc7c3720b0ed297ded7b824c106cca65b52785e1b60688e8b783639",
+      "output_sha256": "488893d99fc7c3720b0ed297ded7b824c106cca65b52785e1b60688e8b783639"
     },
     "levels/textures/tc_3288149713_ft_ground14.tex": {
       "source_id": "3288149713",
@@ -5872,7 +5923,8 @@
     "images/inventoryimages/tc_3288149713_801af95f8d87abfd.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf14.tex",
-      "sha256": "801af95f8d87abfd86487080319de880b2d968a5c42a4686256108ea64be8bee"
+      "sha256": "801af95f8d87abfd86487080319de880b2d968a5c42a4686256108ea64be8bee",
+      "output_sha256": "801af95f8d87abfd86487080319de880b2d968a5c42a4686256108ea64be8bee"
     },
     "levels/textures/tc_3288149713_ft_ground15.tex": {
       "source_id": "3288149713",
@@ -5887,7 +5939,8 @@
     "images/inventoryimages/tc_3288149713_477aa2170fef9c78.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf15.tex",
-      "sha256": "477aa2170fef9c788acff03f3d9d373df2d1aed958cad370dff8bc089acabc2c"
+      "sha256": "477aa2170fef9c788acff03f3d9d373df2d1aed958cad370dff8bc089acabc2c",
+      "output_sha256": "477aa2170fef9c788acff03f3d9d373df2d1aed958cad370dff8bc089acabc2c"
     },
     "levels/textures/tc_3288149713_ft_ground2.tex": {
       "source_id": "3288149713",
@@ -5902,7 +5955,8 @@
     "images/inventoryimages/tc_3288149713_7e7da47807908461.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf2.tex",
-      "sha256": "7e7da4780790846168ea09be975ee169f8d98db3d3ecb41f68de2c847f06b072"
+      "sha256": "7e7da4780790846168ea09be975ee169f8d98db3d3ecb41f68de2c847f06b072",
+      "output_sha256": "7e7da4780790846168ea09be975ee169f8d98db3d3ecb41f68de2c847f06b072"
     },
     "levels/textures/tc_3288149713_ft_ground3.tex": {
       "source_id": "3288149713",
@@ -5917,7 +5971,8 @@
     "images/inventoryimages/tc_3288149713_19c0d35520db54bf.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf3.tex",
-      "sha256": "19c0d35520db54bfb154016dabcf7b79cc270b6d4e22c9a9aa4fd3eec5a37852"
+      "sha256": "19c0d35520db54bfb154016dabcf7b79cc270b6d4e22c9a9aa4fd3eec5a37852",
+      "output_sha256": "19c0d35520db54bfb154016dabcf7b79cc270b6d4e22c9a9aa4fd3eec5a37852"
     },
     "levels/textures/tc_3288149713_ft_ground4.tex": {
       "source_id": "3288149713",
@@ -5932,7 +5987,8 @@
     "images/inventoryimages/tc_3288149713_50399c660cb80b86.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf4.tex",
-      "sha256": "50399c660cb80b869213e230664f72824e25141f84fb0211105040fd7c4a51c0"
+      "sha256": "50399c660cb80b869213e230664f72824e25141f84fb0211105040fd7c4a51c0",
+      "output_sha256": "50399c660cb80b869213e230664f72824e25141f84fb0211105040fd7c4a51c0"
     },
     "levels/textures/tc_3288149713_ft_ground5.tex": {
       "source_id": "3288149713",
@@ -5947,7 +6003,8 @@
     "images/inventoryimages/tc_3288149713_23352c8dd22b2010.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf5.tex",
-      "sha256": "23352c8dd22b2010b0dc3c634dad364b0cb4cb8b5e29dbbfb76a65199b9ab234"
+      "sha256": "23352c8dd22b2010b0dc3c634dad364b0cb4cb8b5e29dbbfb76a65199b9ab234",
+      "output_sha256": "23352c8dd22b2010b0dc3c634dad364b0cb4cb8b5e29dbbfb76a65199b9ab234"
     },
     "levels/textures/tc_3288149713_ft_ground6.tex": {
       "source_id": "3288149713",
@@ -5962,7 +6019,8 @@
     "images/inventoryimages/tc_3288149713_c92f6d95453c62f8.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf6.tex",
-      "sha256": "c92f6d95453c62f85231fe660812d7803d175dd10a180f6d58054833e5ed7d75"
+      "sha256": "c92f6d95453c62f85231fe660812d7803d175dd10a180f6d58054833e5ed7d75",
+      "output_sha256": "c92f6d95453c62f85231fe660812d7803d175dd10a180f6d58054833e5ed7d75"
     },
     "levels/textures/tc_3288149713_ft_ground7.tex": {
       "source_id": "3288149713",
@@ -5977,7 +6035,8 @@
     "images/inventoryimages/tc_3288149713_ec65e53610668d75.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf7.tex",
-      "sha256": "ec65e53610668d758f3fd116f0ab26b1d29f7fc12252465a427fcc3a80bd6e13"
+      "sha256": "ec65e53610668d758f3fd116f0ab26b1d29f7fc12252465a427fcc3a80bd6e13",
+      "output_sha256": "ec65e53610668d758f3fd116f0ab26b1d29f7fc12252465a427fcc3a80bd6e13"
     },
     "levels/textures/tc_3288149713_ft_ground8.tex": {
       "source_id": "3288149713",
@@ -5992,7 +6051,8 @@
     "images/inventoryimages/tc_3288149713_db497c477b65d8af.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf8.tex",
-      "sha256": "db497c477b65d8afc79c5b9e9839044da6bd487004c5c751868b9f7def8779e6"
+      "sha256": "db497c477b65d8afc79c5b9e9839044da6bd487004c5c751868b9f7def8779e6",
+      "output_sha256": "db497c477b65d8afc79c5b9e9839044da6bd487004c5c751868b9f7def8779e6"
     },
     "levels/textures/tc_3288149713_ft_ground9.tex": {
       "source_id": "3288149713",
@@ -6007,7 +6067,8 @@
     "images/inventoryimages/tc_3288149713_2967c9b089f52bab.tex": {
       "source_id": "3288149713",
       "file": "images/inventoryimages/ft_turf9.tex",
-      "sha256": "2967c9b089f52babf0d45761a76f644b784791993909e031116af62a3295587b"
+      "sha256": "2967c9b089f52babf0d45761a76f644b784791993909e031116af62a3295587b",
+      "output_sha256": "2967c9b089f52babf0d45761a76f644b784791993909e031116af62a3295587b"
     },
     "levels/textures/tc_3544387985_tbat_checkerboard_road.tex": {
       "source_id": "3544387985",
@@ -6027,7 +6088,8 @@
     "images/inventoryimages/tc_3544387985_800865643f9a6cd2.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_checkerboard_road.tex",
-      "sha256": "800865643f9a6cd26d4ecf46ae88b8b1094c3ee72fd5f2470d4ad4ff90daa3a8"
+      "sha256": "800865643f9a6cd26d4ecf46ae88b8b1094c3ee72fd5f2470d4ad4ff90daa3a8",
+      "output_sha256": "800865643f9a6cd26d4ecf46ae88b8b1094c3ee72fd5f2470d4ad4ff90daa3a8"
     },
     "levels/tiles/tc_3544387985_tbat_jungle_new.tex": {
       "source_id": "3544387985",
@@ -6037,7 +6099,8 @@
     "levels/tiles/tc_3544387985_tbat_jungle_new.xml": {
       "source_id": "3544387985",
       "file": "atbooks2/levels/tiles/tbat_jungle_new.xml",
-      "sha256": "2312977fff22fa2aefc12331a2933e2c3c5b1027dc8301ee33a40052524eddf1"
+      "sha256": "2312977fff22fa2aefc12331a2933e2c3c5b1027dc8301ee33a40052524eddf1",
+      "output_sha256": "fad1eaa01febbb061482d454ce59ae9103e8b04f374f4f994b4681994f8764b0"
     },
     "levels/textures/tc_3544387985_noise_tbat_cloud.tex": {
       "source_id": "3544387985",
@@ -6052,7 +6115,8 @@
     "images/inventoryimages/tc_3544387985_e5eca13ca645602c.tex": {
       "source_id": "3544387985",
       "file": "atbooks2/images/tbat_inventoryimages.tex",
-      "sha256": "e5eca13ca645602cf0fd74398f5c1cbe2984a215df190cfba87b166eaeeafe65"
+      "sha256": "e5eca13ca645602cf0fd74398f5c1cbe2984a215df190cfba87b166eaeeafe65",
+      "output_sha256": "e5eca13ca645602cf0fd74398f5c1cbe2984a215df190cfba87b166eaeeafe65"
     },
     "levels/textures/tc_3544387985_noise_tbat_forest.tex": {
       "source_id": "3544387985",
@@ -6077,7 +6141,8 @@
     "images/inventoryimages/tc_3544387985_c727fc733bdfbb69.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_herringbone_road.tex",
-      "sha256": "c727fc733bdfbb69ce5aacf2a5754bc7a496d8e2a376113dfd6b3395c34e10f0"
+      "sha256": "c727fc733bdfbb69ce5aacf2a5754bc7a496d8e2a376113dfd6b3395c34e10f0",
+      "output_sha256": "c727fc733bdfbb69ce5aacf2a5754bc7a496d8e2a376113dfd6b3395c34e10f0"
     },
     "levels/tiles/tc_3544387985_tbat_jungle.tex": {
       "source_id": "3544387985",
@@ -6087,7 +6152,8 @@
     "levels/tiles/tc_3544387985_tbat_jungle.xml": {
       "source_id": "3544387985",
       "file": "atbooks1/levels/tiles/tbat_jungle.xml",
-      "sha256": "77bcfae1d1d765b9fd35e4c22ea7461501b1f6ad15a2ebf93eb0bbc53bfcddfe"
+      "sha256": "77bcfae1d1d765b9fd35e4c22ea7461501b1f6ad15a2ebf93eb0bbc53bfcddfe",
+      "output_sha256": "1565c29887dac77c8387726e59a2aee0fe4e817b6fac2af1996d8a590ddfc673"
     },
     "levels/textures/tc_3544387985_tbat_milkyway_cloud.tex": {
       "source_id": "3544387985",
@@ -6107,7 +6173,8 @@
     "images/inventoryimages/tc_3544387985_0d9a546e6839306b.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_milkyway_cloud.tex",
-      "sha256": "0d9a546e6839306b39e7cc1e254a2710318ce13d72b48c6a6c739dd111330267"
+      "sha256": "0d9a546e6839306b39e7cc1e254a2710318ce13d72b48c6a6c739dd111330267",
+      "output_sha256": "0d9a546e6839306b39e7cc1e254a2710318ce13d72b48c6a6c739dd111330267"
     },
     "levels/textures/tc_3544387985_tbat_miragewood_floor_blue.tex": {
       "source_id": "3544387985",
@@ -6127,7 +6194,8 @@
     "images/inventoryimages/tc_3544387985_2595384dae6ca8b6.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_miragewood_floor_blue.tex",
-      "sha256": "2595384dae6ca8b6c14940c96dfcadca6b98a72b7a89f49ad0ef3f8ca7b36397"
+      "sha256": "2595384dae6ca8b6c14940c96dfcadca6b98a72b7a89f49ad0ef3f8ca7b36397",
+      "output_sha256": "2595384dae6ca8b6c14940c96dfcadca6b98a72b7a89f49ad0ef3f8ca7b36397"
     },
     "levels/textures/tc_3544387985_tbat_miragewood_floor_orange.tex": {
       "source_id": "3544387985",
@@ -6147,7 +6215,8 @@
     "images/inventoryimages/tc_3544387985_90bad16292d77718.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_miragewood_floor_orange.tex",
-      "sha256": "90bad16292d77718d181ca5808613dfea0ca0a87d07bba123230edb3c588ebcd"
+      "sha256": "90bad16292d77718d181ca5808613dfea0ca0a87d07bba123230edb3c588ebcd",
+      "output_sha256": "90bad16292d77718d181ca5808613dfea0ca0a87d07bba123230edb3c588ebcd"
     },
     "levels/textures/tc_3544387985_tbat_miragewood_floor_purple.tex": {
       "source_id": "3544387985",
@@ -6167,7 +6236,8 @@
     "images/inventoryimages/tc_3544387985_9ce69aa687d8338b.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_miragewood_floor_purple.tex",
-      "sha256": "9ce69aa687d8338be0835812313623834c3faeaaf22b5e3dc7c0a0ef9b53e52d"
+      "sha256": "9ce69aa687d8338be0835812313623834c3faeaaf22b5e3dc7c0a0ef9b53e52d",
+      "output_sha256": "9ce69aa687d8338be0835812313623834c3faeaaf22b5e3dc7c0a0ef9b53e52d"
     },
     "levels/textures/tc_3544387985_tbat_miragewood_floor_yellow.tex": {
       "source_id": "3544387985",
@@ -6187,7 +6257,8 @@
     "images/inventoryimages/tc_3544387985_74b482501d83b578.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_miragewood_floor_yellow.tex",
-      "sha256": "74b482501d83b578cd1e57968574ff9e80e7147be4631e69f40acfa75ceeac26"
+      "sha256": "74b482501d83b578cd1e57968574ff9e80e7147be4631e69f40acfa75ceeac26",
+      "output_sha256": "74b482501d83b578cd1e57968574ff9e80e7147be4631e69f40acfa75ceeac26"
     },
     "levels/textures/tc_3544387985_noise_tbat_psylocke.tex": {
       "source_id": "3544387985",
@@ -6212,7 +6283,8 @@
     "images/inventoryimages/tc_3544387985_c5f65f142da8cf6b.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_redautumn_maplepath.tex",
-      "sha256": "c5f65f142da8cf6bc4fce1f49b2d1022ba05afcc0db6a59655337747815c21c1"
+      "sha256": "c5f65f142da8cf6bc4fce1f49b2d1022ba05afcc0db6a59655337747815c21c1",
+      "output_sha256": "c5f65f142da8cf6bc4fce1f49b2d1022ba05afcc0db6a59655337747815c21c1"
     },
     "levels/textures/tc_3544387985_noise_tbat_snowfall.tex": {
       "source_id": "3544387985",
@@ -6237,7 +6309,8 @@
     "images/inventoryimages/tc_3544387985_67849780818dd5b3.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_terracotta_road.tex",
-      "sha256": "67849780818dd5b3ad8256184157b6288523f5912073d0812777e18fbdfaba46"
+      "sha256": "67849780818dd5b3ad8256184157b6288523f5912073d0812777e18fbdfaba46",
+      "output_sha256": "67849780818dd5b3ad8256184157b6288523f5912073d0812777e18fbdfaba46"
     },
     "levels/textures/tc_3544387985_tbat_turf_checkerfloor_blue.tex": {
       "source_id": "3544387985",
@@ -6257,7 +6330,8 @@
     "images/inventoryimages/tc_3544387985_4daa4ef24537e808.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_turf_checkerfloor_blue.tex",
-      "sha256": "4daa4ef24537e80809594e92c7ef75e6b740b57122c06c81e7718946898274e6"
+      "sha256": "4daa4ef24537e80809594e92c7ef75e6b740b57122c06c81e7718946898274e6",
+      "output_sha256": "4daa4ef24537e80809594e92c7ef75e6b740b57122c06c81e7718946898274e6"
     },
     "levels/textures/tc_3544387985_tbat_turf_checkerfloor_orange.tex": {
       "source_id": "3544387985",
@@ -6277,7 +6351,8 @@
     "images/inventoryimages/tc_3544387985_c381fc96eeccb783.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_turf_checkerfloor_orange.tex",
-      "sha256": "c381fc96eeccb78387b68b6b027563f2245b1e04797594a043a8cf46b25c49df"
+      "sha256": "c381fc96eeccb78387b68b6b027563f2245b1e04797594a043a8cf46b25c49df",
+      "output_sha256": "c381fc96eeccb78387b68b6b027563f2245b1e04797594a043a8cf46b25c49df"
     },
     "levels/textures/tc_3544387985_tbat_turf_checkerfloor_pink.tex": {
       "source_id": "3544387985",
@@ -6297,7 +6372,8 @@
     "images/inventoryimages/tc_3544387985_4a9fc8e30ac61e54.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_turf_checkerfloor_pink.tex",
-      "sha256": "4a9fc8e30ac61e544b095bd9ae72d86931f1e02471e02111e73a988c0d295a14"
+      "sha256": "4a9fc8e30ac61e544b095bd9ae72d86931f1e02471e02111e73a988c0d295a14",
+      "output_sha256": "4a9fc8e30ac61e544b095bd9ae72d86931f1e02471e02111e73a988c0d295a14"
     },
     "levels/textures/tc_3544387985_tbat_turf_clover_butterfly.tex": {
       "source_id": "3544387985",
@@ -6317,7 +6393,8 @@
     "images/inventoryimages/tc_3544387985_f3af6955b0f014a3.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_turf_clover_butterfly.tex",
-      "sha256": "f3af6955b0f014a338edc74b3ee5574a233c6479733ecc77ffaa269a47101afc"
+      "sha256": "f3af6955b0f014a338edc74b3ee5574a233c6479733ecc77ffaa269a47101afc",
+      "output_sha256": "f3af6955b0f014a338edc74b3ee5574a233c6479733ecc77ffaa269a47101afc"
     },
     "levels/textures/tc_3544387985_tbat_turf_emerald_feather_leaves.tex": {
       "source_id": "3544387985",
@@ -6337,7 +6414,8 @@
     "images/inventoryimages/tc_3544387985_69fd752683da32d7.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_turf_emerald_feather_leaves.tex",
-      "sha256": "69fd752683da32d7135fed514d01cbb8a911f871be8dbac71b6496e62335c234"
+      "sha256": "69fd752683da32d7135fed514d01cbb8a911f871be8dbac71b6496e62335c234",
+      "output_sha256": "69fd752683da32d7135fed514d01cbb8a911f871be8dbac71b6496e62335c234"
     },
     "levels/textures/tc_3544387985_tbat_turf_fake_ocean_deep.tex": {
       "source_id": "3544387985",
@@ -6357,7 +6435,8 @@
     "images/inventoryimages/tc_3544387985_7bb71ce3f49f643a.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_turf_fake_ocean_deep.tex",
-      "sha256": "7bb71ce3f49f643a12137ae28d307a26ee9bd38f1d00e60d482d22f671a05abe"
+      "sha256": "7bb71ce3f49f643a12137ae28d307a26ee9bd38f1d00e60d482d22f671a05abe",
+      "output_sha256": "7bb71ce3f49f643a12137ae28d307a26ee9bd38f1d00e60d482d22f671a05abe"
     },
     "levels/textures/tc_3544387985_tbat_turf_fake_ocean_middle.tex": {
       "source_id": "3544387985",
@@ -6377,7 +6456,8 @@
     "images/inventoryimages/tc_3544387985_244ffbe35202c599.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_turf_fake_ocean_middle.tex",
-      "sha256": "244ffbe35202c599718be369a76ca653fd8c49b968884de11316565b2c2bd032"
+      "sha256": "244ffbe35202c599718be369a76ca653fd8c49b968884de11316565b2c2bd032",
+      "output_sha256": "244ffbe35202c599718be369a76ca653fd8c49b968884de11316565b2c2bd032"
     },
     "levels/textures/tc_3544387985_tbat_turf_fake_ocean_shallow.tex": {
       "source_id": "3544387985",
@@ -6397,7 +6477,8 @@
     "images/inventoryimages/tc_3544387985_7bc58bdf3caf31ce.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_turf_fake_ocean_shallow.tex",
-      "sha256": "7bc58bdf3caf31ce17f062bce1473bb5265cb5b9e856591417ce7a5a7ae3282e"
+      "sha256": "7bc58bdf3caf31ce17f062bce1473bb5265cb5b9e856591417ce7a5a7ae3282e",
+      "output_sha256": "7bc58bdf3caf31ce17f062bce1473bb5265cb5b9e856591417ce7a5a7ae3282e"
     },
     "levels/textures/tc_3544387985_tbat_turf_fallen_cherry_blossoms.tex": {
       "source_id": "3544387985",
@@ -6417,7 +6498,8 @@
     "images/inventoryimages/tc_3544387985_517da840a7cf5bdb.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_turf_fallen_cherry_blossoms.tex",
-      "sha256": "517da840a7cf5bdb492a92039d4eb32cc97bfd253836a02a22d68c801db35f31"
+      "sha256": "517da840a7cf5bdb492a92039d4eb32cc97bfd253836a02a22d68c801db35f31",
+      "output_sha256": "517da840a7cf5bdb492a92039d4eb32cc97bfd253836a02a22d68c801db35f31"
     },
     "levels/textures/tc_3544387985_tbat_turf_lavender_dusk.tex": {
       "source_id": "3544387985",
@@ -6437,7 +6519,8 @@
     "images/inventoryimages/tc_3544387985_e0d3f665c50dfb33.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_turf_lavender_dusk.tex",
-      "sha256": "e0d3f665c50dfb33b78216b77f8067c4b83e59110845ab163d8b5f3d1d1e5320"
+      "sha256": "e0d3f665c50dfb33b78216b77f8067c4b83e59110845ab163d8b5f3d1d1e5320",
+      "output_sha256": "e0d3f665c50dfb33b78216b77f8067c4b83e59110845ab163d8b5f3d1d1e5320"
     },
     "levels/textures/tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.tex": {
       "source_id": "3544387985",
@@ -6457,7 +6540,8 @@
     "images/inventoryimages/tc_3544387985_77209d0df6bfe3a8.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_turf_pearblossom_brewed_with_snow.tex",
-      "sha256": "77209d0df6bfe3a8686317b456bd2b403040251051fb6568b897b9e5df33e0be"
+      "sha256": "77209d0df6bfe3a8686317b456bd2b403040251051fb6568b897b9e5df33e0be",
+      "output_sha256": "77209d0df6bfe3a8686317b456bd2b403040251051fb6568b897b9e5df33e0be"
     },
     "levels/textures/tc_3544387985_tbat_turf_water_lily_cat.tex": {
       "source_id": "3544387985",
@@ -6472,7 +6556,8 @@
     "images/inventoryimages/tc_3544387985_3d7718ee894d9bbc.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/map_icons/tbat_turf_water_lily_cat.tex",
-      "sha256": "3d7718ee894d9bbc4539080dcd2a28d1a2451d864829b661d5100290bc10075d"
+      "sha256": "3d7718ee894d9bbc4539080dcd2a28d1a2451d864829b661d5100290bc10075d",
+      "output_sha256": "3d7718ee894d9bbc4539080dcd2a28d1a2451d864829b661d5100290bc10075d"
     },
     "levels/textures/tc_3544387985_tbat_turf_water_sparkles.tex": {
       "source_id": "3544387985",
@@ -6492,7 +6577,8 @@
     "images/inventoryimages/tc_3544387985_2cb38bbcfad731bc.tex": {
       "source_id": "3544387985",
       "file": "atbooks1/images/inventoryimages/tbat_turf_water_sparkles.tex",
-      "sha256": "2cb38bbcfad731bce569803aba91039484340fcfb2f36a76c2e6f79ff74cd363"
+      "sha256": "2cb38bbcfad731bce569803aba91039484340fcfb2f36a76c2e6f79ff74cd363",
+      "output_sha256": "2cb38bbcfad731bce569803aba91039484340fcfb2f36a76c2e6f79ff74cd363"
     },
     "levels/textures/tc_3597024951_noise_jx_corridor.tex": {
       "source_id": "3597024951",
@@ -6512,7 +6598,8 @@
     "images/inventoryimages/tc_3597024951_e58521b66ce9b0a5.tex": {
       "source_id": "3597024951",
       "file": "images/inventoryimages/jx_inventoryimages1.tex",
-      "sha256": "e58521b66ce9b0a52b80a59bd3d505e7edb174a828ab35213045ea2c7c4d2c19"
+      "sha256": "e58521b66ce9b0a52b80a59bd3d505e7edb174a828ab35213045ea2c7c4d2c19",
+      "output_sha256": "e58521b66ce9b0a52b80a59bd3d505e7edb174a828ab35213045ea2c7c4d2c19"
     },
     "levels/textures/tc_3597024951_noise_jx_granite.tex": {
       "source_id": "3597024951",
@@ -6532,7 +6619,8 @@
     "levels/tiles/tc_3597024951_jx_stoneroad.xml": {
       "source_id": "3597024951",
       "file": "levels/tiles/jx_stoneroad.xml",
-      "sha256": "d91533033f812d1cf5d4d9f6d48c41401133c8c05275bef7b0a60e126ea07990"
+      "sha256": "d91533033f812d1cf5d4d9f6d48c41401133c8c05275bef7b0a60e126ea07990",
+      "output_sha256": "b95c7f0931d72cc0eda8df5032e669ad67978062952ed3389a795b3bfa26f9bc"
     },
     "levels/textures/tc_3597024951_noise_jx_asphalt_road.tex": {
       "source_id": "3597024951",
@@ -6599,10 +6687,11 @@
       "file": "anim/jx_dock_kit.zip",
       "sha256": "c044a94228fceb2273b03e572b06fbe68badedef2c3794c0484f472fc25d7a63"
     },
-    "images/inventoryimages/tc_3597024951_c554c2cb0a75f9cd.tex": {
+    "images/inventoryimages/tc_3597024951_1d97ab0c431ca59c.tex": {
       "source_id": "3597024951",
       "file": "levels/textures/noise_jx_dock.tex",
-      "sha256": "c554c2cb0a75f9cd2d81ae53a5ee2b5b2aa11e17dda95698b382f67b30d00f2c"
+      "sha256": "c554c2cb0a75f9cd2d81ae53a5ee2b5b2aa11e17dda95698b382f67b30d00f2c",
+      "output_sha256": "1d97ab0c431ca59c57358a4439c659ee66f2c5ba6c8ef954852ce7a5ccc456c5"
     },
     "levels/textures/tc_3597024951_noise_jx_greendiamond.tex": {
       "source_id": "3597024951",
@@ -6677,7 +6766,8 @@
     "images/inventoryimages/tc_3361615927_89eca5e19941124a.tex": {
       "source_id": "3361615927",
       "file": "images/inventoryimages/jt_turfs_inv.tex",
-      "sha256": "89eca5e19941124ac842488ba6cebeb6eb66e4ec2de7e664619e539f43c3b894"
+      "sha256": "89eca5e19941124ac842488ba6cebeb6eb66e4ec2de7e664619e539f43c3b894",
+      "output_sha256": "89eca5e19941124ac842488ba6cebeb6eb66e4ec2de7e664619e539f43c3b894"
     },
     "levels/textures/tc_3393876841_wanyuan_cherry_noise_texture.tex": {
       "source_id": "3393876841",
@@ -6692,7 +6782,8 @@
     "images/inventoryimages/tc_3393876841_1a4e684fdf6c27b8.tex": {
       "source_id": "3393876841",
       "file": "images/inventoryimages/turf_wanyuan_cherry.tex",
-      "sha256": "1a4e684fdf6c27b8eedf9973a56491cdbe8aa5cad21b29f0ee4eede8e8890bce"
+      "sha256": "1a4e684fdf6c27b8eedf9973a56491cdbe8aa5cad21b29f0ee4eede8e8890bce",
+      "output_sha256": "1a4e684fdf6c27b8eedf9973a56491cdbe8aa5cad21b29f0ee4eede8e8890bce"
     },
     "levels/textures/tc_3393876841_wanyuan_fantasy_color_1_noise_texture.tex": {
       "source_id": "3393876841",
@@ -6702,7 +6793,8 @@
     "images/inventoryimages/tc_3393876841_9d1acfa73d76fed1.tex": {
       "source_id": "3393876841",
       "file": "images/inventoryimages/turf_wanyuan_fantasy_color_1.tex",
-      "sha256": "9d1acfa73d76fed1b61e8a686f41287644999fefbfc331364436accfd879815a"
+      "sha256": "9d1acfa73d76fed1b61e8a686f41287644999fefbfc331364436accfd879815a",
+      "output_sha256": "9d1acfa73d76fed1b61e8a686f41287644999fefbfc331364436accfd879815a"
     },
     "levels/textures/tc_3393876841_wanyuan_fantasy_color_2_noise_texture.tex": {
       "source_id": "3393876841",
@@ -6712,7 +6804,8 @@
     "images/inventoryimages/tc_3393876841_f77a6f3af9390dc1.tex": {
       "source_id": "3393876841",
       "file": "images/inventoryimages/turf_wanyuan_fantasy_color_2.tex",
-      "sha256": "f77a6f3af9390dc1744398cac4d538b68746f08dd4d271454bc6f0c35d846410"
+      "sha256": "f77a6f3af9390dc1744398cac4d538b68746f08dd4d271454bc6f0c35d846410",
+      "output_sha256": "f77a6f3af9390dc1744398cac4d538b68746f08dd4d271454bc6f0c35d846410"
     },
     "levels/textures/tc_3393876841_wanyuan_fantasy_color_3_noise_texture.tex": {
       "source_id": "3393876841",
@@ -6722,7 +6815,8 @@
     "images/inventoryimages/tc_3393876841_c686d696622be8b5.tex": {
       "source_id": "3393876841",
       "file": "images/inventoryimages/turf_wanyuan_fantasy_color_3.tex",
-      "sha256": "c686d696622be8b5bc8e46a3adfd7e0ee402a61d6530174756ed7ff66520f796"
+      "sha256": "c686d696622be8b5bc8e46a3adfd7e0ee402a61d6530174756ed7ff66520f796",
+      "output_sha256": "c686d696622be8b5bc8e46a3adfd7e0ee402a61d6530174756ed7ff66520f796"
     },
     "levels/textures/tc_3393876841_wanyuan_fantasy_color_4_noise_texture.tex": {
       "source_id": "3393876841",
@@ -6732,7 +6826,8 @@
     "images/inventoryimages/tc_3393876841_199b91f8fe5a9aa4.tex": {
       "source_id": "3393876841",
       "file": "images/inventoryimages/turf_wanyuan_fantasy_color_4.tex",
-      "sha256": "199b91f8fe5a9aa444a4a644e796cffef8e2fe1b0a558b738063839aaab7da5f"
+      "sha256": "199b91f8fe5a9aa444a4a644e796cffef8e2fe1b0a558b738063839aaab7da5f",
+      "output_sha256": "199b91f8fe5a9aa444a4a644e796cffef8e2fe1b0a558b738063839aaab7da5f"
     },
     "levels/textures/tc_3393876841_wanyuan_fenhua_noise_texture.tex": {
       "source_id": "3393876841",
@@ -6742,7 +6837,8 @@
     "images/inventoryimages/tc_3393876841_23e133fa020b140e.tex": {
       "source_id": "3393876841",
       "file": "images/inventoryimages/turf_wanyuan_fenhua.tex",
-      "sha256": "23e133fa020b140e4d2d51c43f3e3d7ca4dbc4df2ff4bc5d2536cb195362ad65"
+      "sha256": "23e133fa020b140e4d2d51c43f3e3d7ca4dbc4df2ff4bc5d2536cb195362ad65",
+      "output_sha256": "23e133fa020b140e4d2d51c43f3e3d7ca4dbc4df2ff4bc5d2536cb195362ad65"
     },
     "levels/textures/tc_3393876841_wanyuan_haian_noise_texture.tex": {
       "source_id": "3393876841",
@@ -6752,7 +6848,8 @@
     "images/inventoryimages/tc_3393876841_ff4311894448b409.tex": {
       "source_id": "3393876841",
       "file": "images/inventoryimages/turf_wanyuan_haian.tex",
-      "sha256": "ff4311894448b4094bed88af0fb886b438061ecae230710825ebc239eb361a3d"
+      "sha256": "ff4311894448b4094bed88af0fb886b438061ecae230710825ebc239eb361a3d",
+      "output_sha256": "ff4311894448b4094bed88af0fb886b438061ecae230710825ebc239eb361a3d"
     },
     "levels/textures/tc_3393876841_wanyuan_night_noise_texture.tex": {
       "source_id": "3393876841",
@@ -6762,7 +6859,8 @@
     "images/inventoryimages/tc_3393876841_cf399caaf435f4e2.tex": {
       "source_id": "3393876841",
       "file": "images/inventoryimages/turf_wanyuan_night.tex",
-      "sha256": "cf399caaf435f4e2b67edde7ba3bb7f4079e32581018b18f0070bf313227e7b5"
+      "sha256": "cf399caaf435f4e2b67edde7ba3bb7f4079e32581018b18f0070bf313227e7b5",
+      "output_sha256": "cf399caaf435f4e2b67edde7ba3bb7f4079e32581018b18f0070bf313227e7b5"
     },
     "levels/textures/tc_3393876841_wanyuan_qishui_noise_texture.tex": {
       "source_id": "3393876841",
@@ -6772,7 +6870,8 @@
     "images/inventoryimages/tc_3393876841_e3f5cb3a129c1689.tex": {
       "source_id": "3393876841",
       "file": "images/inventoryimages/turf_wanyuan_qishui.tex",
-      "sha256": "e3f5cb3a129c1689f806f8f8a507084b164cbff9a31db7af280de5a0c5c9e619"
+      "sha256": "e3f5cb3a129c1689f806f8f8a507084b164cbff9a31db7af280de5a0c5c9e619",
+      "output_sha256": "e3f5cb3a129c1689f806f8f8a507084b164cbff9a31db7af280de5a0c5c9e619"
     },
     "levels/textures/tc_3393876841_wanyuan_xialian_noise_texture.tex": {
       "source_id": "3393876841",
@@ -6782,7 +6881,8 @@
     "images/inventoryimages/tc_3393876841_f598cd432138c332.tex": {
       "source_id": "3393876841",
       "file": "images/inventoryimages/turf_wanyuan_xialian.tex",
-      "sha256": "f598cd432138c3328699feb82c37f93806c3e4ea74b5c94f637b147269029777"
+      "sha256": "f598cd432138c3328699feb82c37f93806c3e4ea74b5c94f637b147269029777",
+      "output_sha256": "f598cd432138c3328699feb82c37f93806c3e4ea74b5c94f637b147269029777"
     },
     "levels/textures/tc_3393876841_wanyuan_xunyicao_noise_texture.tex": {
       "source_id": "3393876841",
@@ -6792,7 +6892,8 @@
     "images/inventoryimages/tc_3393876841_9d5d380c9306c4a7.tex": {
       "source_id": "3393876841",
       "file": "images/inventoryimages/turf_wanyuan_xunyicao.tex",
-      "sha256": "9d5d380c9306c4a751eb3900bb8d94158d2c925394a611aac35c29d60af02a71"
+      "sha256": "9d5d380c9306c4a751eb3900bb8d94158d2c925394a611aac35c29d60af02a71",
+      "output_sha256": "9d5d380c9306c4a751eb3900bb8d94158d2c925394a611aac35c29d60af02a71"
     },
     "levels/textures/tc_3393876841_wanyuan_yingguang_noise_texture.tex": {
       "source_id": "3393876841",
@@ -6802,7 +6903,8 @@
     "images/inventoryimages/tc_3393876841_383f69379a496c93.tex": {
       "source_id": "3393876841",
       "file": "images/inventoryimages/turf_wanyuan_yingguang.tex",
-      "sha256": "383f69379a496c93448d81facd9ac9e983d980be887cdc789ae549b8771d29cf"
+      "sha256": "383f69379a496c93448d81facd9ac9e983d980be887cdc789ae549b8771d29cf",
+      "output_sha256": "383f69379a496c93448d81facd9ac9e983d980be887cdc789ae549b8771d29cf"
     },
     "levels/tiles/tc_1289779251_cherryruins.tex": {
       "source_id": "1289779251",
@@ -6812,7 +6914,8 @@
     "levels/tiles/tc_1289779251_cherryruins.xml": {
       "source_id": "1289779251",
       "file": "levels/tiles/cherryruins.xml",
-      "sha256": "7df45f4bf951848dc4116fbd4a2ebdc3b05edbf944554e64c3a4aa82c96fb7a3"
+      "sha256": "7df45f4bf951848dc4116fbd4a2ebdc3b05edbf944554e64c3a4aa82c96fb7a3",
+      "output_sha256": "7943d50695df90a7425f3cd2c7f9816bb128468539e60a34d7fdfc28b3141134"
     },
     "levels/textures/tc_1289779251_noise_bismuthbrick.tex": {
       "source_id": "1289779251",
@@ -6832,7 +6935,8 @@
     "images/inventoryimages/tc_1289779251_7ae710ff03229182.tex": {
       "source_id": "1289779251",
       "file": "images/cherryimages.tex",
-      "sha256": "7ae710ff03229182d7cae8190342887f079ed655523746796764b2aa28a9db98"
+      "sha256": "7ae710ff03229182d7cae8190342887f079ed655523746796764b2aa28a9db98",
+      "output_sha256": "7ae710ff03229182d7cae8190342887f079ed655523746796764b2aa28a9db98"
     },
     "levels/tiles/tc_1289779251_cherrift.tex": {
       "source_id": "1289779251",
@@ -6842,7 +6946,8 @@
     "levels/tiles/tc_1289779251_cherrift.xml": {
       "source_id": "1289779251",
       "file": "levels/tiles/cherrift.xml",
-      "sha256": "6a007d8ca72fb9fc80000b419878c3ae84cec5f6f2f690da133b8eafeecf8867"
+      "sha256": "6a007d8ca72fb9fc80000b419878c3ae84cec5f6f2f690da133b8eafeecf8867",
+      "output_sha256": "ed55a2f7994017ac67fb69af44b849a9be3c211f13aa6f04ebb4a7759f3ebee8"
     },
     "levels/textures/tc_1289779251_noise_cherrift.tex": {
       "source_id": "1289779251",
@@ -6854,10 +6959,11 @@
       "file": "levels/textures/mini_noise_cherrift.tex",
       "sha256": "761a65a0697d6302f7092f2ad6624d92a940747dbc313557fe13d57ece3c22ba"
     },
-    "images/inventoryimages/tc_1289779251_f2bdebb4ba09ef8f.tex": {
+    "images/inventoryimages/tc_1289779251_9cbf0d8f0c080f62.tex": {
       "source_id": "1289779251",
       "file": "levels/textures/noise_cherrift.tex",
-      "sha256": "f2bdebb4ba09ef8f3e624f5fedc3b0dbb53d16fa6447d1c4bd493a97e7d99f5c"
+      "sha256": "f2bdebb4ba09ef8f3e624f5fedc3b0dbb53d16fa6447d1c4bd493a97e7d99f5c",
+      "output_sha256": "9cbf0d8f0c080f6247cff5ab74169190fdd2300b0ca4f913c8c1b92020a6fc91"
     },
     "levels/tiles/tc_1289779251_cherry.tex": {
       "source_id": "1289779251",
@@ -6867,7 +6973,8 @@
     "levels/tiles/tc_1289779251_cherry.xml": {
       "source_id": "1289779251",
       "file": "levels/tiles/cherry.xml",
-      "sha256": "1ce91b2d277fcc7fd8a9321771666c534771e56064c6af5d663d3746dbd8f6e7"
+      "sha256": "1ce91b2d277fcc7fd8a9321771666c534771e56064c6af5d663d3746dbd8f6e7",
+      "output_sha256": "8e52f281ef93c927c9b5fb02b14b87a37d3f17d4d2021cb2ddb11e3d8a5062a2"
     },
     "levels/textures/tc_1289779251_noise_cherrygreen.tex": {
       "source_id": "1289779251",
@@ -6887,7 +6994,8 @@
     "levels/tiles/tc_1289779251_cherry2.xml": {
       "source_id": "1289779251",
       "file": "levels/tiles/cherry2.xml",
-      "sha256": "34c7b243b0535aeeed20b12b46b3013abfe732b7e26c86afe9beb1020b9ad76c"
+      "sha256": "34c7b243b0535aeeed20b12b46b3013abfe732b7e26c86afe9beb1020b9ad76c",
+      "output_sha256": "df418777de28361a689840c56e9b3b06a92d07291c60b05b632165243ecdc8bc"
     },
     "levels/textures/tc_1289779251_noise_cherrycrimson.tex": {
       "source_id": "1289779251",
@@ -6907,7 +7015,8 @@
     "levels/tiles/tc_1289779251_cherry3.xml": {
       "source_id": "1289779251",
       "file": "levels/tiles/cherry3.xml",
-      "sha256": "c2416e996fc3749b45b28d324e7907e6ab94b3fd04397694b784c000c2341900"
+      "sha256": "c2416e996fc3749b45b28d324e7907e6ab94b3fd04397694b784c000c2341900",
+      "output_sha256": "2f5494d239636f7f8f9486cd47099902cf7944b354f40fa5f650a8cfd08c6665"
     },
     "levels/textures/tc_1289779251_noise_cherrylime.tex": {
       "source_id": "1289779251",
@@ -6927,7 +7036,8 @@
     "levels/tiles/tc_1289779251_cherry4.xml": {
       "source_id": "1289779251",
       "file": "levels/tiles/cherry4.xml",
-      "sha256": "1d8bd08148de64f096b92bc0dfa33f68aad9801b2cb1d9559d50f027fa9f09af"
+      "sha256": "1d8bd08148de64f096b92bc0dfa33f68aad9801b2cb1d9559d50f027fa9f09af",
+      "output_sha256": "5a290dbffbd15940b98a93d29180cd67de0fa30699dd2f421c51272780f63a06"
     },
     "levels/textures/tc_1289779251_noise_cherrypink.tex": {
       "source_id": "1289779251",
@@ -6987,7 +7097,8 @@
     "images/inventoryimages/tc_3626093627_9f496bd384e5602f.tex": {
       "source_id": "3626093627",
       "file": "images/inventoryimages/niao_blue_grey_checkered_pattern_turf.tex",
-      "sha256": "9f496bd384e5602ffe8c301acb2b65eddf009e2105af6d44c1575717f2950686"
+      "sha256": "9f496bd384e5602ffe8c301acb2b65eddf009e2105af6d44c1575717f2950686",
+      "output_sha256": "9f496bd384e5602ffe8c301acb2b65eddf009e2105af6d44c1575717f2950686"
     },
     "levels/textures/tc_3626093627_niao_brown_pattern_turf.tex": {
       "source_id": "3626093627",
@@ -7007,7 +7118,8 @@
     "images/inventoryimages/tc_3626093627_9955b3d0e8ddb8ee.tex": {
       "source_id": "3626093627",
       "file": "images/inventoryimages/niao_brown_pattern_turf.tex",
-      "sha256": "9955b3d0e8ddb8ee3edb1dabd6b430cd2b6d8f633b2db6b5274a0f4018f43e10"
+      "sha256": "9955b3d0e8ddb8ee3edb1dabd6b430cd2b6d8f633b2db6b5274a0f4018f43e10",
+      "output_sha256": "9955b3d0e8ddb8ee3edb1dabd6b430cd2b6d8f633b2db6b5274a0f4018f43e10"
     },
     "levels/textures/tc_3626093627_niao_brown_tile_turf.tex": {
       "source_id": "3626093627",
@@ -7027,7 +7139,8 @@
     "images/inventoryimages/tc_3626093627_f3abefea4aa26ec7.tex": {
       "source_id": "3626093627",
       "file": "images/inventoryimages/niao_brown_tile_turf.tex",
-      "sha256": "f3abefea4aa26ec7411936069f3e94df2fe3173e0c90b82fd7f286cb48d814ed"
+      "sha256": "f3abefea4aa26ec7411936069f3e94df2fe3173e0c90b82fd7f286cb48d814ed",
+      "output_sha256": "f3abefea4aa26ec7411936069f3e94df2fe3173e0c90b82fd7f286cb48d814ed"
     },
     "levels/textures/tc_3626093627_niao_dark_brown_wooden_turf.tex": {
       "source_id": "3626093627",
@@ -7047,7 +7160,8 @@
     "images/inventoryimages/tc_3626093627_53fa44370d100799.tex": {
       "source_id": "3626093627",
       "file": "images/inventoryimages/niao_dark_brown_wooden_turf.tex",
-      "sha256": "53fa44370d100799d98fa064eb193cbb4215081ca45fea44c3c11ef4c06ea017"
+      "sha256": "53fa44370d100799d98fa064eb193cbb4215081ca45fea44c3c11ef4c06ea017",
+      "output_sha256": "53fa44370d100799d98fa064eb193cbb4215081ca45fea44c3c11ef4c06ea017"
     },
     "levels/textures/tc_3626093627_niao_dark_brown_woven_turf.tex": {
       "source_id": "3626093627",
@@ -7067,7 +7181,8 @@
     "images/inventoryimages/tc_3626093627_b3d1b942761578ed.tex": {
       "source_id": "3626093627",
       "file": "images/inventoryimages/niao_dark_brown_woven_turf.tex",
-      "sha256": "b3d1b942761578ed79975ace2a6572ecc2791ac0f597b715271ee50123dd693e"
+      "sha256": "b3d1b942761578ed79975ace2a6572ecc2791ac0f597b715271ee50123dd693e",
+      "output_sha256": "b3d1b942761578ed79975ace2a6572ecc2791ac0f597b715271ee50123dd693e"
     },
     "levels/textures/tc_3626093627_niao_green_floral_turf.tex": {
       "source_id": "3626093627",
@@ -7087,7 +7202,8 @@
     "images/inventoryimages/tc_3626093627_f720c9d809a7cff8.tex": {
       "source_id": "3626093627",
       "file": "images/inventoryimages/niao_green_floral_turf.tex",
-      "sha256": "f720c9d809a7cff88ba3db14a03526b056ebd452cfdab696a2ca80b64cd01b91"
+      "sha256": "f720c9d809a7cff88ba3db14a03526b056ebd452cfdab696a2ca80b64cd01b91",
+      "output_sha256": "f720c9d809a7cff88ba3db14a03526b056ebd452cfdab696a2ca80b64cd01b91"
     },
     "levels/textures/tc_3626093627_niao_green_orange_checkered_pattern_turf.tex": {
       "source_id": "3626093627",
@@ -7107,7 +7223,8 @@
     "images/inventoryimages/tc_3626093627_dda129af348f65dc.tex": {
       "source_id": "3626093627",
       "file": "images/inventoryimages/niao_green_orange_checkered_pattern_turf.tex",
-      "sha256": "dda129af348f65dc155d275a7417ff13715dd57499c0307d21eb0becc19ffc8d"
+      "sha256": "dda129af348f65dc155d275a7417ff13715dd57499c0307d21eb0becc19ffc8d",
+      "output_sha256": "dda129af348f65dc155d275a7417ff13715dd57499c0307d21eb0becc19ffc8d"
     },
     "levels/textures/tc_3626093627_niao_leaf_orange_point_turf.tex": {
       "source_id": "3626093627",
@@ -7127,7 +7244,8 @@
     "images/inventoryimages/tc_3626093627_6fa13aa7d7153638.tex": {
       "source_id": "3626093627",
       "file": "images/inventoryimages/niao_leaf_orange_point_turf.tex",
-      "sha256": "6fa13aa7d715363897af318cf72acb99fef0bac648a100bca40a313b0697a99f"
+      "sha256": "6fa13aa7d715363897af318cf72acb99fef0bac648a100bca40a313b0697a99f",
+      "output_sha256": "6fa13aa7d715363897af318cf72acb99fef0bac648a100bca40a313b0697a99f"
     },
     "levels/textures/tc_3626093627_niao_light_brown_wooden_turf.tex": {
       "source_id": "3626093627",
@@ -7147,7 +7265,8 @@
     "images/inventoryimages/tc_3626093627_545cf55d7a3420b0.tex": {
       "source_id": "3626093627",
       "file": "images/inventoryimages/niao_light_brown_wooden_turf.tex",
-      "sha256": "545cf55d7a3420b016604ac5625a63db0aa8df2f7beb4926249302e27d194084"
+      "sha256": "545cf55d7a3420b016604ac5625a63db0aa8df2f7beb4926249302e27d194084",
+      "output_sha256": "545cf55d7a3420b016604ac5625a63db0aa8df2f7beb4926249302e27d194084"
     },
     "levels/textures/tc_3626093627_niao_light_brown_woven_turf.tex": {
       "source_id": "3626093627",
@@ -7167,7 +7286,8 @@
     "images/inventoryimages/tc_3626093627_74095284c46a668a.tex": {
       "source_id": "3626093627",
       "file": "images/inventoryimages/niao_light_brown_woven_turf.tex",
-      "sha256": "74095284c46a668aa330eb1ef58dc5695386d20dd1a44a830dde80a939d1d7e8"
+      "sha256": "74095284c46a668aa330eb1ef58dc5695386d20dd1a44a830dde80a939d1d7e8",
+      "output_sha256": "74095284c46a668aa330eb1ef58dc5695386d20dd1a44a830dde80a939d1d7e8"
     },
     "levels/textures/tc_3626093627_niao_small_green_leaf_turf.tex": {
       "source_id": "3626093627",
@@ -7187,7 +7307,8 @@
     "images/inventoryimages/tc_3626093627_09d5664f7c6b4937.tex": {
       "source_id": "3626093627",
       "file": "images/inventoryimages/niao_small_green_leaf_turf.tex",
-      "sha256": "09d5664f7c6b49372e56856c1b64e6c8d9ad31c3dd9827a6aee37c01eca891c7"
+      "sha256": "09d5664f7c6b49372e56856c1b64e6c8d9ad31c3dd9827a6aee37c01eca891c7",
+      "output_sha256": "09d5664f7c6b49372e56856c1b64e6c8d9ad31c3dd9827a6aee37c01eca891c7"
     },
     "levels/tiles/tc_3283650699_gentleness_jungle.tex": {
       "source_id": "3283650699",
@@ -7197,7 +7318,8 @@
     "levels/tiles/tc_3283650699_gentleness_jungle.xml": {
       "source_id": "3283650699",
       "file": "levels/tiles/gentleness_jungle.xml",
-      "sha256": "0c20639b992d03d78d96fdcae7a2fc1d2ef8e316b36eea78588980e8c9cf87f8"
+      "sha256": "0c20639b992d03d78d96fdcae7a2fc1d2ef8e316b36eea78588980e8c9cf87f8",
+      "output_sha256": "1567c06845c19adfc467736ea481fafa988d6902483138c5c8dd3f86b120ea16"
     },
     "levels/textures/tc_3283650699_Ground_gentleness_green.tex": {
       "source_id": "3283650699",
@@ -7212,7 +7334,8 @@
     "images/inventoryimages/tc_3283650699_638164042fe086ce.tex": {
       "source_id": "3283650699",
       "file": "images/gentleness_image/turf_gentleness_green.tex",
-      "sha256": "638164042fe086ce541cecd7161931257188ec024c2c08a264307a49f21d4d51"
+      "sha256": "638164042fe086ce541cecd7161931257188ec024c2c08a264307a49f21d4d51",
+      "output_sha256": "638164042fe086ce541cecd7161931257188ec024c2c08a264307a49f21d4d51"
     },
     "levels/textures/tc_3283650699_Ground_gentleness_star.tex": {
       "source_id": "3283650699",
@@ -7227,7 +7350,8 @@
     "images/inventoryimages/tc_3283650699_b656d58391c9c1c6.tex": {
       "source_id": "3283650699",
       "file": "images/gentleness_image/turf_gentleness_star.tex",
-      "sha256": "b656d58391c9c1c6d3f5c1f98ecc3a0283f5cfb735a8132a1073d620bb04b06f"
+      "sha256": "b656d58391c9c1c6d3f5c1f98ecc3a0283f5cfb735a8132a1073d620bb04b06f",
+      "output_sha256": "b656d58391c9c1c6d3f5c1f98ecc3a0283f5cfb735a8132a1073d620bb04b06f"
     },
     "levels/textures/tc_3283650699_Ground_gentleness_strawberry.tex": {
       "source_id": "3283650699",
@@ -7242,7 +7366,8 @@
     "images/inventoryimages/tc_3283650699_013d82715c8fce15.tex": {
       "source_id": "3283650699",
       "file": "images/gentleness_image/turf_gentleness_strawberry.tex",
-      "sha256": "013d82715c8fce15b339ef1304a3489c4b6cc24641f6286a41293485e55c93fe"
+      "sha256": "013d82715c8fce15b339ef1304a3489c4b6cc24641f6286a41293485e55c93fe",
+      "output_sha256": "013d82715c8fce15b339ef1304a3489c4b6cc24641f6286a41293485e55c93fe"
     }
   }
 }

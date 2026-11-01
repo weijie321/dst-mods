@@ -15,6 +15,7 @@ DST (Don't Starve Together) 本地模组与配套工具项目。先读取根 [AG
 - `tools/sync_dst_mods.bat` — 兼容部署入口，无参数只预览旺达模组
 - `dst-inspect/` — DST 原生脚本历史提取（只读线索）
 - `wanda-skilltree/` — 旺达技能树扩展 mod（五栏技能树 + 怀表 Hook + 时光贮匣）
+- `turf-collection/` — 130 项独立地皮合集，使用说明与当前验收边界见其 `README.md`、`DEVELOPMENT_STATUS.md`
 
 ## 相关工作区
 

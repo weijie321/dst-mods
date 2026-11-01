@@ -29,6 +29,55 @@ return function(t)
             t.Assert(key .. ".client_tile", TheWorld.Map:GetTileAtPoint(x + (col - 6) * 4, 0, z + (row - 4) * 4) == WORLD_TILES[entry.tile])
         end
         t.Assert("client_crafting_filter", CRAFTING_FILTERS.TURF_COLLECTION ~= nil)
+        local hud = ThePlayer.HUD.controls.craftingmenu
+        local menu = hud.craftingmenu
+        local atlas = resolvefilepath("images/crafting_menu.xml")
+        t.Assert("client_crafting_vanilla_atlas", resolvefilepath(CRAFTING_ATLAS) == atlas
+            and TheSim:AtlasContains(atlas, "backing.tex"), {atlas = CRAFTING_ATLAS})
+        local backing
+        for child in pairs(menu.frame.children) do
+            if child.texture == "backing.tex" then backing = child end
+        end
+        t.Assert("client_crafting_frame", backing ~= nil and backing.atlas == atlas,
+            {atlas = backing ~= nil and backing.atlas or "missing"})
+        local button = menu.filter_buttons.TURF_COLLECTION
+        local width, height = button.filter_img:GetScaledSize()
+        t.Assert("client_crafting_filter_size", width > 0 and width <= 64
+            and height > 0 and height <= 64, {width = width, height = height})
+        hud:Open()
+        menu:SelectFilter("TURF_COLLECTION", true)
+        t.After(1, function()
+            t.Assert("client_crafting_open_catalog", hud:IsCraftingOpen()
+                and menu.current_filter_name == "TURF_COLLECTION"
+                and #menu.filtered_recipes == 130, {recipes = #menu.filtered_recipes})
+            for _, data in ipairs(menu.filtered_recipes) do
+                menu:PopulateRecipeDetailPanel(data)
+                local image = menu.details_root.skins_spinner.spinner.fgimage
+                local w, h = image:GetSize()
+                t.Assert(data.recipe.product:sub(6) .. ".client_recipe_preview",
+                    w > 0 and w <= 64 and h > 0 and h <= 64,
+                    {width = w, height = h, atlas = image.atlas, image = image.texture})
+            end
+            local prefab = "turf_tc_1289779251_cherrift"
+            menu:PopulateRecipeDetailPanel(hud:GetRecipeState(prefab))
+            menu.details_root.build_button_root.button.onclick()
+            t.After(3, function()
+                local count = 0
+                for _, item in pairs(ThePlayer.replica.inventory:GetItems()) do
+                    if item.prefab == prefab then count = count + item.replica.stackable:StackSize() end
+                end
+                t.Assert("client_crafting_build_from_preview", count == 4, {count = count})
+                hud:Close()
+                t.After(0.5, function()
+                    hud:Open()
+                    menu:SelectFilter("TURF_COLLECTION", true)
+                    menu:PopulateRecipeDetailPanel(hud:GetRecipeState(prefab))
+                    local w, h = menu.details_root.skins_spinner.spinner.fgimage:GetSize()
+                    t.Assert("client_crafting_reselect_preview", w <= 64 and h <= 64
+                        and hud:IsCraftingOpen(), {width = w, height = h})
+                end)
+            end)
+        end)
         TheCamera:SetDistance(60)
         t.After(30, function() t.Done("130种真实客户端地皮、网络物品、图标和动画检查完成") end)
     end)
