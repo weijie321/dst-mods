@@ -1,0 +1,3415 @@
+{
+  "schema_version": 1,
+  "mod": "turf-collection",
+  "scope": "用户指定11个模组全部130条注册地皮的独立加载、原版材料制作配方、物品存读、铺挖及真实客户端资源与同步",
+  "server_script": "tools/scenarios/turf-collection-server.lua",
+  "client_server_script": "tools/scenarios/turf-collection-client-server.lua",
+  "client_script": "tools/scenarios/turf-collection-client.lua",
+  "requirements": [
+    {
+      "id": "source-coverage",
+      "description": "11个来源共130种地皮全部独立注册",
+      "stage": "server",
+      "assertions": [
+        "catalog_130",
+        "sources_11"
+      ]
+    },
+    {
+      "id": "client-catalog",
+      "description": "远端客户端清单与制作分类加载",
+      "stage": "client",
+      "assertions": [
+        "client_catalog_130",
+        "client_crafting_filter"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf1",
+      "description": "海洋传说：灰白石板路独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_2979177306_lg_turf1.registered",
+        "tc_2979177306_lg_turf1.standalone",
+        "tc_2979177306_lg_turf1.recipe",
+        "tc_2979177306_lg_turf1.spawn",
+        "tc_2979177306_lg_turf1.item_reload",
+        "tc_2979177306_lg_turf1.deploy",
+        "tc_2979177306_lg_turf1.dig",
+        "tc_2979177306_lg_turf1.craft"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf1.client",
+      "description": "海洋传说：灰白石板路远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_2979177306_lg_turf1.client_item",
+        "tc_2979177306_lg_turf1.client_icon",
+        "tc_2979177306_lg_turf1.client_anim",
+        "tc_2979177306_lg_turf1.client_tile"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf10",
+      "description": "海洋传说：青丘草地地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_2979177306_lg_turf10.registered",
+        "tc_2979177306_lg_turf10.standalone",
+        "tc_2979177306_lg_turf10.recipe",
+        "tc_2979177306_lg_turf10.spawn",
+        "tc_2979177306_lg_turf10.item_reload",
+        "tc_2979177306_lg_turf10.deploy",
+        "tc_2979177306_lg_turf10.dig",
+        "tc_2979177306_lg_turf10.craft"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf10.client",
+      "description": "海洋传说：青丘草地地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_2979177306_lg_turf10.client_item",
+        "tc_2979177306_lg_turf10.client_icon",
+        "tc_2979177306_lg_turf10.client_anim",
+        "tc_2979177306_lg_turf10.client_tile"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf11",
+      "description": "海洋传说：焦土地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_2979177306_lg_turf11.registered",
+        "tc_2979177306_lg_turf11.standalone",
+        "tc_2979177306_lg_turf11.recipe",
+        "tc_2979177306_lg_turf11.spawn",
+        "tc_2979177306_lg_turf11.item_reload",
+        "tc_2979177306_lg_turf11.deploy",
+        "tc_2979177306_lg_turf11.dig",
+        "tc_2979177306_lg_turf11.craft"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf11.client",
+      "description": "海洋传说：焦土地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_2979177306_lg_turf11.client_item",
+        "tc_2979177306_lg_turf11.client_icon",
+        "tc_2979177306_lg_turf11.client_anim",
+        "tc_2979177306_lg_turf11.client_tile"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf2",
+      "description": "海洋传说：城镇石砖路独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_2979177306_lg_turf2.registered",
+        "tc_2979177306_lg_turf2.standalone",
+        "tc_2979177306_lg_turf2.recipe",
+        "tc_2979177306_lg_turf2.spawn",
+        "tc_2979177306_lg_turf2.item_reload",
+        "tc_2979177306_lg_turf2.deploy",
+        "tc_2979177306_lg_turf2.dig",
+        "tc_2979177306_lg_turf2.craft"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf2.client",
+      "description": "海洋传说：城镇石砖路远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_2979177306_lg_turf2.client_item",
+        "tc_2979177306_lg_turf2.client_icon",
+        "tc_2979177306_lg_turf2.client_anim",
+        "tc_2979177306_lg_turf2.client_tile"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf3",
+      "description": "海洋传说：绿化草皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_2979177306_lg_turf3.registered",
+        "tc_2979177306_lg_turf3.standalone",
+        "tc_2979177306_lg_turf3.recipe",
+        "tc_2979177306_lg_turf3.spawn",
+        "tc_2979177306_lg_turf3.item_reload",
+        "tc_2979177306_lg_turf3.deploy",
+        "tc_2979177306_lg_turf3.dig",
+        "tc_2979177306_lg_turf3.craft"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf3.client",
+      "description": "海洋传说：绿化草皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_2979177306_lg_turf3.client_item",
+        "tc_2979177306_lg_turf3.client_icon",
+        "tc_2979177306_lg_turf3.client_anim",
+        "tc_2979177306_lg_turf3.client_tile"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf4",
+      "description": "海洋传说：绿格子草皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_2979177306_lg_turf4.registered",
+        "tc_2979177306_lg_turf4.standalone",
+        "tc_2979177306_lg_turf4.recipe",
+        "tc_2979177306_lg_turf4.spawn",
+        "tc_2979177306_lg_turf4.item_reload",
+        "tc_2979177306_lg_turf4.deploy",
+        "tc_2979177306_lg_turf4.dig",
+        "tc_2979177306_lg_turf4.craft"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf4.client",
+      "description": "海洋传说：绿格子草皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_2979177306_lg_turf4.client_item",
+        "tc_2979177306_lg_turf4.client_icon",
+        "tc_2979177306_lg_turf4.client_anim",
+        "tc_2979177306_lg_turf4.client_tile"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf5",
+      "description": "海洋传说：石子嵌合路独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_2979177306_lg_turf5.registered",
+        "tc_2979177306_lg_turf5.standalone",
+        "tc_2979177306_lg_turf5.recipe",
+        "tc_2979177306_lg_turf5.spawn",
+        "tc_2979177306_lg_turf5.item_reload",
+        "tc_2979177306_lg_turf5.deploy",
+        "tc_2979177306_lg_turf5.dig",
+        "tc_2979177306_lg_turf5.craft"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf5.client",
+      "description": "海洋传说：石子嵌合路远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_2979177306_lg_turf5.client_item",
+        "tc_2979177306_lg_turf5.client_icon",
+        "tc_2979177306_lg_turf5.client_anim",
+        "tc_2979177306_lg_turf5.client_tile"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf6",
+      "description": "海洋传说：蓝色石子嵌合路独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_2979177306_lg_turf6.registered",
+        "tc_2979177306_lg_turf6.standalone",
+        "tc_2979177306_lg_turf6.recipe",
+        "tc_2979177306_lg_turf6.spawn",
+        "tc_2979177306_lg_turf6.item_reload",
+        "tc_2979177306_lg_turf6.deploy",
+        "tc_2979177306_lg_turf6.dig",
+        "tc_2979177306_lg_turf6.craft"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf6.client",
+      "description": "海洋传说：蓝色石子嵌合路远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_2979177306_lg_turf6.client_item",
+        "tc_2979177306_lg_turf6.client_icon",
+        "tc_2979177306_lg_turf6.client_anim",
+        "tc_2979177306_lg_turf6.client_tile"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf7",
+      "description": "海洋传说：石砖地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_2979177306_lg_turf7.registered",
+        "tc_2979177306_lg_turf7.standalone",
+        "tc_2979177306_lg_turf7.recipe",
+        "tc_2979177306_lg_turf7.spawn",
+        "tc_2979177306_lg_turf7.item_reload",
+        "tc_2979177306_lg_turf7.deploy",
+        "tc_2979177306_lg_turf7.dig",
+        "tc_2979177306_lg_turf7.craft"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf7.client",
+      "description": "海洋传说：石砖地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_2979177306_lg_turf7.client_item",
+        "tc_2979177306_lg_turf7.client_icon",
+        "tc_2979177306_lg_turf7.client_anim",
+        "tc_2979177306_lg_turf7.client_tile"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf8",
+      "description": "海洋传说：桦树林地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_2979177306_lg_turf8.registered",
+        "tc_2979177306_lg_turf8.standalone",
+        "tc_2979177306_lg_turf8.recipe",
+        "tc_2979177306_lg_turf8.spawn",
+        "tc_2979177306_lg_turf8.item_reload",
+        "tc_2979177306_lg_turf8.deploy",
+        "tc_2979177306_lg_turf8.dig",
+        "tc_2979177306_lg_turf8.craft"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf8.client",
+      "description": "海洋传说：桦树林地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_2979177306_lg_turf8.client_item",
+        "tc_2979177306_lg_turf8.client_icon",
+        "tc_2979177306_lg_turf8.client_anim",
+        "tc_2979177306_lg_turf8.client_tile"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf9",
+      "description": "海洋传说：粉色装饰地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_2979177306_lg_turf9.registered",
+        "tc_2979177306_lg_turf9.standalone",
+        "tc_2979177306_lg_turf9.recipe",
+        "tc_2979177306_lg_turf9.spawn",
+        "tc_2979177306_lg_turf9.item_reload",
+        "tc_2979177306_lg_turf9.deploy",
+        "tc_2979177306_lg_turf9.dig",
+        "tc_2979177306_lg_turf9.craft"
+      ]
+    },
+    {
+      "id": "tc_2979177306_lg_turf9.client",
+      "description": "海洋传说：粉色装饰地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_2979177306_lg_turf9.client_item",
+        "tc_2979177306_lg_turf9.client_icon",
+        "tc_2979177306_lg_turf9.client_anim",
+        "tc_2979177306_lg_turf9.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridge",
+      "description": "荔只只：白玉桥·十字型（基底地纹）独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_bridge.registered",
+        "tc_3349143694_lz_bridge.standalone",
+        "tc_3349143694_lz_bridge.recipe",
+        "tc_3349143694_lz_bridge.spawn",
+        "tc_3349143694_lz_bridge.item_reload",
+        "tc_3349143694_lz_bridge.deploy",
+        "tc_3349143694_lz_bridge.dig",
+        "tc_3349143694_lz_bridge.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridge.client",
+      "description": "荔只只：白玉桥·十字型（基底地纹）远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_bridge.client_item",
+        "tc_3349143694_lz_bridge.client_icon",
+        "tc_3349143694_lz_bridge.client_anim",
+        "tc_3349143694_lz_bridge.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridgethree",
+      "description": "荔只只：白玉桥·连接型（基底地纹）独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_bridgethree.registered",
+        "tc_3349143694_lz_bridgethree.standalone",
+        "tc_3349143694_lz_bridgethree.recipe",
+        "tc_3349143694_lz_bridgethree.spawn",
+        "tc_3349143694_lz_bridgethree.item_reload",
+        "tc_3349143694_lz_bridgethree.deploy",
+        "tc_3349143694_lz_bridgethree.dig",
+        "tc_3349143694_lz_bridgethree.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridgethree.client",
+      "description": "荔只只：白玉桥·连接型（基底地纹）远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_bridgethree.client_item",
+        "tc_3349143694_lz_bridgethree.client_icon",
+        "tc_3349143694_lz_bridgethree.client_anim",
+        "tc_3349143694_lz_bridgethree.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridgethree_red",
+      "description": "荔只只：红木桥·连接型（基底地纹）独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_bridgethree_red.registered",
+        "tc_3349143694_lz_bridgethree_red.standalone",
+        "tc_3349143694_lz_bridgethree_red.recipe",
+        "tc_3349143694_lz_bridgethree_red.spawn",
+        "tc_3349143694_lz_bridgethree_red.item_reload",
+        "tc_3349143694_lz_bridgethree_red.deploy",
+        "tc_3349143694_lz_bridgethree_red.dig",
+        "tc_3349143694_lz_bridgethree_red.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridgethree_red.client",
+      "description": "荔只只：红木桥·连接型（基底地纹）远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_bridgethree_red.client_item",
+        "tc_3349143694_lz_bridgethree_red.client_icon",
+        "tc_3349143694_lz_bridgethree_red.client_anim",
+        "tc_3349143694_lz_bridgethree_red.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridgetwo",
+      "description": "荔只只：白玉桥·一字型（基底地纹）独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_bridgetwo.registered",
+        "tc_3349143694_lz_bridgetwo.standalone",
+        "tc_3349143694_lz_bridgetwo.recipe",
+        "tc_3349143694_lz_bridgetwo.spawn",
+        "tc_3349143694_lz_bridgetwo.item_reload",
+        "tc_3349143694_lz_bridgetwo.deploy",
+        "tc_3349143694_lz_bridgetwo.dig",
+        "tc_3349143694_lz_bridgetwo.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridgetwo.client",
+      "description": "荔只只：白玉桥·一字型（基底地纹）远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_bridgetwo.client_item",
+        "tc_3349143694_lz_bridgetwo.client_icon",
+        "tc_3349143694_lz_bridgetwo.client_anim",
+        "tc_3349143694_lz_bridgetwo.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridgetwo_red",
+      "description": "荔只只：红木桥·一字型（基底地纹）独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_bridgetwo_red.registered",
+        "tc_3349143694_lz_bridgetwo_red.standalone",
+        "tc_3349143694_lz_bridgetwo_red.recipe",
+        "tc_3349143694_lz_bridgetwo_red.spawn",
+        "tc_3349143694_lz_bridgetwo_red.item_reload",
+        "tc_3349143694_lz_bridgetwo_red.deploy",
+        "tc_3349143694_lz_bridgetwo_red.dig",
+        "tc_3349143694_lz_bridgetwo_red.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridgetwo_red.client",
+      "description": "荔只只：红木桥·一字型（基底地纹）远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_bridgetwo_red.client_item",
+        "tc_3349143694_lz_bridgetwo_red.client_icon",
+        "tc_3349143694_lz_bridgetwo_red.client_anim",
+        "tc_3349143694_lz_bridgetwo_red.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridge_red",
+      "description": "荔只只：红木桥·十字型（基底地纹）独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_bridge_red.registered",
+        "tc_3349143694_lz_bridge_red.standalone",
+        "tc_3349143694_lz_bridge_red.recipe",
+        "tc_3349143694_lz_bridge_red.spawn",
+        "tc_3349143694_lz_bridge_red.item_reload",
+        "tc_3349143694_lz_bridge_red.deploy",
+        "tc_3349143694_lz_bridge_red.dig",
+        "tc_3349143694_lz_bridge_red.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridge_red.client",
+      "description": "荔只只：红木桥·十字型（基底地纹）远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_bridge_red.client_item",
+        "tc_3349143694_lz_bridge_red.client_icon",
+        "tc_3349143694_lz_bridge_red.client_anim",
+        "tc_3349143694_lz_bridge_red.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridge_shuilian",
+      "description": "荔只只：荷叶桥（基底地纹）独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_bridge_shuilian.registered",
+        "tc_3349143694_lz_bridge_shuilian.standalone",
+        "tc_3349143694_lz_bridge_shuilian.recipe",
+        "tc_3349143694_lz_bridge_shuilian.spawn",
+        "tc_3349143694_lz_bridge_shuilian.item_reload",
+        "tc_3349143694_lz_bridge_shuilian.deploy",
+        "tc_3349143694_lz_bridge_shuilian.dig",
+        "tc_3349143694_lz_bridge_shuilian.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_bridge_shuilian.client",
+      "description": "荔只只：荷叶桥（基底地纹）远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_bridge_shuilian.client_item",
+        "tc_3349143694_lz_bridge_shuilian.client_icon",
+        "tc_3349143694_lz_bridge_shuilian.client_anim",
+        "tc_3349143694_lz_bridge_shuilian.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf1",
+      "description": "荔只只：云雾微雨地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf1.registered",
+        "tc_3349143694_lz_turf1.standalone",
+        "tc_3349143694_lz_turf1.recipe",
+        "tc_3349143694_lz_turf1.spawn",
+        "tc_3349143694_lz_turf1.item_reload",
+        "tc_3349143694_lz_turf1.deploy",
+        "tc_3349143694_lz_turf1.dig",
+        "tc_3349143694_lz_turf1.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf1.client",
+      "description": "荔只只：云雾微雨地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf1.client_item",
+        "tc_3349143694_lz_turf1.client_icon",
+        "tc_3349143694_lz_turf1.client_anim",
+        "tc_3349143694_lz_turf1.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf10",
+      "description": "荔只只：蓝色砖头地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf10.registered",
+        "tc_3349143694_lz_turf10.standalone",
+        "tc_3349143694_lz_turf10.recipe",
+        "tc_3349143694_lz_turf10.spawn",
+        "tc_3349143694_lz_turf10.item_reload",
+        "tc_3349143694_lz_turf10.deploy",
+        "tc_3349143694_lz_turf10.dig",
+        "tc_3349143694_lz_turf10.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf10.client",
+      "description": "荔只只：蓝色砖头地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf10.client_item",
+        "tc_3349143694_lz_turf10.client_icon",
+        "tc_3349143694_lz_turf10.client_anim",
+        "tc_3349143694_lz_turf10.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf11",
+      "description": "荔只只：红色转头地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf11.registered",
+        "tc_3349143694_lz_turf11.standalone",
+        "tc_3349143694_lz_turf11.recipe",
+        "tc_3349143694_lz_turf11.spawn",
+        "tc_3349143694_lz_turf11.item_reload",
+        "tc_3349143694_lz_turf11.deploy",
+        "tc_3349143694_lz_turf11.dig",
+        "tc_3349143694_lz_turf11.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf11.client",
+      "description": "荔只只：红色转头地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf11.client_item",
+        "tc_3349143694_lz_turf11.client_icon",
+        "tc_3349143694_lz_turf11.client_anim",
+        "tc_3349143694_lz_turf11.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf12",
+      "description": "荔只只：星辉斑斓地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf12.registered",
+        "tc_3349143694_lz_turf12.standalone",
+        "tc_3349143694_lz_turf12.recipe",
+        "tc_3349143694_lz_turf12.spawn",
+        "tc_3349143694_lz_turf12.item_reload",
+        "tc_3349143694_lz_turf12.deploy",
+        "tc_3349143694_lz_turf12.dig",
+        "tc_3349143694_lz_turf12.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf12.client",
+      "description": "荔只只：星辉斑斓地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf12.client_item",
+        "tc_3349143694_lz_turf12.client_icon",
+        "tc_3349143694_lz_turf12.client_anim",
+        "tc_3349143694_lz_turf12.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf13",
+      "description": "荔只只：雪地地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf13.registered",
+        "tc_3349143694_lz_turf13.standalone",
+        "tc_3349143694_lz_turf13.recipe",
+        "tc_3349143694_lz_turf13.spawn",
+        "tc_3349143694_lz_turf13.item_reload",
+        "tc_3349143694_lz_turf13.deploy",
+        "tc_3349143694_lz_turf13.dig",
+        "tc_3349143694_lz_turf13.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf13.client",
+      "description": "荔只只：雪地地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf13.client_item",
+        "tc_3349143694_lz_turf13.client_icon",
+        "tc_3349143694_lz_turf13.client_anim",
+        "tc_3349143694_lz_turf13.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf14",
+      "description": "荔只只：绯心夜毯地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf14.registered",
+        "tc_3349143694_lz_turf14.standalone",
+        "tc_3349143694_lz_turf14.recipe",
+        "tc_3349143694_lz_turf14.spawn",
+        "tc_3349143694_lz_turf14.item_reload",
+        "tc_3349143694_lz_turf14.deploy",
+        "tc_3349143694_lz_turf14.dig",
+        "tc_3349143694_lz_turf14.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf14.client",
+      "description": "荔只只：绯心夜毯地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf14.client_item",
+        "tc_3349143694_lz_turf14.client_icon",
+        "tc_3349143694_lz_turf14.client_anim",
+        "tc_3349143694_lz_turf14.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf15",
+      "description": "荔只只：蝶栖森苔地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf15.registered",
+        "tc_3349143694_lz_turf15.standalone",
+        "tc_3349143694_lz_turf15.recipe",
+        "tc_3349143694_lz_turf15.spawn",
+        "tc_3349143694_lz_turf15.item_reload",
+        "tc_3349143694_lz_turf15.deploy",
+        "tc_3349143694_lz_turf15.dig",
+        "tc_3349143694_lz_turf15.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf15.client",
+      "description": "荔只只：蝶栖森苔地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf15.client_item",
+        "tc_3349143694_lz_turf15.client_icon",
+        "tc_3349143694_lz_turf15.client_anim",
+        "tc_3349143694_lz_turf15.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf16",
+      "description": "荔只只：云梦月华地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf16.registered",
+        "tc_3349143694_lz_turf16.standalone",
+        "tc_3349143694_lz_turf16.recipe",
+        "tc_3349143694_lz_turf16.spawn",
+        "tc_3349143694_lz_turf16.item_reload",
+        "tc_3349143694_lz_turf16.deploy",
+        "tc_3349143694_lz_turf16.dig",
+        "tc_3349143694_lz_turf16.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf16.client",
+      "description": "荔只只：云梦月华地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf16.client_item",
+        "tc_3349143694_lz_turf16.client_icon",
+        "tc_3349143694_lz_turf16.client_anim",
+        "tc_3349143694_lz_turf16.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf2",
+      "description": "荔只只：糖果森林地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf2.registered",
+        "tc_3349143694_lz_turf2.standalone",
+        "tc_3349143694_lz_turf2.recipe",
+        "tc_3349143694_lz_turf2.spawn",
+        "tc_3349143694_lz_turf2.item_reload",
+        "tc_3349143694_lz_turf2.deploy",
+        "tc_3349143694_lz_turf2.dig",
+        "tc_3349143694_lz_turf2.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf2.client",
+      "description": "荔只只：糖果森林地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf2.client_item",
+        "tc_3349143694_lz_turf2.client_icon",
+        "tc_3349143694_lz_turf2.client_anim",
+        "tc_3349143694_lz_turf2.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf3",
+      "description": "荔只只：星星地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf3.registered",
+        "tc_3349143694_lz_turf3.standalone",
+        "tc_3349143694_lz_turf3.recipe",
+        "tc_3349143694_lz_turf3.spawn",
+        "tc_3349143694_lz_turf3.item_reload",
+        "tc_3349143694_lz_turf3.deploy",
+        "tc_3349143694_lz_turf3.dig",
+        "tc_3349143694_lz_turf3.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf3.client",
+      "description": "荔只只：星星地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf3.client_item",
+        "tc_3349143694_lz_turf3.client_icon",
+        "tc_3349143694_lz_turf3.client_anim",
+        "tc_3349143694_lz_turf3.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf4",
+      "description": "荔只只：花生地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf4.registered",
+        "tc_3349143694_lz_turf4.standalone",
+        "tc_3349143694_lz_turf4.recipe",
+        "tc_3349143694_lz_turf4.spawn",
+        "tc_3349143694_lz_turf4.item_reload",
+        "tc_3349143694_lz_turf4.deploy",
+        "tc_3349143694_lz_turf4.dig",
+        "tc_3349143694_lz_turf4.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf4.client",
+      "description": "荔只只：花生地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf4.client_item",
+        "tc_3349143694_lz_turf4.client_icon",
+        "tc_3349143694_lz_turf4.client_anim",
+        "tc_3349143694_lz_turf4.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf5",
+      "description": "荔只只：夏日萤火地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf5.registered",
+        "tc_3349143694_lz_turf5.standalone",
+        "tc_3349143694_lz_turf5.recipe",
+        "tc_3349143694_lz_turf5.spawn",
+        "tc_3349143694_lz_turf5.item_reload",
+        "tc_3349143694_lz_turf5.deploy",
+        "tc_3349143694_lz_turf5.dig",
+        "tc_3349143694_lz_turf5.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf5.client",
+      "description": "荔只只：夏日萤火地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf5.client_item",
+        "tc_3349143694_lz_turf5.client_icon",
+        "tc_3349143694_lz_turf5.client_anim",
+        "tc_3349143694_lz_turf5.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf6",
+      "description": "荔只只：黄色星星地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf6.registered",
+        "tc_3349143694_lz_turf6.standalone",
+        "tc_3349143694_lz_turf6.recipe",
+        "tc_3349143694_lz_turf6.spawn",
+        "tc_3349143694_lz_turf6.item_reload",
+        "tc_3349143694_lz_turf6.deploy",
+        "tc_3349143694_lz_turf6.dig",
+        "tc_3349143694_lz_turf6.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf6.client",
+      "description": "荔只只：黄色星星地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf6.client_item",
+        "tc_3349143694_lz_turf6.client_icon",
+        "tc_3349143694_lz_turf6.client_anim",
+        "tc_3349143694_lz_turf6.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf7",
+      "description": "荔只只：致命绿色地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf7.registered",
+        "tc_3349143694_lz_turf7.standalone",
+        "tc_3349143694_lz_turf7.recipe",
+        "tc_3349143694_lz_turf7.spawn",
+        "tc_3349143694_lz_turf7.item_reload",
+        "tc_3349143694_lz_turf7.deploy",
+        "tc_3349143694_lz_turf7.dig",
+        "tc_3349143694_lz_turf7.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf7.client",
+      "description": "荔只只：致命绿色地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf7.client_item",
+        "tc_3349143694_lz_turf7.client_icon",
+        "tc_3349143694_lz_turf7.client_anim",
+        "tc_3349143694_lz_turf7.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf8",
+      "description": "荔只只：妄想星空地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf8.registered",
+        "tc_3349143694_lz_turf8.standalone",
+        "tc_3349143694_lz_turf8.recipe",
+        "tc_3349143694_lz_turf8.spawn",
+        "tc_3349143694_lz_turf8.item_reload",
+        "tc_3349143694_lz_turf8.deploy",
+        "tc_3349143694_lz_turf8.dig",
+        "tc_3349143694_lz_turf8.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf8.client",
+      "description": "荔只只：妄想星空地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf8.client_item",
+        "tc_3349143694_lz_turf8.client_icon",
+        "tc_3349143694_lz_turf8.client_anim",
+        "tc_3349143694_lz_turf8.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf9",
+      "description": "荔只只：灰色砖头地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3349143694_lz_turf9.registered",
+        "tc_3349143694_lz_turf9.standalone",
+        "tc_3349143694_lz_turf9.recipe",
+        "tc_3349143694_lz_turf9.spawn",
+        "tc_3349143694_lz_turf9.item_reload",
+        "tc_3349143694_lz_turf9.deploy",
+        "tc_3349143694_lz_turf9.dig",
+        "tc_3349143694_lz_turf9.craft"
+      ]
+    },
+    {
+      "id": "tc_3349143694_lz_turf9.client",
+      "description": "荔只只：灰色砖头地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3349143694_lz_turf9.client_item",
+        "tc_3349143694_lz_turf9.client_icon",
+        "tc_3349143694_lz_turf9.client_anim",
+        "tc_3349143694_lz_turf9.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3609964985_hmr_cherry_flower",
+      "description": "丰耘秘境：樱花地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3609964985_hmr_cherry_flower.registered",
+        "tc_3609964985_hmr_cherry_flower.standalone",
+        "tc_3609964985_hmr_cherry_flower.recipe",
+        "tc_3609964985_hmr_cherry_flower.spawn",
+        "tc_3609964985_hmr_cherry_flower.item_reload",
+        "tc_3609964985_hmr_cherry_flower.deploy",
+        "tc_3609964985_hmr_cherry_flower.dig",
+        "tc_3609964985_hmr_cherry_flower.craft"
+      ]
+    },
+    {
+      "id": "tc_3609964985_hmr_cherry_flower.client",
+      "description": "丰耘秘境：樱花地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3609964985_hmr_cherry_flower.client_item",
+        "tc_3609964985_hmr_cherry_flower.client_icon",
+        "tc_3609964985_hmr_cherry_flower.client_anim",
+        "tc_3609964985_hmr_cherry_flower.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3609964985_hmr_cherry_grass",
+      "description": "丰耘秘境：樱草地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3609964985_hmr_cherry_grass.registered",
+        "tc_3609964985_hmr_cherry_grass.standalone",
+        "tc_3609964985_hmr_cherry_grass.recipe",
+        "tc_3609964985_hmr_cherry_grass.spawn",
+        "tc_3609964985_hmr_cherry_grass.item_reload",
+        "tc_3609964985_hmr_cherry_grass.deploy",
+        "tc_3609964985_hmr_cherry_grass.dig",
+        "tc_3609964985_hmr_cherry_grass.craft"
+      ]
+    },
+    {
+      "id": "tc_3609964985_hmr_cherry_grass.client",
+      "description": "丰耘秘境：樱草地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3609964985_hmr_cherry_grass.client_item",
+        "tc_3609964985_hmr_cherry_grass.client_icon",
+        "tc_3609964985_hmr_cherry_grass.client_anim",
+        "tc_3609964985_hmr_cherry_grass.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3609964985_hmr_cherry_mystery",
+      "description": "丰耘秘境：樱海秘境地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3609964985_hmr_cherry_mystery.registered",
+        "tc_3609964985_hmr_cherry_mystery.standalone",
+        "tc_3609964985_hmr_cherry_mystery.recipe",
+        "tc_3609964985_hmr_cherry_mystery.spawn",
+        "tc_3609964985_hmr_cherry_mystery.item_reload",
+        "tc_3609964985_hmr_cherry_mystery.deploy",
+        "tc_3609964985_hmr_cherry_mystery.dig",
+        "tc_3609964985_hmr_cherry_mystery.craft"
+      ]
+    },
+    {
+      "id": "tc_3609964985_hmr_cherry_mystery.client",
+      "description": "丰耘秘境：樱海秘境地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3609964985_hmr_cherry_mystery.client_item",
+        "tc_3609964985_hmr_cherry_mystery.client_icon",
+        "tc_3609964985_hmr_cherry_mystery.client_anim",
+        "tc_3609964985_hmr_cherry_mystery.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3609964985_hmr_cherry_road",
+      "description": "丰耘秘境：樱花小径地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3609964985_hmr_cherry_road.registered",
+        "tc_3609964985_hmr_cherry_road.standalone",
+        "tc_3609964985_hmr_cherry_road.recipe",
+        "tc_3609964985_hmr_cherry_road.spawn",
+        "tc_3609964985_hmr_cherry_road.item_reload",
+        "tc_3609964985_hmr_cherry_road.deploy",
+        "tc_3609964985_hmr_cherry_road.dig",
+        "tc_3609964985_hmr_cherry_road.craft"
+      ]
+    },
+    {
+      "id": "tc_3609964985_hmr_cherry_road.client",
+      "description": "丰耘秘境：樱花小径地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3609964985_hmr_cherry_road.client_item",
+        "tc_3609964985_hmr_cherry_road.client_icon",
+        "tc_3609964985_hmr_cherry_road.client_anim",
+        "tc_3609964985_hmr_cherry_road.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3609964985_hmr_cherry_xmm",
+      "description": "丰耘秘境：悉樱樱地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3609964985_hmr_cherry_xmm.registered",
+        "tc_3609964985_hmr_cherry_xmm.standalone",
+        "tc_3609964985_hmr_cherry_xmm.recipe",
+        "tc_3609964985_hmr_cherry_xmm.spawn",
+        "tc_3609964985_hmr_cherry_xmm.item_reload",
+        "tc_3609964985_hmr_cherry_xmm.deploy",
+        "tc_3609964985_hmr_cherry_xmm.dig",
+        "tc_3609964985_hmr_cherry_xmm.craft"
+      ]
+    },
+    {
+      "id": "tc_3609964985_hmr_cherry_xmm.client",
+      "description": "丰耘秘境：悉樱樱地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3609964985_hmr_cherry_xmm.client_item",
+        "tc_3609964985_hmr_cherry_xmm.client_icon",
+        "tc_3609964985_hmr_cherry_xmm.client_anim",
+        "tc_3609964985_hmr_cherry_xmm.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground1",
+      "description": "童话世界：格子地砖独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground1.registered",
+        "tc_3288149713_ft_ground1.standalone",
+        "tc_3288149713_ft_ground1.recipe",
+        "tc_3288149713_ft_ground1.spawn",
+        "tc_3288149713_ft_ground1.item_reload",
+        "tc_3288149713_ft_ground1.deploy",
+        "tc_3288149713_ft_ground1.dig",
+        "tc_3288149713_ft_ground1.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground1.client",
+      "description": "童话世界：格子地砖远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground1.client_item",
+        "tc_3288149713_ft_ground1.client_icon",
+        "tc_3288149713_ft_ground1.client_anim",
+        "tc_3288149713_ft_ground1.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground10",
+      "description": "童话世界：浅灰格子地板独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground10.registered",
+        "tc_3288149713_ft_ground10.standalone",
+        "tc_3288149713_ft_ground10.recipe",
+        "tc_3288149713_ft_ground10.spawn",
+        "tc_3288149713_ft_ground10.item_reload",
+        "tc_3288149713_ft_ground10.deploy",
+        "tc_3288149713_ft_ground10.dig",
+        "tc_3288149713_ft_ground10.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground10.client",
+      "description": "童话世界：浅灰格子地板远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground10.client_item",
+        "tc_3288149713_ft_ground10.client_icon",
+        "tc_3288149713_ft_ground10.client_anim",
+        "tc_3288149713_ft_ground10.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground11",
+      "description": "童话世界：青色石头路独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground11.registered",
+        "tc_3288149713_ft_ground11.standalone",
+        "tc_3288149713_ft_ground11.recipe",
+        "tc_3288149713_ft_ground11.spawn",
+        "tc_3288149713_ft_ground11.item_reload",
+        "tc_3288149713_ft_ground11.deploy",
+        "tc_3288149713_ft_ground11.dig",
+        "tc_3288149713_ft_ground11.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground11.client",
+      "description": "童话世界：青色石头路远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground11.client_item",
+        "tc_3288149713_ft_ground11.client_icon",
+        "tc_3288149713_ft_ground11.client_anim",
+        "tc_3288149713_ft_ground11.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground12",
+      "description": "童话世界：沙地1独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground12.registered",
+        "tc_3288149713_ft_ground12.standalone",
+        "tc_3288149713_ft_ground12.recipe",
+        "tc_3288149713_ft_ground12.spawn",
+        "tc_3288149713_ft_ground12.item_reload",
+        "tc_3288149713_ft_ground12.deploy",
+        "tc_3288149713_ft_ground12.dig",
+        "tc_3288149713_ft_ground12.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground12.client",
+      "description": "童话世界：沙地1远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground12.client_item",
+        "tc_3288149713_ft_ground12.client_icon",
+        "tc_3288149713_ft_ground12.client_anim",
+        "tc_3288149713_ft_ground12.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground13",
+      "description": "童话世界：深灰大格子地板独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground13.registered",
+        "tc_3288149713_ft_ground13.standalone",
+        "tc_3288149713_ft_ground13.recipe",
+        "tc_3288149713_ft_ground13.spawn",
+        "tc_3288149713_ft_ground13.item_reload",
+        "tc_3288149713_ft_ground13.deploy",
+        "tc_3288149713_ft_ground13.dig",
+        "tc_3288149713_ft_ground13.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground13.client",
+      "description": "童话世界：深灰大格子地板远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground13.client_item",
+        "tc_3288149713_ft_ground13.client_icon",
+        "tc_3288149713_ft_ground13.client_anim",
+        "tc_3288149713_ft_ground13.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground14",
+      "description": "童话世界：深灰地板独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground14.registered",
+        "tc_3288149713_ft_ground14.standalone",
+        "tc_3288149713_ft_ground14.recipe",
+        "tc_3288149713_ft_ground14.spawn",
+        "tc_3288149713_ft_ground14.item_reload",
+        "tc_3288149713_ft_ground14.deploy",
+        "tc_3288149713_ft_ground14.dig",
+        "tc_3288149713_ft_ground14.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground14.client",
+      "description": "童话世界：深灰地板远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground14.client_item",
+        "tc_3288149713_ft_ground14.client_icon",
+        "tc_3288149713_ft_ground14.client_anim",
+        "tc_3288149713_ft_ground14.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground15",
+      "description": "童话世界：深灰格子地板独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground15.registered",
+        "tc_3288149713_ft_ground15.standalone",
+        "tc_3288149713_ft_ground15.recipe",
+        "tc_3288149713_ft_ground15.spawn",
+        "tc_3288149713_ft_ground15.item_reload",
+        "tc_3288149713_ft_ground15.deploy",
+        "tc_3288149713_ft_ground15.dig",
+        "tc_3288149713_ft_ground15.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground15.client",
+      "description": "童话世界：深灰格子地板远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground15.client_item",
+        "tc_3288149713_ft_ground15.client_icon",
+        "tc_3288149713_ft_ground15.client_anim",
+        "tc_3288149713_ft_ground15.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground2",
+      "description": "童话世界：格子地砖2独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground2.registered",
+        "tc_3288149713_ft_ground2.standalone",
+        "tc_3288149713_ft_ground2.recipe",
+        "tc_3288149713_ft_ground2.spawn",
+        "tc_3288149713_ft_ground2.item_reload",
+        "tc_3288149713_ft_ground2.deploy",
+        "tc_3288149713_ft_ground2.dig",
+        "tc_3288149713_ft_ground2.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground2.client",
+      "description": "童话世界：格子地砖2远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground2.client_item",
+        "tc_3288149713_ft_ground2.client_icon",
+        "tc_3288149713_ft_ground2.client_anim",
+        "tc_3288149713_ft_ground2.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground3",
+      "description": "童话世界：格子地砖3独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground3.registered",
+        "tc_3288149713_ft_ground3.standalone",
+        "tc_3288149713_ft_ground3.recipe",
+        "tc_3288149713_ft_ground3.spawn",
+        "tc_3288149713_ft_ground3.item_reload",
+        "tc_3288149713_ft_ground3.deploy",
+        "tc_3288149713_ft_ground3.dig",
+        "tc_3288149713_ft_ground3.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground3.client",
+      "description": "童话世界：格子地砖3远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground3.client_item",
+        "tc_3288149713_ft_ground3.client_icon",
+        "tc_3288149713_ft_ground3.client_anim",
+        "tc_3288149713_ft_ground3.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground4",
+      "description": "童话世界：花朵地板独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground4.registered",
+        "tc_3288149713_ft_ground4.standalone",
+        "tc_3288149713_ft_ground4.recipe",
+        "tc_3288149713_ft_ground4.spawn",
+        "tc_3288149713_ft_ground4.item_reload",
+        "tc_3288149713_ft_ground4.deploy",
+        "tc_3288149713_ft_ground4.dig",
+        "tc_3288149713_ft_ground4.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground4.client",
+      "description": "童话世界：花朵地板远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground4.client_item",
+        "tc_3288149713_ft_ground4.client_icon",
+        "tc_3288149713_ft_ground4.client_anim",
+        "tc_3288149713_ft_ground4.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground5",
+      "description": "童话世界：花色格子地板独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground5.registered",
+        "tc_3288149713_ft_ground5.standalone",
+        "tc_3288149713_ft_ground5.recipe",
+        "tc_3288149713_ft_ground5.spawn",
+        "tc_3288149713_ft_ground5.item_reload",
+        "tc_3288149713_ft_ground5.deploy",
+        "tc_3288149713_ft_ground5.dig",
+        "tc_3288149713_ft_ground5.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground5.client",
+      "description": "童话世界：花色格子地板远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground5.client_item",
+        "tc_3288149713_ft_ground5.client_icon",
+        "tc_3288149713_ft_ground5.client_anim",
+        "tc_3288149713_ft_ground5.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground6",
+      "description": "童话世界：花色石头路独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground6.registered",
+        "tc_3288149713_ft_ground6.standalone",
+        "tc_3288149713_ft_ground6.recipe",
+        "tc_3288149713_ft_ground6.spawn",
+        "tc_3288149713_ft_ground6.item_reload",
+        "tc_3288149713_ft_ground6.deploy",
+        "tc_3288149713_ft_ground6.dig",
+        "tc_3288149713_ft_ground6.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground6.client",
+      "description": "童话世界：花色石头路远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground6.client_item",
+        "tc_3288149713_ft_ground6.client_icon",
+        "tc_3288149713_ft_ground6.client_anim",
+        "tc_3288149713_ft_ground6.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground7",
+      "description": "童话世界：灰色大石砖独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground7.registered",
+        "tc_3288149713_ft_ground7.standalone",
+        "tc_3288149713_ft_ground7.recipe",
+        "tc_3288149713_ft_ground7.spawn",
+        "tc_3288149713_ft_ground7.item_reload",
+        "tc_3288149713_ft_ground7.deploy",
+        "tc_3288149713_ft_ground7.dig",
+        "tc_3288149713_ft_ground7.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground7.client",
+      "description": "童话世界：灰色大石砖远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground7.client_item",
+        "tc_3288149713_ft_ground7.client_icon",
+        "tc_3288149713_ft_ground7.client_anim",
+        "tc_3288149713_ft_ground7.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground8",
+      "description": "童话世界：棱形地板独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground8.registered",
+        "tc_3288149713_ft_ground8.standalone",
+        "tc_3288149713_ft_ground8.recipe",
+        "tc_3288149713_ft_ground8.spawn",
+        "tc_3288149713_ft_ground8.item_reload",
+        "tc_3288149713_ft_ground8.deploy",
+        "tc_3288149713_ft_ground8.dig",
+        "tc_3288149713_ft_ground8.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground8.client",
+      "description": "童话世界：棱形地板远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground8.client_item",
+        "tc_3288149713_ft_ground8.client_icon",
+        "tc_3288149713_ft_ground8.client_anim",
+        "tc_3288149713_ft_ground8.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground9",
+      "description": "童话世界：浅灰地板独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3288149713_ft_ground9.registered",
+        "tc_3288149713_ft_ground9.standalone",
+        "tc_3288149713_ft_ground9.recipe",
+        "tc_3288149713_ft_ground9.spawn",
+        "tc_3288149713_ft_ground9.item_reload",
+        "tc_3288149713_ft_ground9.deploy",
+        "tc_3288149713_ft_ground9.dig",
+        "tc_3288149713_ft_ground9.craft"
+      ]
+    },
+    {
+      "id": "tc_3288149713_ft_ground9.client",
+      "description": "童话世界：浅灰地板远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3288149713_ft_ground9.client_item",
+        "tc_3288149713_ft_ground9.client_icon",
+        "tc_3288149713_ft_ground9.client_anim",
+        "tc_3288149713_ft_ground9.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_checkerboard_road",
+      "description": "万物书：方格石砖路独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_checkerboard_road.registered",
+        "tc_3544387985_tbat_checkerboard_road.standalone",
+        "tc_3544387985_tbat_checkerboard_road.recipe",
+        "tc_3544387985_tbat_checkerboard_road.spawn",
+        "tc_3544387985_tbat_checkerboard_road.item_reload",
+        "tc_3544387985_tbat_checkerboard_road.deploy",
+        "tc_3544387985_tbat_checkerboard_road.dig",
+        "tc_3544387985_tbat_checkerboard_road.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_checkerboard_road.client",
+      "description": "万物书：方格石砖路远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_checkerboard_road.client_item",
+        "tc_3544387985_tbat_checkerboard_road.client_icon",
+        "tc_3544387985_tbat_checkerboard_road.client_anim",
+        "tc_3544387985_tbat_checkerboard_road.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_cloud",
+      "description": "万物书：幻彩云间地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_cloud.registered",
+        "tc_3544387985_tbat_cloud.standalone",
+        "tc_3544387985_tbat_cloud.recipe",
+        "tc_3544387985_tbat_cloud.spawn",
+        "tc_3544387985_tbat_cloud.item_reload",
+        "tc_3544387985_tbat_cloud.deploy",
+        "tc_3544387985_tbat_cloud.dig",
+        "tc_3544387985_tbat_cloud.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_cloud.client",
+      "description": "万物书：幻彩云间地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_cloud.client_item",
+        "tc_3544387985_tbat_cloud.client_icon",
+        "tc_3544387985_tbat_cloud.client_anim",
+        "tc_3544387985_tbat_cloud.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_forest",
+      "description": "万物书：绿野森林地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_forest.registered",
+        "tc_3544387985_tbat_forest.standalone",
+        "tc_3544387985_tbat_forest.recipe",
+        "tc_3544387985_tbat_forest.spawn",
+        "tc_3544387985_tbat_forest.item_reload",
+        "tc_3544387985_tbat_forest.deploy",
+        "tc_3544387985_tbat_forest.dig",
+        "tc_3544387985_tbat_forest.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_forest.client",
+      "description": "万物书：绿野森林地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_forest.client_item",
+        "tc_3544387985_tbat_forest.client_icon",
+        "tc_3544387985_tbat_forest.client_anim",
+        "tc_3544387985_tbat_forest.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_herringbone_road",
+      "description": "万物书：横纹石砖路独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_herringbone_road.registered",
+        "tc_3544387985_tbat_herringbone_road.standalone",
+        "tc_3544387985_tbat_herringbone_road.recipe",
+        "tc_3544387985_tbat_herringbone_road.spawn",
+        "tc_3544387985_tbat_herringbone_road.item_reload",
+        "tc_3544387985_tbat_herringbone_road.deploy",
+        "tc_3544387985_tbat_herringbone_road.dig",
+        "tc_3544387985_tbat_herringbone_road.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_herringbone_road.client",
+      "description": "万物书：横纹石砖路远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_herringbone_road.client_item",
+        "tc_3544387985_tbat_herringbone_road.client_icon",
+        "tc_3544387985_tbat_herringbone_road.client_anim",
+        "tc_3544387985_tbat_herringbone_road.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_milkyway_cloud",
+      "description": "万物书：星河云端独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_milkyway_cloud.registered",
+        "tc_3544387985_tbat_milkyway_cloud.standalone",
+        "tc_3544387985_tbat_milkyway_cloud.recipe",
+        "tc_3544387985_tbat_milkyway_cloud.spawn",
+        "tc_3544387985_tbat_milkyway_cloud.item_reload",
+        "tc_3544387985_tbat_milkyway_cloud.deploy",
+        "tc_3544387985_tbat_milkyway_cloud.dig",
+        "tc_3544387985_tbat_milkyway_cloud.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_milkyway_cloud.client",
+      "description": "万物书：星河云端远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_milkyway_cloud.client_item",
+        "tc_3544387985_tbat_milkyway_cloud.client_icon",
+        "tc_3544387985_tbat_milkyway_cloud.client_anim",
+        "tc_3544387985_tbat_milkyway_cloud.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_miragewood_floor_blue",
+      "description": "万物书：幻源木地板_蓝独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_miragewood_floor_blue.registered",
+        "tc_3544387985_tbat_miragewood_floor_blue.standalone",
+        "tc_3544387985_tbat_miragewood_floor_blue.recipe",
+        "tc_3544387985_tbat_miragewood_floor_blue.spawn",
+        "tc_3544387985_tbat_miragewood_floor_blue.item_reload",
+        "tc_3544387985_tbat_miragewood_floor_blue.deploy",
+        "tc_3544387985_tbat_miragewood_floor_blue.dig",
+        "tc_3544387985_tbat_miragewood_floor_blue.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_miragewood_floor_blue.client",
+      "description": "万物书：幻源木地板_蓝远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_miragewood_floor_blue.client_item",
+        "tc_3544387985_tbat_miragewood_floor_blue.client_icon",
+        "tc_3544387985_tbat_miragewood_floor_blue.client_anim",
+        "tc_3544387985_tbat_miragewood_floor_blue.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_miragewood_floor_orange",
+      "description": "万物书：幻源木地板_橙独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_miragewood_floor_orange.registered",
+        "tc_3544387985_tbat_miragewood_floor_orange.standalone",
+        "tc_3544387985_tbat_miragewood_floor_orange.recipe",
+        "tc_3544387985_tbat_miragewood_floor_orange.spawn",
+        "tc_3544387985_tbat_miragewood_floor_orange.item_reload",
+        "tc_3544387985_tbat_miragewood_floor_orange.deploy",
+        "tc_3544387985_tbat_miragewood_floor_orange.dig",
+        "tc_3544387985_tbat_miragewood_floor_orange.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_miragewood_floor_orange.client",
+      "description": "万物书：幻源木地板_橙远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_miragewood_floor_orange.client_item",
+        "tc_3544387985_tbat_miragewood_floor_orange.client_icon",
+        "tc_3544387985_tbat_miragewood_floor_orange.client_anim",
+        "tc_3544387985_tbat_miragewood_floor_orange.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_miragewood_floor_purple",
+      "description": "万物书：幻源木地板_紫独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_miragewood_floor_purple.registered",
+        "tc_3544387985_tbat_miragewood_floor_purple.standalone",
+        "tc_3544387985_tbat_miragewood_floor_purple.recipe",
+        "tc_3544387985_tbat_miragewood_floor_purple.spawn",
+        "tc_3544387985_tbat_miragewood_floor_purple.item_reload",
+        "tc_3544387985_tbat_miragewood_floor_purple.deploy",
+        "tc_3544387985_tbat_miragewood_floor_purple.dig",
+        "tc_3544387985_tbat_miragewood_floor_purple.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_miragewood_floor_purple.client",
+      "description": "万物书：幻源木地板_紫远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_miragewood_floor_purple.client_item",
+        "tc_3544387985_tbat_miragewood_floor_purple.client_icon",
+        "tc_3544387985_tbat_miragewood_floor_purple.client_anim",
+        "tc_3544387985_tbat_miragewood_floor_purple.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_miragewood_floor_yellow",
+      "description": "万物书：幻源木地板_黄独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_miragewood_floor_yellow.registered",
+        "tc_3544387985_tbat_miragewood_floor_yellow.standalone",
+        "tc_3544387985_tbat_miragewood_floor_yellow.recipe",
+        "tc_3544387985_tbat_miragewood_floor_yellow.spawn",
+        "tc_3544387985_tbat_miragewood_floor_yellow.item_reload",
+        "tc_3544387985_tbat_miragewood_floor_yellow.deploy",
+        "tc_3544387985_tbat_miragewood_floor_yellow.dig",
+        "tc_3544387985_tbat_miragewood_floor_yellow.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_miragewood_floor_yellow.client",
+      "description": "万物书：幻源木地板_黄远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_miragewood_floor_yellow.client_item",
+        "tc_3544387985_tbat_miragewood_floor_yellow.client_icon",
+        "tc_3544387985_tbat_miragewood_floor_yellow.client_anim",
+        "tc_3544387985_tbat_miragewood_floor_yellow.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_psylocke",
+      "description": "万物书：灵蝶幻境地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_psylocke.registered",
+        "tc_3544387985_tbat_psylocke.standalone",
+        "tc_3544387985_tbat_psylocke.recipe",
+        "tc_3544387985_tbat_psylocke.spawn",
+        "tc_3544387985_tbat_psylocke.item_reload",
+        "tc_3544387985_tbat_psylocke.deploy",
+        "tc_3544387985_tbat_psylocke.dig",
+        "tc_3544387985_tbat_psylocke.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_psylocke.client",
+      "description": "万物书：灵蝶幻境地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_psylocke.client_item",
+        "tc_3544387985_tbat_psylocke.client_icon",
+        "tc_3544387985_tbat_psylocke.client_anim",
+        "tc_3544387985_tbat_psylocke.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_redautumn_maplepath",
+      "description": "万物书：赤秋枫道独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_redautumn_maplepath.registered",
+        "tc_3544387985_tbat_redautumn_maplepath.standalone",
+        "tc_3544387985_tbat_redautumn_maplepath.recipe",
+        "tc_3544387985_tbat_redautumn_maplepath.spawn",
+        "tc_3544387985_tbat_redautumn_maplepath.item_reload",
+        "tc_3544387985_tbat_redautumn_maplepath.deploy",
+        "tc_3544387985_tbat_redautumn_maplepath.dig",
+        "tc_3544387985_tbat_redautumn_maplepath.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_redautumn_maplepath.client",
+      "description": "万物书：赤秋枫道远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_redautumn_maplepath.client_item",
+        "tc_3544387985_tbat_redautumn_maplepath.client_icon",
+        "tc_3544387985_tbat_redautumn_maplepath.client_anim",
+        "tc_3544387985_tbat_redautumn_maplepath.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_snowfall",
+      "description": "万物书：浮梦落雪地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_snowfall.registered",
+        "tc_3544387985_tbat_snowfall.standalone",
+        "tc_3544387985_tbat_snowfall.recipe",
+        "tc_3544387985_tbat_snowfall.spawn",
+        "tc_3544387985_tbat_snowfall.item_reload",
+        "tc_3544387985_tbat_snowfall.deploy",
+        "tc_3544387985_tbat_snowfall.dig",
+        "tc_3544387985_tbat_snowfall.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_snowfall.client",
+      "description": "万物书：浮梦落雪地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_snowfall.client_item",
+        "tc_3544387985_tbat_snowfall.client_icon",
+        "tc_3544387985_tbat_snowfall.client_anim",
+        "tc_3544387985_tbat_snowfall.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_terracotta_road",
+      "description": "万物书：陶土石砖路独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_terracotta_road.registered",
+        "tc_3544387985_tbat_terracotta_road.standalone",
+        "tc_3544387985_tbat_terracotta_road.recipe",
+        "tc_3544387985_tbat_terracotta_road.spawn",
+        "tc_3544387985_tbat_terracotta_road.item_reload",
+        "tc_3544387985_tbat_terracotta_road.deploy",
+        "tc_3544387985_tbat_terracotta_road.dig",
+        "tc_3544387985_tbat_terracotta_road.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_terracotta_road.client",
+      "description": "万物书：陶土石砖路远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_terracotta_road.client_item",
+        "tc_3544387985_tbat_terracotta_road.client_icon",
+        "tc_3544387985_tbat_terracotta_road.client_anim",
+        "tc_3544387985_tbat_terracotta_road.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_checkerfloor_blue",
+      "description": "万物书：蓝色棋盘地毯独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_turf_checkerfloor_blue.registered",
+        "tc_3544387985_tbat_turf_checkerfloor_blue.standalone",
+        "tc_3544387985_tbat_turf_checkerfloor_blue.recipe",
+        "tc_3544387985_tbat_turf_checkerfloor_blue.spawn",
+        "tc_3544387985_tbat_turf_checkerfloor_blue.item_reload",
+        "tc_3544387985_tbat_turf_checkerfloor_blue.deploy",
+        "tc_3544387985_tbat_turf_checkerfloor_blue.dig",
+        "tc_3544387985_tbat_turf_checkerfloor_blue.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_checkerfloor_blue.client",
+      "description": "万物书：蓝色棋盘地毯远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_turf_checkerfloor_blue.client_item",
+        "tc_3544387985_tbat_turf_checkerfloor_blue.client_icon",
+        "tc_3544387985_tbat_turf_checkerfloor_blue.client_anim",
+        "tc_3544387985_tbat_turf_checkerfloor_blue.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_checkerfloor_orange",
+      "description": "万物书：橙色棋盘地毯独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_turf_checkerfloor_orange.registered",
+        "tc_3544387985_tbat_turf_checkerfloor_orange.standalone",
+        "tc_3544387985_tbat_turf_checkerfloor_orange.recipe",
+        "tc_3544387985_tbat_turf_checkerfloor_orange.spawn",
+        "tc_3544387985_tbat_turf_checkerfloor_orange.item_reload",
+        "tc_3544387985_tbat_turf_checkerfloor_orange.deploy",
+        "tc_3544387985_tbat_turf_checkerfloor_orange.dig",
+        "tc_3544387985_tbat_turf_checkerfloor_orange.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_checkerfloor_orange.client",
+      "description": "万物书：橙色棋盘地毯远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_turf_checkerfloor_orange.client_item",
+        "tc_3544387985_tbat_turf_checkerfloor_orange.client_icon",
+        "tc_3544387985_tbat_turf_checkerfloor_orange.client_anim",
+        "tc_3544387985_tbat_turf_checkerfloor_orange.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_checkerfloor_pink",
+      "description": "万物书：粉色棋盘地毯独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_turf_checkerfloor_pink.registered",
+        "tc_3544387985_tbat_turf_checkerfloor_pink.standalone",
+        "tc_3544387985_tbat_turf_checkerfloor_pink.recipe",
+        "tc_3544387985_tbat_turf_checkerfloor_pink.spawn",
+        "tc_3544387985_tbat_turf_checkerfloor_pink.item_reload",
+        "tc_3544387985_tbat_turf_checkerfloor_pink.deploy",
+        "tc_3544387985_tbat_turf_checkerfloor_pink.dig",
+        "tc_3544387985_tbat_turf_checkerfloor_pink.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_checkerfloor_pink.client",
+      "description": "万物书：粉色棋盘地毯远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_turf_checkerfloor_pink.client_item",
+        "tc_3544387985_tbat_turf_checkerfloor_pink.client_icon",
+        "tc_3544387985_tbat_turf_checkerfloor_pink.client_anim",
+        "tc_3544387985_tbat_turf_checkerfloor_pink.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_clover_butterfly",
+      "description": "万物书：蘑语林间地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_turf_clover_butterfly.registered",
+        "tc_3544387985_tbat_turf_clover_butterfly.standalone",
+        "tc_3544387985_tbat_turf_clover_butterfly.recipe",
+        "tc_3544387985_tbat_turf_clover_butterfly.spawn",
+        "tc_3544387985_tbat_turf_clover_butterfly.item_reload",
+        "tc_3544387985_tbat_turf_clover_butterfly.deploy",
+        "tc_3544387985_tbat_turf_clover_butterfly.dig",
+        "tc_3544387985_tbat_turf_clover_butterfly.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_clover_butterfly.client",
+      "description": "万物书：蘑语林间地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_turf_clover_butterfly.client_item",
+        "tc_3544387985_tbat_turf_clover_butterfly.client_icon",
+        "tc_3544387985_tbat_turf_clover_butterfly.client_anim",
+        "tc_3544387985_tbat_turf_clover_butterfly.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_emerald_feather_leaves",
+      "description": "万物书：翠羽树叶地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_turf_emerald_feather_leaves.registered",
+        "tc_3544387985_tbat_turf_emerald_feather_leaves.standalone",
+        "tc_3544387985_tbat_turf_emerald_feather_leaves.recipe",
+        "tc_3544387985_tbat_turf_emerald_feather_leaves.spawn",
+        "tc_3544387985_tbat_turf_emerald_feather_leaves.item_reload",
+        "tc_3544387985_tbat_turf_emerald_feather_leaves.deploy",
+        "tc_3544387985_tbat_turf_emerald_feather_leaves.dig",
+        "tc_3544387985_tbat_turf_emerald_feather_leaves.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_emerald_feather_leaves.client",
+      "description": "万物书：翠羽树叶地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_turf_emerald_feather_leaves.client_item",
+        "tc_3544387985_tbat_turf_emerald_feather_leaves.client_icon",
+        "tc_3544387985_tbat_turf_emerald_feather_leaves.client_anim",
+        "tc_3544387985_tbat_turf_emerald_feather_leaves.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_fake_ocean_deep",
+      "description": "万物书：深色海洋地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_turf_fake_ocean_deep.registered",
+        "tc_3544387985_tbat_turf_fake_ocean_deep.standalone",
+        "tc_3544387985_tbat_turf_fake_ocean_deep.recipe",
+        "tc_3544387985_tbat_turf_fake_ocean_deep.spawn",
+        "tc_3544387985_tbat_turf_fake_ocean_deep.item_reload",
+        "tc_3544387985_tbat_turf_fake_ocean_deep.deploy",
+        "tc_3544387985_tbat_turf_fake_ocean_deep.dig",
+        "tc_3544387985_tbat_turf_fake_ocean_deep.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_fake_ocean_deep.client",
+      "description": "万物书：深色海洋地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_turf_fake_ocean_deep.client_item",
+        "tc_3544387985_tbat_turf_fake_ocean_deep.client_icon",
+        "tc_3544387985_tbat_turf_fake_ocean_deep.client_anim",
+        "tc_3544387985_tbat_turf_fake_ocean_deep.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_fake_ocean_middle",
+      "description": "万物书：中色海洋地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_turf_fake_ocean_middle.registered",
+        "tc_3544387985_tbat_turf_fake_ocean_middle.standalone",
+        "tc_3544387985_tbat_turf_fake_ocean_middle.recipe",
+        "tc_3544387985_tbat_turf_fake_ocean_middle.spawn",
+        "tc_3544387985_tbat_turf_fake_ocean_middle.item_reload",
+        "tc_3544387985_tbat_turf_fake_ocean_middle.deploy",
+        "tc_3544387985_tbat_turf_fake_ocean_middle.dig",
+        "tc_3544387985_tbat_turf_fake_ocean_middle.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_fake_ocean_middle.client",
+      "description": "万物书：中色海洋地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_turf_fake_ocean_middle.client_item",
+        "tc_3544387985_tbat_turf_fake_ocean_middle.client_icon",
+        "tc_3544387985_tbat_turf_fake_ocean_middle.client_anim",
+        "tc_3544387985_tbat_turf_fake_ocean_middle.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_fake_ocean_shallow",
+      "description": "万物书：浅色海洋地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_turf_fake_ocean_shallow.registered",
+        "tc_3544387985_tbat_turf_fake_ocean_shallow.standalone",
+        "tc_3544387985_tbat_turf_fake_ocean_shallow.recipe",
+        "tc_3544387985_tbat_turf_fake_ocean_shallow.spawn",
+        "tc_3544387985_tbat_turf_fake_ocean_shallow.item_reload",
+        "tc_3544387985_tbat_turf_fake_ocean_shallow.deploy",
+        "tc_3544387985_tbat_turf_fake_ocean_shallow.dig",
+        "tc_3544387985_tbat_turf_fake_ocean_shallow.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_fake_ocean_shallow.client",
+      "description": "万物书：浅色海洋地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_turf_fake_ocean_shallow.client_item",
+        "tc_3544387985_tbat_turf_fake_ocean_shallow.client_icon",
+        "tc_3544387985_tbat_turf_fake_ocean_shallow.client_anim",
+        "tc_3544387985_tbat_turf_fake_ocean_shallow.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_fallen_cherry_blossoms",
+      "description": "万物书：岛屿落樱地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_turf_fallen_cherry_blossoms.registered",
+        "tc_3544387985_tbat_turf_fallen_cherry_blossoms.standalone",
+        "tc_3544387985_tbat_turf_fallen_cherry_blossoms.recipe",
+        "tc_3544387985_tbat_turf_fallen_cherry_blossoms.spawn",
+        "tc_3544387985_tbat_turf_fallen_cherry_blossoms.item_reload",
+        "tc_3544387985_tbat_turf_fallen_cherry_blossoms.deploy",
+        "tc_3544387985_tbat_turf_fallen_cherry_blossoms.dig",
+        "tc_3544387985_tbat_turf_fallen_cherry_blossoms.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_fallen_cherry_blossoms.client",
+      "description": "万物书：岛屿落樱地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_turf_fallen_cherry_blossoms.client_item",
+        "tc_3544387985_tbat_turf_fallen_cherry_blossoms.client_icon",
+        "tc_3544387985_tbat_turf_fallen_cherry_blossoms.client_anim",
+        "tc_3544387985_tbat_turf_fallen_cherry_blossoms.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_lavender_dusk",
+      "description": "万物书：薰花晚霞地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_turf_lavender_dusk.registered",
+        "tc_3544387985_tbat_turf_lavender_dusk.standalone",
+        "tc_3544387985_tbat_turf_lavender_dusk.recipe",
+        "tc_3544387985_tbat_turf_lavender_dusk.spawn",
+        "tc_3544387985_tbat_turf_lavender_dusk.item_reload",
+        "tc_3544387985_tbat_turf_lavender_dusk.deploy",
+        "tc_3544387985_tbat_turf_lavender_dusk.dig",
+        "tc_3544387985_tbat_turf_lavender_dusk.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_lavender_dusk.client",
+      "description": "万物书：薰花晚霞地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_turf_lavender_dusk.client_item",
+        "tc_3544387985_tbat_turf_lavender_dusk.client_icon",
+        "tc_3544387985_tbat_turf_lavender_dusk.client_anim",
+        "tc_3544387985_tbat_turf_lavender_dusk.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow",
+      "description": "万物书：棠梨煎雪地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.registered",
+        "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.standalone",
+        "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.recipe",
+        "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.spawn",
+        "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.item_reload",
+        "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.deploy",
+        "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.dig",
+        "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.client",
+      "description": "万物书：棠梨煎雪地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.client_item",
+        "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.client_icon",
+        "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.client_anim",
+        "tc_3544387985_tbat_turf_pearblossom_brewed_with_snow.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_water_lily_cat",
+      "description": "万物书：睡莲猫猫独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_turf_water_lily_cat.registered",
+        "tc_3544387985_tbat_turf_water_lily_cat.standalone",
+        "tc_3544387985_tbat_turf_water_lily_cat.recipe",
+        "tc_3544387985_tbat_turf_water_lily_cat.spawn",
+        "tc_3544387985_tbat_turf_water_lily_cat.item_reload",
+        "tc_3544387985_tbat_turf_water_lily_cat.deploy",
+        "tc_3544387985_tbat_turf_water_lily_cat.dig",
+        "tc_3544387985_tbat_turf_water_lily_cat.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_water_lily_cat.client",
+      "description": "万物书：睡莲猫猫远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_turf_water_lily_cat.client_item",
+        "tc_3544387985_tbat_turf_water_lily_cat.client_icon",
+        "tc_3544387985_tbat_turf_water_lily_cat.client_anim",
+        "tc_3544387985_tbat_turf_water_lily_cat.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_water_sparkles",
+      "description": "万物书：水光粼粼地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3544387985_tbat_turf_water_sparkles.registered",
+        "tc_3544387985_tbat_turf_water_sparkles.standalone",
+        "tc_3544387985_tbat_turf_water_sparkles.recipe",
+        "tc_3544387985_tbat_turf_water_sparkles.spawn",
+        "tc_3544387985_tbat_turf_water_sparkles.item_reload",
+        "tc_3544387985_tbat_turf_water_sparkles.deploy",
+        "tc_3544387985_tbat_turf_water_sparkles.dig",
+        "tc_3544387985_tbat_turf_water_sparkles.craft"
+      ]
+    },
+    {
+      "id": "tc_3544387985_tbat_turf_water_sparkles.client",
+      "description": "万物书：水光粼粼地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3544387985_tbat_turf_water_sparkles.client_item",
+        "tc_3544387985_tbat_turf_water_sparkles.client_icon",
+        "tc_3544387985_tbat_turf_water_sparkles.client_anim",
+        "tc_3544387985_tbat_turf_water_sparkles.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_corridor",
+      "description": "景熹家居：棕韵织章回廊地毯独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_corridor.registered",
+        "tc_3597024951_corridor.standalone",
+        "tc_3597024951_corridor.recipe",
+        "tc_3597024951_corridor.spawn",
+        "tc_3597024951_corridor.item_reload",
+        "tc_3597024951_corridor.deploy",
+        "tc_3597024951_corridor.dig",
+        "tc_3597024951_corridor.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_corridor.client",
+      "description": "景熹家居：棕韵织章回廊地毯远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_corridor.client_item",
+        "tc_3597024951_corridor.client_icon",
+        "tc_3597024951_corridor.client_anim",
+        "tc_3597024951_corridor.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_granite",
+      "description": "景熹家居：仿花岗岩拼花地毯独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_granite.registered",
+        "tc_3597024951_granite.standalone",
+        "tc_3597024951_granite.recipe",
+        "tc_3597024951_granite.spawn",
+        "tc_3597024951_granite.item_reload",
+        "tc_3597024951_granite.deploy",
+        "tc_3597024951_granite.dig",
+        "tc_3597024951_granite.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_granite.client",
+      "description": "景熹家居：仿花岗岩拼花地毯远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_granite.client_item",
+        "tc_3597024951_granite.client_icon",
+        "tc_3597024951_granite.client_anim",
+        "tc_3597024951_granite.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_asphalt_road",
+      "description": "景熹家居：横向泊油路独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_jx_asphalt_road.registered",
+        "tc_3597024951_jx_asphalt_road.standalone",
+        "tc_3597024951_jx_asphalt_road.recipe",
+        "tc_3597024951_jx_asphalt_road.spawn",
+        "tc_3597024951_jx_asphalt_road.item_reload",
+        "tc_3597024951_jx_asphalt_road.deploy",
+        "tc_3597024951_jx_asphalt_road.dig",
+        "tc_3597024951_jx_asphalt_road.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_asphalt_road.client",
+      "description": "景熹家居：横向泊油路远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_jx_asphalt_road.client_item",
+        "tc_3597024951_jx_asphalt_road.client_icon",
+        "tc_3597024951_jx_asphalt_road.client_anim",
+        "tc_3597024951_jx_asphalt_road.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_asphalt_road2",
+      "description": "景熹家居：纵向泊油路独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_jx_asphalt_road2.registered",
+        "tc_3597024951_jx_asphalt_road2.standalone",
+        "tc_3597024951_jx_asphalt_road2.recipe",
+        "tc_3597024951_jx_asphalt_road2.spawn",
+        "tc_3597024951_jx_asphalt_road2.item_reload",
+        "tc_3597024951_jx_asphalt_road2.deploy",
+        "tc_3597024951_jx_asphalt_road2.dig",
+        "tc_3597024951_jx_asphalt_road2.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_asphalt_road2.client",
+      "description": "景熹家居：纵向泊油路远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_jx_asphalt_road2.client_item",
+        "tc_3597024951_jx_asphalt_road2.client_icon",
+        "tc_3597024951_jx_asphalt_road2.client_anim",
+        "tc_3597024951_jx_asphalt_road2.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_bath",
+      "description": "景熹家居：复古棋盘浴室瓷砖独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_jx_bath.registered",
+        "tc_3597024951_jx_bath.standalone",
+        "tc_3597024951_jx_bath.recipe",
+        "tc_3597024951_jx_bath.spawn",
+        "tc_3597024951_jx_bath.item_reload",
+        "tc_3597024951_jx_bath.deploy",
+        "tc_3597024951_jx_bath.dig",
+        "tc_3597024951_jx_bath.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_bath.client",
+      "description": "景熹家居：复古棋盘浴室瓷砖远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_jx_bath.client_item",
+        "tc_3597024951_jx_bath.client_icon",
+        "tc_3597024951_jx_bath.client_anim",
+        "tc_3597024951_jx_bath.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_courtyard",
+      "description": "景熹家居：庭院步道方砖独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_jx_courtyard.registered",
+        "tc_3597024951_jx_courtyard.standalone",
+        "tc_3597024951_jx_courtyard.recipe",
+        "tc_3597024951_jx_courtyard.spawn",
+        "tc_3597024951_jx_courtyard.item_reload",
+        "tc_3597024951_jx_courtyard.deploy",
+        "tc_3597024951_jx_courtyard.dig",
+        "tc_3597024951_jx_courtyard.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_courtyard.client",
+      "description": "景熹家居：庭院步道方砖远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_jx_courtyard.client_item",
+        "tc_3597024951_jx_courtyard.client_icon",
+        "tc_3597024951_jx_courtyard.client_anim",
+        "tc_3597024951_jx_courtyard.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_courtyard2",
+      "description": "景熹家居：庭院沉灰纹砖独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_jx_courtyard2.registered",
+        "tc_3597024951_jx_courtyard2.standalone",
+        "tc_3597024951_jx_courtyard2.recipe",
+        "tc_3597024951_jx_courtyard2.spawn",
+        "tc_3597024951_jx_courtyard2.item_reload",
+        "tc_3597024951_jx_courtyard2.deploy",
+        "tc_3597024951_jx_courtyard2.dig",
+        "tc_3597024951_jx_courtyard2.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_courtyard2.client",
+      "description": "景熹家居：庭院沉灰纹砖远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_jx_courtyard2.client_item",
+        "tc_3597024951_jx_courtyard2.client_icon",
+        "tc_3597024951_jx_courtyard2.client_anim",
+        "tc_3597024951_jx_courtyard2.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_dock",
+      "description": "景熹家居：码头地纹独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_jx_dock.registered",
+        "tc_3597024951_jx_dock.standalone",
+        "tc_3597024951_jx_dock.recipe",
+        "tc_3597024951_jx_dock.spawn",
+        "tc_3597024951_jx_dock.item_reload",
+        "tc_3597024951_jx_dock.deploy",
+        "tc_3597024951_jx_dock.dig",
+        "tc_3597024951_jx_dock.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_dock.client",
+      "description": "景熹家居：码头地纹远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_jx_dock.client_item",
+        "tc_3597024951_jx_dock.client_icon",
+        "tc_3597024951_jx_dock.client_anim",
+        "tc_3597024951_jx_dock.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_greendiamond",
+      "description": "景熹家居：庄园绿菱格地砖独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_jx_greendiamond.registered",
+        "tc_3597024951_jx_greendiamond.standalone",
+        "tc_3597024951_jx_greendiamond.recipe",
+        "tc_3597024951_jx_greendiamond.spawn",
+        "tc_3597024951_jx_greendiamond.item_reload",
+        "tc_3597024951_jx_greendiamond.deploy",
+        "tc_3597024951_jx_greendiamond.dig",
+        "tc_3597024951_jx_greendiamond.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_greendiamond.client",
+      "description": "景熹家居：庄园绿菱格地砖远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_jx_greendiamond.client_item",
+        "tc_3597024951_jx_greendiamond.client_icon",
+        "tc_3597024951_jx_greendiamond.client_anim",
+        "tc_3597024951_jx_greendiamond.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_mansion",
+      "description": "景熹家居：宅邸环纹花砖独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_jx_mansion.registered",
+        "tc_3597024951_jx_mansion.standalone",
+        "tc_3597024951_jx_mansion.recipe",
+        "tc_3597024951_jx_mansion.spawn",
+        "tc_3597024951_jx_mansion.item_reload",
+        "tc_3597024951_jx_mansion.deploy",
+        "tc_3597024951_jx_mansion.dig",
+        "tc_3597024951_jx_mansion.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_mansion.client",
+      "description": "景熹家居：宅邸环纹花砖远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_jx_mansion.client_item",
+        "tc_3597024951_jx_mansion.client_icon",
+        "tc_3597024951_jx_mansion.client_anim",
+        "tc_3597024951_jx_mansion.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_whitesquare",
+      "description": "景熹家居：暖棕红白纹方砖独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_jx_whitesquare.registered",
+        "tc_3597024951_jx_whitesquare.standalone",
+        "tc_3597024951_jx_whitesquare.recipe",
+        "tc_3597024951_jx_whitesquare.spawn",
+        "tc_3597024951_jx_whitesquare.item_reload",
+        "tc_3597024951_jx_whitesquare.deploy",
+        "tc_3597024951_jx_whitesquare.dig",
+        "tc_3597024951_jx_whitesquare.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_whitesquare.client",
+      "description": "景熹家居：暖棕红白纹方砖远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_jx_whitesquare.client_item",
+        "tc_3597024951_jx_whitesquare.client_icon",
+        "tc_3597024951_jx_whitesquare.client_anim",
+        "tc_3597024951_jx_whitesquare.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_wood",
+      "description": "景熹家居：宫廷实木地板独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_jx_wood.registered",
+        "tc_3597024951_jx_wood.standalone",
+        "tc_3597024951_jx_wood.recipe",
+        "tc_3597024951_jx_wood.spawn",
+        "tc_3597024951_jx_wood.item_reload",
+        "tc_3597024951_jx_wood.deploy",
+        "tc_3597024951_jx_wood.dig",
+        "tc_3597024951_jx_wood.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_wood.client",
+      "description": "景熹家居：宫廷实木地板远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_jx_wood.client_item",
+        "tc_3597024951_jx_wood.client_icon",
+        "tc_3597024951_jx_wood.client_anim",
+        "tc_3597024951_jx_wood.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_wood2",
+      "description": "景熹家居：酒馆柚木地板独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_jx_wood2.registered",
+        "tc_3597024951_jx_wood2.standalone",
+        "tc_3597024951_jx_wood2.recipe",
+        "tc_3597024951_jx_wood2.spawn",
+        "tc_3597024951_jx_wood2.item_reload",
+        "tc_3597024951_jx_wood2.deploy",
+        "tc_3597024951_jx_wood2.dig",
+        "tc_3597024951_jx_wood2.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_jx_wood2.client",
+      "description": "景熹家居：酒馆柚木地板远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_jx_wood2.client_item",
+        "tc_3597024951_jx_wood2.client_icon",
+        "tc_3597024951_jx_wood2.client_anim",
+        "tc_3597024951_jx_wood2.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3597024951_reddish_brown",
+      "description": "景熹家居：复古几何纹红棕地毯独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3597024951_reddish_brown.registered",
+        "tc_3597024951_reddish_brown.standalone",
+        "tc_3597024951_reddish_brown.recipe",
+        "tc_3597024951_reddish_brown.spawn",
+        "tc_3597024951_reddish_brown.item_reload",
+        "tc_3597024951_reddish_brown.deploy",
+        "tc_3597024951_reddish_brown.dig",
+        "tc_3597024951_reddish_brown.craft"
+      ]
+    },
+    {
+      "id": "tc_3597024951_reddish_brown.client",
+      "description": "景熹家居：复古几何纹红棕地毯远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3597024951_reddish_brown.client_item",
+        "tc_3597024951_reddish_brown.client_icon",
+        "tc_3597024951_reddish_brown.client_anim",
+        "tc_3597024951_reddish_brown.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3361615927_jt_turfs01",
+      "description": "田园物语：三角形长草地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3361615927_jt_turfs01.registered",
+        "tc_3361615927_jt_turfs01.standalone",
+        "tc_3361615927_jt_turfs01.recipe",
+        "tc_3361615927_jt_turfs01.spawn",
+        "tc_3361615927_jt_turfs01.item_reload",
+        "tc_3361615927_jt_turfs01.deploy",
+        "tc_3361615927_jt_turfs01.dig",
+        "tc_3361615927_jt_turfs01.craft"
+      ]
+    },
+    {
+      "id": "tc_3361615927_jt_turfs01.client",
+      "description": "田园物语：三角形长草地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3361615927_jt_turfs01.client_item",
+        "tc_3361615927_jt_turfs01.client_icon",
+        "tc_3361615927_jt_turfs01.client_anim",
+        "tc_3361615927_jt_turfs01.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_cherry",
+      "description": "花仙子：樱桃地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3393876841_wanyuan_cherry.registered",
+        "tc_3393876841_wanyuan_cherry.standalone",
+        "tc_3393876841_wanyuan_cherry.recipe",
+        "tc_3393876841_wanyuan_cherry.spawn",
+        "tc_3393876841_wanyuan_cherry.item_reload",
+        "tc_3393876841_wanyuan_cherry.deploy",
+        "tc_3393876841_wanyuan_cherry.dig",
+        "tc_3393876841_wanyuan_cherry.craft"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_cherry.client",
+      "description": "花仙子：樱桃地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3393876841_wanyuan_cherry.client_item",
+        "tc_3393876841_wanyuan_cherry.client_icon",
+        "tc_3393876841_wanyuan_cherry.client_anim",
+        "tc_3393876841_wanyuan_cherry.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_fantasy_color_1",
+      "description": "花仙子：奇幻色彩1 紫云独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3393876841_wanyuan_fantasy_color_1.registered",
+        "tc_3393876841_wanyuan_fantasy_color_1.standalone",
+        "tc_3393876841_wanyuan_fantasy_color_1.recipe",
+        "tc_3393876841_wanyuan_fantasy_color_1.spawn",
+        "tc_3393876841_wanyuan_fantasy_color_1.item_reload",
+        "tc_3393876841_wanyuan_fantasy_color_1.deploy",
+        "tc_3393876841_wanyuan_fantasy_color_1.dig",
+        "tc_3393876841_wanyuan_fantasy_color_1.craft"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_fantasy_color_1.client",
+      "description": "花仙子：奇幻色彩1 紫云远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3393876841_wanyuan_fantasy_color_1.client_item",
+        "tc_3393876841_wanyuan_fantasy_color_1.client_icon",
+        "tc_3393876841_wanyuan_fantasy_color_1.client_anim",
+        "tc_3393876841_wanyuan_fantasy_color_1.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_fantasy_color_2",
+      "description": "花仙子：奇幻色彩2 花蒲独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3393876841_wanyuan_fantasy_color_2.registered",
+        "tc_3393876841_wanyuan_fantasy_color_2.standalone",
+        "tc_3393876841_wanyuan_fantasy_color_2.recipe",
+        "tc_3393876841_wanyuan_fantasy_color_2.spawn",
+        "tc_3393876841_wanyuan_fantasy_color_2.item_reload",
+        "tc_3393876841_wanyuan_fantasy_color_2.deploy",
+        "tc_3393876841_wanyuan_fantasy_color_2.dig",
+        "tc_3393876841_wanyuan_fantasy_color_2.craft"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_fantasy_color_2.client",
+      "description": "花仙子：奇幻色彩2 花蒲远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3393876841_wanyuan_fantasy_color_2.client_item",
+        "tc_3393876841_wanyuan_fantasy_color_2.client_icon",
+        "tc_3393876841_wanyuan_fantasy_color_2.client_anim",
+        "tc_3393876841_wanyuan_fantasy_color_2.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_fantasy_color_3",
+      "description": "花仙子：奇幻色彩3 淡蓝独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3393876841_wanyuan_fantasy_color_3.registered",
+        "tc_3393876841_wanyuan_fantasy_color_3.standalone",
+        "tc_3393876841_wanyuan_fantasy_color_3.recipe",
+        "tc_3393876841_wanyuan_fantasy_color_3.spawn",
+        "tc_3393876841_wanyuan_fantasy_color_3.item_reload",
+        "tc_3393876841_wanyuan_fantasy_color_3.deploy",
+        "tc_3393876841_wanyuan_fantasy_color_3.dig",
+        "tc_3393876841_wanyuan_fantasy_color_3.craft"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_fantasy_color_3.client",
+      "description": "花仙子：奇幻色彩3 淡蓝远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3393876841_wanyuan_fantasy_color_3.client_item",
+        "tc_3393876841_wanyuan_fantasy_color_3.client_icon",
+        "tc_3393876841_wanyuan_fantasy_color_3.client_anim",
+        "tc_3393876841_wanyuan_fantasy_color_3.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_fantasy_color_4",
+      "description": "花仙子：奇幻色彩4 偏紫独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3393876841_wanyuan_fantasy_color_4.registered",
+        "tc_3393876841_wanyuan_fantasy_color_4.standalone",
+        "tc_3393876841_wanyuan_fantasy_color_4.recipe",
+        "tc_3393876841_wanyuan_fantasy_color_4.spawn",
+        "tc_3393876841_wanyuan_fantasy_color_4.item_reload",
+        "tc_3393876841_wanyuan_fantasy_color_4.deploy",
+        "tc_3393876841_wanyuan_fantasy_color_4.dig",
+        "tc_3393876841_wanyuan_fantasy_color_4.craft"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_fantasy_color_4.client",
+      "description": "花仙子：奇幻色彩4 偏紫远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3393876841_wanyuan_fantasy_color_4.client_item",
+        "tc_3393876841_wanyuan_fantasy_color_4.client_icon",
+        "tc_3393876841_wanyuan_fantasy_color_4.client_anim",
+        "tc_3393876841_wanyuan_fantasy_color_4.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_fenhua",
+      "description": "花仙子：粉花地毯独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3393876841_wanyuan_fenhua.registered",
+        "tc_3393876841_wanyuan_fenhua.standalone",
+        "tc_3393876841_wanyuan_fenhua.recipe",
+        "tc_3393876841_wanyuan_fenhua.spawn",
+        "tc_3393876841_wanyuan_fenhua.item_reload",
+        "tc_3393876841_wanyuan_fenhua.deploy",
+        "tc_3393876841_wanyuan_fenhua.dig",
+        "tc_3393876841_wanyuan_fenhua.craft"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_fenhua.client",
+      "description": "花仙子：粉花地毯远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3393876841_wanyuan_fenhua.client_item",
+        "tc_3393876841_wanyuan_fenhua.client_icon",
+        "tc_3393876841_wanyuan_fenhua.client_anim",
+        "tc_3393876841_wanyuan_fenhua.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_haian",
+      "description": "花仙子：碧蓝海岸独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3393876841_wanyuan_haian.registered",
+        "tc_3393876841_wanyuan_haian.standalone",
+        "tc_3393876841_wanyuan_haian.recipe",
+        "tc_3393876841_wanyuan_haian.spawn",
+        "tc_3393876841_wanyuan_haian.item_reload",
+        "tc_3393876841_wanyuan_haian.deploy",
+        "tc_3393876841_wanyuan_haian.dig",
+        "tc_3393876841_wanyuan_haian.craft"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_haian.client",
+      "description": "花仙子：碧蓝海岸远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3393876841_wanyuan_haian.client_item",
+        "tc_3393876841_wanyuan_haian.client_icon",
+        "tc_3393876841_wanyuan_haian.client_anim",
+        "tc_3393876841_wanyuan_haian.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_night",
+      "description": "花仙子：地毯-夜色独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3393876841_wanyuan_night.registered",
+        "tc_3393876841_wanyuan_night.standalone",
+        "tc_3393876841_wanyuan_night.recipe",
+        "tc_3393876841_wanyuan_night.spawn",
+        "tc_3393876841_wanyuan_night.item_reload",
+        "tc_3393876841_wanyuan_night.deploy",
+        "tc_3393876841_wanyuan_night.dig",
+        "tc_3393876841_wanyuan_night.craft"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_night.client",
+      "description": "花仙子：地毯-夜色远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3393876841_wanyuan_night.client_item",
+        "tc_3393876841_wanyuan_night.client_icon",
+        "tc_3393876841_wanyuan_night.client_anim",
+        "tc_3393876841_wanyuan_night.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_qishui",
+      "description": "花仙子：夏日汽水独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3393876841_wanyuan_qishui.registered",
+        "tc_3393876841_wanyuan_qishui.standalone",
+        "tc_3393876841_wanyuan_qishui.recipe",
+        "tc_3393876841_wanyuan_qishui.spawn",
+        "tc_3393876841_wanyuan_qishui.item_reload",
+        "tc_3393876841_wanyuan_qishui.deploy",
+        "tc_3393876841_wanyuan_qishui.dig",
+        "tc_3393876841_wanyuan_qishui.craft"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_qishui.client",
+      "description": "花仙子：夏日汽水远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3393876841_wanyuan_qishui.client_item",
+        "tc_3393876841_wanyuan_qishui.client_icon",
+        "tc_3393876841_wanyuan_qishui.client_anim",
+        "tc_3393876841_wanyuan_qishui.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_xialian",
+      "description": "花仙子：夏莲独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3393876841_wanyuan_xialian.registered",
+        "tc_3393876841_wanyuan_xialian.standalone",
+        "tc_3393876841_wanyuan_xialian.recipe",
+        "tc_3393876841_wanyuan_xialian.spawn",
+        "tc_3393876841_wanyuan_xialian.item_reload",
+        "tc_3393876841_wanyuan_xialian.deploy",
+        "tc_3393876841_wanyuan_xialian.dig",
+        "tc_3393876841_wanyuan_xialian.craft"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_xialian.client",
+      "description": "花仙子：夏莲远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3393876841_wanyuan_xialian.client_item",
+        "tc_3393876841_wanyuan_xialian.client_icon",
+        "tc_3393876841_wanyuan_xialian.client_anim",
+        "tc_3393876841_wanyuan_xialian.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_xunyicao",
+      "description": "花仙子：薰衣草星空独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3393876841_wanyuan_xunyicao.registered",
+        "tc_3393876841_wanyuan_xunyicao.standalone",
+        "tc_3393876841_wanyuan_xunyicao.recipe",
+        "tc_3393876841_wanyuan_xunyicao.spawn",
+        "tc_3393876841_wanyuan_xunyicao.item_reload",
+        "tc_3393876841_wanyuan_xunyicao.deploy",
+        "tc_3393876841_wanyuan_xunyicao.dig",
+        "tc_3393876841_wanyuan_xunyicao.craft"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_xunyicao.client",
+      "description": "花仙子：薰衣草星空远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3393876841_wanyuan_xunyicao.client_item",
+        "tc_3393876841_wanyuan_xunyicao.client_icon",
+        "tc_3393876841_wanyuan_xunyicao.client_anim",
+        "tc_3393876841_wanyuan_xunyicao.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_yinguang",
+      "description": "花仙子：海盐汽水独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3393876841_wanyuan_yinguang.registered",
+        "tc_3393876841_wanyuan_yinguang.standalone",
+        "tc_3393876841_wanyuan_yinguang.recipe",
+        "tc_3393876841_wanyuan_yinguang.spawn",
+        "tc_3393876841_wanyuan_yinguang.item_reload",
+        "tc_3393876841_wanyuan_yinguang.deploy",
+        "tc_3393876841_wanyuan_yinguang.dig",
+        "tc_3393876841_wanyuan_yinguang.craft"
+      ]
+    },
+    {
+      "id": "tc_3393876841_wanyuan_yinguang.client",
+      "description": "花仙子：海盐汽水远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3393876841_wanyuan_yinguang.client_item",
+        "tc_3393876841_wanyuan_yinguang.client_icon",
+        "tc_3393876841_wanyuan_yinguang.client_anim",
+        "tc_3393876841_wanyuan_yinguang.client_tile"
+      ]
+    },
+    {
+      "id": "tc_1289779251_bismuthbrick",
+      "description": "新版樱花林：铋化沥青地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_1289779251_bismuthbrick.registered",
+        "tc_1289779251_bismuthbrick.standalone",
+        "tc_1289779251_bismuthbrick.recipe",
+        "tc_1289779251_bismuthbrick.spawn",
+        "tc_1289779251_bismuthbrick.item_reload",
+        "tc_1289779251_bismuthbrick.deploy",
+        "tc_1289779251_bismuthbrick.dig",
+        "tc_1289779251_bismuthbrick.craft"
+      ]
+    },
+    {
+      "id": "tc_1289779251_bismuthbrick.client",
+      "description": "新版樱花林：铋化沥青地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_1289779251_bismuthbrick.client_item",
+        "tc_1289779251_bismuthbrick.client_icon",
+        "tc_1289779251_bismuthbrick.client_anim",
+        "tc_1289779251_bismuthbrick.client_tile"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherrift",
+      "description": "新版樱花林：樱化裂隙地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_1289779251_cherrift.registered",
+        "tc_1289779251_cherrift.standalone",
+        "tc_1289779251_cherrift.recipe",
+        "tc_1289779251_cherrift.spawn",
+        "tc_1289779251_cherrift.item_reload",
+        "tc_1289779251_cherrift.deploy",
+        "tc_1289779251_cherrift.dig",
+        "tc_1289779251_cherrift.craft"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherrift.client",
+      "description": "新版樱花林：樱化裂隙地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_1289779251_cherrift.client_item",
+        "tc_1289779251_cherrift.client_icon",
+        "tc_1289779251_cherrift.client_anim",
+        "tc_1289779251_cherrift.client_tile"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherry",
+      "description": "新版樱花林：树林花瓣地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_1289779251_cherry.registered",
+        "tc_1289779251_cherry.standalone",
+        "tc_1289779251_cherry.recipe",
+        "tc_1289779251_cherry.spawn",
+        "tc_1289779251_cherry.item_reload",
+        "tc_1289779251_cherry.deploy",
+        "tc_1289779251_cherry.dig",
+        "tc_1289779251_cherry.craft"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherry.client",
+      "description": "新版樱花林：树林花瓣地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_1289779251_cherry.client_item",
+        "tc_1289779251_cherry.client_icon",
+        "tc_1289779251_cherry.client_anim",
+        "tc_1289779251_cherry.client_tile"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherry2",
+      "description": "新版樱花林：玫瑰花瓣地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_1289779251_cherry2.registered",
+        "tc_1289779251_cherry2.standalone",
+        "tc_1289779251_cherry2.recipe",
+        "tc_1289779251_cherry2.spawn",
+        "tc_1289779251_cherry2.item_reload",
+        "tc_1289779251_cherry2.deploy",
+        "tc_1289779251_cherry2.dig",
+        "tc_1289779251_cherry2.craft"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherry2.client",
+      "description": "新版樱花林：玫瑰花瓣地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_1289779251_cherry2.client_item",
+        "tc_1289779251_cherry2.client_icon",
+        "tc_1289779251_cherry2.client_anim",
+        "tc_1289779251_cherry2.client_tile"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherry3",
+      "description": "新版樱花林：园丁花瓣地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_1289779251_cherry3.registered",
+        "tc_1289779251_cherry3.standalone",
+        "tc_1289779251_cherry3.recipe",
+        "tc_1289779251_cherry3.spawn",
+        "tc_1289779251_cherry3.item_reload",
+        "tc_1289779251_cherry3.deploy",
+        "tc_1289779251_cherry3.dig",
+        "tc_1289779251_cherry3.craft"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherry3.client",
+      "description": "新版樱花林：园丁花瓣地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_1289779251_cherry3.client_item",
+        "tc_1289779251_cherry3.client_icon",
+        "tc_1289779251_cherry3.client_anim",
+        "tc_1289779251_cherry3.client_tile"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherry4",
+      "description": "新版樱花林：河畔花瓣地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_1289779251_cherry4.registered",
+        "tc_1289779251_cherry4.standalone",
+        "tc_1289779251_cherry4.recipe",
+        "tc_1289779251_cherry4.spawn",
+        "tc_1289779251_cherry4.item_reload",
+        "tc_1289779251_cherry4.deploy",
+        "tc_1289779251_cherry4.dig",
+        "tc_1289779251_cherry4.craft"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherry4.client",
+      "description": "新版樱花林：河畔花瓣地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_1289779251_cherry4.client_item",
+        "tc_1289779251_cherry4.client_icon",
+        "tc_1289779251_cherry4.client_anim",
+        "tc_1289779251_cherry4.client_tile"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherrygem",
+      "description": "新版樱花林：河畔花瓣地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_1289779251_cherrygem.registered",
+        "tc_1289779251_cherrygem.standalone",
+        "tc_1289779251_cherrygem.recipe",
+        "tc_1289779251_cherrygem.spawn",
+        "tc_1289779251_cherrygem.item_reload",
+        "tc_1289779251_cherrygem.deploy",
+        "tc_1289779251_cherrygem.dig",
+        "tc_1289779251_cherrygem.craft"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherrygem.client",
+      "description": "新版樱花林：河畔花瓣地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_1289779251_cherrygem.client_item",
+        "tc_1289779251_cherrygem.client_icon",
+        "tc_1289779251_cherrygem.client_anim",
+        "tc_1289779251_cherrygem.client_tile"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherryruins",
+      "description": "新版樱花林：沥青地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_1289779251_cherryruins.registered",
+        "tc_1289779251_cherryruins.standalone",
+        "tc_1289779251_cherryruins.recipe",
+        "tc_1289779251_cherryruins.spawn",
+        "tc_1289779251_cherryruins.item_reload",
+        "tc_1289779251_cherryruins.deploy",
+        "tc_1289779251_cherryruins.dig",
+        "tc_1289779251_cherryruins.craft"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherryruins.client",
+      "description": "新版樱花林：沥青地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_1289779251_cherryruins.client_item",
+        "tc_1289779251_cherryruins.client_icon",
+        "tc_1289779251_cherryruins.client_anim",
+        "tc_1289779251_cherryruins.client_tile"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherrywood",
+      "description": "新版樱花林：樱木地板独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_1289779251_cherrywood.registered",
+        "tc_1289779251_cherrywood.standalone",
+        "tc_1289779251_cherrywood.recipe",
+        "tc_1289779251_cherrywood.spawn",
+        "tc_1289779251_cherrywood.item_reload",
+        "tc_1289779251_cherrywood.deploy",
+        "tc_1289779251_cherrywood.dig",
+        "tc_1289779251_cherrywood.craft"
+      ]
+    },
+    {
+      "id": "tc_1289779251_cherrywood.client",
+      "description": "新版樱花林：樱木地板远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_1289779251_cherrywood.client_item",
+        "tc_1289779251_cherrywood.client_icon",
+        "tc_1289779251_cherrywood.client_anim",
+        "tc_1289779251_cherrywood.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_blue_grey_checkered_pattern_turf",
+      "description": "炊烟袅袅：蓝灰格子地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3626093627_niao_blue_grey_checkered_pattern_turf.registered",
+        "tc_3626093627_niao_blue_grey_checkered_pattern_turf.standalone",
+        "tc_3626093627_niao_blue_grey_checkered_pattern_turf.recipe",
+        "tc_3626093627_niao_blue_grey_checkered_pattern_turf.spawn",
+        "tc_3626093627_niao_blue_grey_checkered_pattern_turf.item_reload",
+        "tc_3626093627_niao_blue_grey_checkered_pattern_turf.deploy",
+        "tc_3626093627_niao_blue_grey_checkered_pattern_turf.dig",
+        "tc_3626093627_niao_blue_grey_checkered_pattern_turf.craft"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_blue_grey_checkered_pattern_turf.client",
+      "description": "炊烟袅袅：蓝灰格子地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3626093627_niao_blue_grey_checkered_pattern_turf.client_item",
+        "tc_3626093627_niao_blue_grey_checkered_pattern_turf.client_icon",
+        "tc_3626093627_niao_blue_grey_checkered_pattern_turf.client_anim",
+        "tc_3626093627_niao_blue_grey_checkered_pattern_turf.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_brown_pattern_turf",
+      "description": "炊烟袅袅：棕色图案地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3626093627_niao_brown_pattern_turf.registered",
+        "tc_3626093627_niao_brown_pattern_turf.standalone",
+        "tc_3626093627_niao_brown_pattern_turf.recipe",
+        "tc_3626093627_niao_brown_pattern_turf.spawn",
+        "tc_3626093627_niao_brown_pattern_turf.item_reload",
+        "tc_3626093627_niao_brown_pattern_turf.deploy",
+        "tc_3626093627_niao_brown_pattern_turf.dig",
+        "tc_3626093627_niao_brown_pattern_turf.craft"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_brown_pattern_turf.client",
+      "description": "炊烟袅袅：棕色图案地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3626093627_niao_brown_pattern_turf.client_item",
+        "tc_3626093627_niao_brown_pattern_turf.client_icon",
+        "tc_3626093627_niao_brown_pattern_turf.client_anim",
+        "tc_3626093627_niao_brown_pattern_turf.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_brown_tile_turf",
+      "description": "炊烟袅袅：棕色砖块地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3626093627_niao_brown_tile_turf.registered",
+        "tc_3626093627_niao_brown_tile_turf.standalone",
+        "tc_3626093627_niao_brown_tile_turf.recipe",
+        "tc_3626093627_niao_brown_tile_turf.spawn",
+        "tc_3626093627_niao_brown_tile_turf.item_reload",
+        "tc_3626093627_niao_brown_tile_turf.deploy",
+        "tc_3626093627_niao_brown_tile_turf.dig",
+        "tc_3626093627_niao_brown_tile_turf.craft"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_brown_tile_turf.client",
+      "description": "炊烟袅袅：棕色砖块地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3626093627_niao_brown_tile_turf.client_item",
+        "tc_3626093627_niao_brown_tile_turf.client_icon",
+        "tc_3626093627_niao_brown_tile_turf.client_anim",
+        "tc_3626093627_niao_brown_tile_turf.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_dark_brown_wooden_turf",
+      "description": "炊烟袅袅：深棕色木质地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3626093627_niao_dark_brown_wooden_turf.registered",
+        "tc_3626093627_niao_dark_brown_wooden_turf.standalone",
+        "tc_3626093627_niao_dark_brown_wooden_turf.recipe",
+        "tc_3626093627_niao_dark_brown_wooden_turf.spawn",
+        "tc_3626093627_niao_dark_brown_wooden_turf.item_reload",
+        "tc_3626093627_niao_dark_brown_wooden_turf.deploy",
+        "tc_3626093627_niao_dark_brown_wooden_turf.dig",
+        "tc_3626093627_niao_dark_brown_wooden_turf.craft"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_dark_brown_wooden_turf.client",
+      "description": "炊烟袅袅：深棕色木质地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3626093627_niao_dark_brown_wooden_turf.client_item",
+        "tc_3626093627_niao_dark_brown_wooden_turf.client_icon",
+        "tc_3626093627_niao_dark_brown_wooden_turf.client_anim",
+        "tc_3626093627_niao_dark_brown_wooden_turf.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_dark_brown_woven_turf",
+      "description": "炊烟袅袅：深棕色编织地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3626093627_niao_dark_brown_woven_turf.registered",
+        "tc_3626093627_niao_dark_brown_woven_turf.standalone",
+        "tc_3626093627_niao_dark_brown_woven_turf.recipe",
+        "tc_3626093627_niao_dark_brown_woven_turf.spawn",
+        "tc_3626093627_niao_dark_brown_woven_turf.item_reload",
+        "tc_3626093627_niao_dark_brown_woven_turf.deploy",
+        "tc_3626093627_niao_dark_brown_woven_turf.dig",
+        "tc_3626093627_niao_dark_brown_woven_turf.craft"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_dark_brown_woven_turf.client",
+      "description": "炊烟袅袅：深棕色编织地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3626093627_niao_dark_brown_woven_turf.client_item",
+        "tc_3626093627_niao_dark_brown_woven_turf.client_icon",
+        "tc_3626093627_niao_dark_brown_woven_turf.client_anim",
+        "tc_3626093627_niao_dark_brown_woven_turf.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_green_floral_turf",
+      "description": "炊烟袅袅：绿色花瓣地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3626093627_niao_green_floral_turf.registered",
+        "tc_3626093627_niao_green_floral_turf.standalone",
+        "tc_3626093627_niao_green_floral_turf.recipe",
+        "tc_3626093627_niao_green_floral_turf.spawn",
+        "tc_3626093627_niao_green_floral_turf.item_reload",
+        "tc_3626093627_niao_green_floral_turf.deploy",
+        "tc_3626093627_niao_green_floral_turf.dig",
+        "tc_3626093627_niao_green_floral_turf.craft"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_green_floral_turf.client",
+      "description": "炊烟袅袅：绿色花瓣地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3626093627_niao_green_floral_turf.client_item",
+        "tc_3626093627_niao_green_floral_turf.client_icon",
+        "tc_3626093627_niao_green_floral_turf.client_anim",
+        "tc_3626093627_niao_green_floral_turf.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_green_orange_checkered_pattern_turf",
+      "description": "炊烟袅袅：绿橘格子地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3626093627_niao_green_orange_checkered_pattern_turf.registered",
+        "tc_3626093627_niao_green_orange_checkered_pattern_turf.standalone",
+        "tc_3626093627_niao_green_orange_checkered_pattern_turf.recipe",
+        "tc_3626093627_niao_green_orange_checkered_pattern_turf.spawn",
+        "tc_3626093627_niao_green_orange_checkered_pattern_turf.item_reload",
+        "tc_3626093627_niao_green_orange_checkered_pattern_turf.deploy",
+        "tc_3626093627_niao_green_orange_checkered_pattern_turf.dig",
+        "tc_3626093627_niao_green_orange_checkered_pattern_turf.craft"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_green_orange_checkered_pattern_turf.client",
+      "description": "炊烟袅袅：绿橘格子地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3626093627_niao_green_orange_checkered_pattern_turf.client_item",
+        "tc_3626093627_niao_green_orange_checkered_pattern_turf.client_icon",
+        "tc_3626093627_niao_green_orange_checkered_pattern_turf.client_anim",
+        "tc_3626093627_niao_green_orange_checkered_pattern_turf.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_leaf_orange_point_turf",
+      "description": "炊烟袅袅：橘点叶地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3626093627_niao_leaf_orange_point_turf.registered",
+        "tc_3626093627_niao_leaf_orange_point_turf.standalone",
+        "tc_3626093627_niao_leaf_orange_point_turf.recipe",
+        "tc_3626093627_niao_leaf_orange_point_turf.spawn",
+        "tc_3626093627_niao_leaf_orange_point_turf.item_reload",
+        "tc_3626093627_niao_leaf_orange_point_turf.deploy",
+        "tc_3626093627_niao_leaf_orange_point_turf.dig",
+        "tc_3626093627_niao_leaf_orange_point_turf.craft"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_leaf_orange_point_turf.client",
+      "description": "炊烟袅袅：橘点叶地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3626093627_niao_leaf_orange_point_turf.client_item",
+        "tc_3626093627_niao_leaf_orange_point_turf.client_icon",
+        "tc_3626093627_niao_leaf_orange_point_turf.client_anim",
+        "tc_3626093627_niao_leaf_orange_point_turf.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_light_brown_wooden_turf",
+      "description": "炊烟袅袅：浅棕色木质地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3626093627_niao_light_brown_wooden_turf.registered",
+        "tc_3626093627_niao_light_brown_wooden_turf.standalone",
+        "tc_3626093627_niao_light_brown_wooden_turf.recipe",
+        "tc_3626093627_niao_light_brown_wooden_turf.spawn",
+        "tc_3626093627_niao_light_brown_wooden_turf.item_reload",
+        "tc_3626093627_niao_light_brown_wooden_turf.deploy",
+        "tc_3626093627_niao_light_brown_wooden_turf.dig",
+        "tc_3626093627_niao_light_brown_wooden_turf.craft"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_light_brown_wooden_turf.client",
+      "description": "炊烟袅袅：浅棕色木质地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3626093627_niao_light_brown_wooden_turf.client_item",
+        "tc_3626093627_niao_light_brown_wooden_turf.client_icon",
+        "tc_3626093627_niao_light_brown_wooden_turf.client_anim",
+        "tc_3626093627_niao_light_brown_wooden_turf.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_light_brown_woven_turf",
+      "description": "炊烟袅袅：浅棕色编织地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3626093627_niao_light_brown_woven_turf.registered",
+        "tc_3626093627_niao_light_brown_woven_turf.standalone",
+        "tc_3626093627_niao_light_brown_woven_turf.recipe",
+        "tc_3626093627_niao_light_brown_woven_turf.spawn",
+        "tc_3626093627_niao_light_brown_woven_turf.item_reload",
+        "tc_3626093627_niao_light_brown_woven_turf.deploy",
+        "tc_3626093627_niao_light_brown_woven_turf.dig",
+        "tc_3626093627_niao_light_brown_woven_turf.craft"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_light_brown_woven_turf.client",
+      "description": "炊烟袅袅：浅棕色编织地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3626093627_niao_light_brown_woven_turf.client_item",
+        "tc_3626093627_niao_light_brown_woven_turf.client_icon",
+        "tc_3626093627_niao_light_brown_woven_turf.client_anim",
+        "tc_3626093627_niao_light_brown_woven_turf.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_small_green_leaf_turf",
+      "description": "炊烟袅袅：绿色小叶地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3626093627_niao_small_green_leaf_turf.registered",
+        "tc_3626093627_niao_small_green_leaf_turf.standalone",
+        "tc_3626093627_niao_small_green_leaf_turf.recipe",
+        "tc_3626093627_niao_small_green_leaf_turf.spawn",
+        "tc_3626093627_niao_small_green_leaf_turf.item_reload",
+        "tc_3626093627_niao_small_green_leaf_turf.deploy",
+        "tc_3626093627_niao_small_green_leaf_turf.dig",
+        "tc_3626093627_niao_small_green_leaf_turf.craft"
+      ]
+    },
+    {
+      "id": "tc_3626093627_niao_small_green_leaf_turf.client",
+      "description": "炊烟袅袅：绿色小叶地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3626093627_niao_small_green_leaf_turf.client_item",
+        "tc_3626093627_niao_small_green_leaf_turf.client_icon",
+        "tc_3626093627_niao_small_green_leaf_turf.client_anim",
+        "tc_3626093627_niao_small_green_leaf_turf.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3283650699_gentleness_green",
+      "description": "悠：花花地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3283650699_gentleness_green.registered",
+        "tc_3283650699_gentleness_green.standalone",
+        "tc_3283650699_gentleness_green.recipe",
+        "tc_3283650699_gentleness_green.spawn",
+        "tc_3283650699_gentleness_green.item_reload",
+        "tc_3283650699_gentleness_green.deploy",
+        "tc_3283650699_gentleness_green.dig",
+        "tc_3283650699_gentleness_green.craft"
+      ]
+    },
+    {
+      "id": "tc_3283650699_gentleness_green.client",
+      "description": "悠：花花地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3283650699_gentleness_green.client_item",
+        "tc_3283650699_gentleness_green.client_icon",
+        "tc_3283650699_gentleness_green.client_anim",
+        "tc_3283650699_gentleness_green.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3283650699_gentleness_star",
+      "description": "悠：星星地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3283650699_gentleness_star.registered",
+        "tc_3283650699_gentleness_star.standalone",
+        "tc_3283650699_gentleness_star.recipe",
+        "tc_3283650699_gentleness_star.spawn",
+        "tc_3283650699_gentleness_star.item_reload",
+        "tc_3283650699_gentleness_star.deploy",
+        "tc_3283650699_gentleness_star.dig",
+        "tc_3283650699_gentleness_star.craft"
+      ]
+    },
+    {
+      "id": "tc_3283650699_gentleness_star.client",
+      "description": "悠：星星地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3283650699_gentleness_star.client_item",
+        "tc_3283650699_gentleness_star.client_icon",
+        "tc_3283650699_gentleness_star.client_anim",
+        "tc_3283650699_gentleness_star.client_tile"
+      ]
+    },
+    {
+      "id": "tc_3283650699_gentleness_strawberry",
+      "description": "悠：草莓地皮独立注册、原版材料实际制作、物品存读、铺挖闭环",
+      "stage": "server",
+      "assertions": [
+        "tc_3283650699_gentleness_strawberry.registered",
+        "tc_3283650699_gentleness_strawberry.standalone",
+        "tc_3283650699_gentleness_strawberry.recipe",
+        "tc_3283650699_gentleness_strawberry.spawn",
+        "tc_3283650699_gentleness_strawberry.item_reload",
+        "tc_3283650699_gentleness_strawberry.deploy",
+        "tc_3283650699_gentleness_strawberry.dig",
+        "tc_3283650699_gentleness_strawberry.craft"
+      ]
+    },
+    {
+      "id": "tc_3283650699_gentleness_strawberry.client",
+      "description": "悠：草莓地皮远端物品、图标、动画与地面同步",
+      "stage": "client",
+      "assertions": [
+        "tc_3283650699_gentleness_strawberry.client_item",
+        "tc_3283650699_gentleness_strawberry.client_icon",
+        "tc_3283650699_gentleness_strawberry.client_anim",
+        "tc_3283650699_gentleness_strawberry.client_tile"
+      ]
+    }
+  ],
+  "uncovered": [
+    "完整世界保存退出后重开",
+    "洞穴迁移",
+    "与来源模组同时启用及其他第三方模组兼容",
+    "特殊桥梁和平台实体机制（仅收录地纹）",
+    "全部地皮逐款像素外观与声音人工比对"
+  ]
+}

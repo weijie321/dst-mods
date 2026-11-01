@@ -1,0 +1,23 @@
+local catalog = require("turf_collection_catalog")
+assert(#catalog == 130, "客户端夹具地皮清单不完整")
+TheWorld:ListenForEvent("ms_playerspawn", function(_, player)
+    player:DoTaskInTime(0, function()
+        local px, _, pz = player.Transform:GetWorldPosition()
+        local x, _, z = TheWorld.Map:GetTileCenterPoint(px, 0, pz)
+        player.Transform:SetPosition(x, 0, z)
+        TheWorld:PushEvent("ms_setclocksegs", {day = 16, dusk = 0, night = 0})
+        for index, entry in ipairs(catalog) do
+            local col, row = (index - 1) % 13, math.floor((index - 1) / 13)
+            local tx, ty = TheWorld.Map:GetTileCoordsAtPoint(x + (col - 6) * 4, 0, z + (row - 4) * 4)
+            TheWorld.Map:SetTile(tx, ty, WORLD_TILES[entry.tile])
+            local item = SpawnPrefab("turf_" .. entry.name)
+            item.Transform:SetPosition(x + (col - 6) * 0.75, 0, z + (row - 4) * 0.75)
+        end
+        local grass, rocks = SpawnPrefab("cutgrass"), SpawnPrefab("rocks")
+        grass.components.stackable:SetStackSize(40)
+        rocks.components.stackable:SetStackSize(40)
+        player.components.inventory:GiveItem(grass)
+        player.components.inventory:GiveItem(rocks)
+    end)
+end)
+-- 本场景由客户端桥接器在收到本轮完成事件后调用 TEST.Done。

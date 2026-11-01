@@ -5,6 +5,7 @@
 当前包含：
 
 - `wanda-skilltree/`：旺达技能树、怀表机制与时光贮匣，状态见其 `DEVELOPMENT_STATUS.md`
+- [turf-collection/](turf-collection/README.md)：来自指定 11 个模组的 130 项独立地皮/地纹合集，验收状态见其 `DEVELOPMENT_STATUS.md`
 - `dst-mod-crash-tracer/`：Lua 层 mod 异常诊断 mod
 - `dst-mod-crash-tracer-test/`：用于验证诊断能力的故意抛错测试 mod
 - `dst-mod-crash-tracer-event-test/`：事件监听异常测试 mod

@@ -77,6 +77,9 @@ def copy_matching_inventory_cache(conf, run_id):
     if result["status"] == "copied_for_engine_validation":
         # 原版 Start 通过 client_save/../customcommands.lua 读取本账号启动命令。
         startup = '''print("[DST_CLIENT_DIAG:__TOKEN__] customcommands_loaded")
+Profile:SetWarnModsEnabled(false)
+assert(not Profile:ShouldWarnModsEnabled(), "测试客户端模组提示未关闭")
+print("[DST_CLIENT_DIAG:__TOKEN__] warn_mods_enabled=false")
 if TheInventory:HasSupportForOfflineSkins() and not TheInventory:HasDownloadedInventory() then
     TheInventory:ForceLoadOfflineCache()
 end
@@ -164,7 +167,7 @@ def run_client_probe(dst_root, storage_root, run_id, server_port, evidence_dir,
         storage.mkdir(parents=True, exist_ok=False)
         conf = storage / "DSTClientProbe"
         conf.mkdir()
-        (conf / "client.ini").write_text("[MISC]\nconsole_enabled = true\nwarn_mods_enabled = false\n[GRAPHICS]\nfullscreen = false\n", encoding="utf-8")
+        (conf / "client.ini").write_text("[MISC]\nconsole_enabled = true\n[GRAPHICS]\nfullscreen = false\n", encoding="utf-8")
         result["offline_inventory_cache"] = copy_matching_inventory_cache(conf, run_id)
         result.update(command=command, client_log=str(conf / "client_log.txt"))
         console_path = evidence / "client-console.log"

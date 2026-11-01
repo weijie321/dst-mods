@@ -117,6 +117,8 @@ end)
 
 离线连接仅原样复制当前 Steam 活动账号的 `inventory_cache_prod` 与 `inventory_cache_prod_sig` 到隔离账号的 `client_save/`，由同账号 `customcommands.lua` 在握手前调用官方 `TheInventory:ForceLoadOfflineCache()` 校验加载；不复制 token、凭据或完整玩家存档。结束时删除本轮临时缓存与脚本。路径及排查细节见 `~/.ai/tools/docs/notes/dst-mod-workflow.md` 的客户端准备章节。
 
+隔离账号的启动命令同时调用原版 `Profile:SetWarnModsEnabled(false)`，并核对 `ShouldWarnModsEnabled()` 为 false，自动跳过联机时的“Mods Enabled”确认。每轮临时配置都会重新设置并记录日志；只写隔离测试目录，不修改玩家日常配置。
+
 查看报告中的 cleanup 结果，任何清理失败都不能交付为通过。不要为了省去清理使用旧 `-KeepTemp`，也不要手动结束所有同名 DST 进程。
 
 ## 部署、备份与回滚

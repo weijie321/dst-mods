@@ -1,6 +1,7 @@
 """客户端证据门禁与进程归属回归，不启动游戏。"""
 import importlib.util
 import json
+from contextlib import nullcontext
 from pathlib import Path
 import shutil
 import subprocess
@@ -69,6 +70,40 @@ class ClientProbeTests(unittest.TestCase):
             (root / "inventory_cache_prod").write_text('{"OfflineUserID":"OU_fixture"}')
             self.assertEqual(probe.copy_inventory_cache(root,root/'target',"OU_fixture")["status"],"unavailable")
             self.assertFalse((root/'target').exists())
+
+    @unittest.skipUnless(shutil.which("lua"), "需要已有 Lua 解释器验证启动命令")
+    def test_isolated_startup_disables_server_mod_warning_before_connect(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            account = 1234
+            source = root / f"Documents/Klei/DoNotStarveTogether/{account}/client_save"
+            source.mkdir(parents=True)
+            (source / "inventory_cache_prod").write_text(json.dumps({
+                "OfflineUserID": "OU_" + str(account + 76561197960265728)}))
+            (source / "inventory_cache_prod_sig").write_bytes(b"fixture-signature")
+            registry = Mock()
+            registry.OpenKey.return_value = nullcontext(object())
+            registry.QueryValueEx.return_value = (account, 4)
+            with patch.dict(sys.modules, {"winreg": registry}), patch.object(Path, "home", return_value=root):
+                result = probe.copy_matching_inventory_cache(root / "isolated", self.token)
+            self.assertEqual(result["status"], "copied_for_engine_validation")
+            startup = root / f"isolated/{account}/customcommands.lua"
+            fixture = root / "startup-test.lua"
+            fixture.write_text('''
+local warning, loaded = true, false
+Profile = {
+    SetWarnModsEnabled = function(_, value) warning = value end,
+    ShouldWarnModsEnabled = function() return warning end,
+}
+TheInventory = {
+    HasSupportForOfflineSkins = function() return true end,
+    HasDownloadedInventory = function() return loaded end,
+    ForceLoadOfflineCache = function() assert(not warning) loaded = true end,
+}
+''' + startup.read_text(encoding="utf-8") + '\nassert(not warning and loaded)\n', encoding="utf-8")
+            run = subprocess.run([shutil.which("lua"), str(fixture)], capture_output=True, text=True, timeout=10)
+            self.assertEqual(run.returncode, 0, run.stderr)
+            self.assertIn("warn_mods_enabled=false", run.stdout)
 
     def test_wrong_side_and_malformed_events_fail(self):
         for text in [self.complete().replace('"client"', '"server"'), self.complete()+f"\n[DST_CLIENT:{self.token}] broken"]:
