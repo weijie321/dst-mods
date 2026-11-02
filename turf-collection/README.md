@@ -39,9 +39,18 @@
 
 上传器的预览图需单独选择有效图片。本机交付封面为 `evidence_root/dist/turf-collection-preview.jpg`，已检查为 RGB JPEG、512×512、约 25 KB，内容是与游戏无关的抽象几何图。上传条目标题填写“321自用dp”。封面建议保存在模组目录外，避免后续严格同步运行文件时作为额外文件清除。上传后在工坊网页核对标题与说明；上传器显示乱码时，不能直接认定网页标题正确。
 
-SteamCMD 可使用 `workshop_build_item <VDF绝对路径>` 更新原条目。工坊网页的 `version:...` 标签与模组内版本是独立元数据，SteamCMD 不会依据 `modinfo.lua` 自动同步该标签。VDF 的 `publishedfileid` 固定为 `3831552730`，`appid` 为 `322330`，`contentfolder` 指向上传文件夹，`previewfile` 指向外部封面；省略 `visibility` 保留现有权限。密码和验证码只在 SteamCMD 本机交互输入，不放入命令、VDF 或文档。登录缓存由 SteamCMD 自身管理，不复制 Steam 客户端 token。
+SteamCMD 可使用 `workshop_build_item <VDF绝对路径>` 更新原条目。工坊的 `version:...` 标签与模组内版本分别保存，SteamCMD 不会依据 `modinfo.lua` 自动同步该标签。**该标签参与客户端过期判断，必须与文件版本完全一致**；即使本地文件较新，只要不相等仍会显示需要更新。VDF 的 `publishedfileid` 固定为 `3831552730`，`appid` 为 `322330`，`contentfolder` 指向上传文件夹，`previewfile` 指向外部封面；省略 `visibility` 保留现有权限。密码和验证码只在 SteamCMD 本机交互输入，不放入命令、VDF 或文档。登录缓存由 SteamCMD 自身管理，不复制 Steam 客户端 token。
 
-上传后用官方匿名接口核对实际结果：向 `https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/` 发送 POST，表单为 `itemcount=1`、`publishedfileids[0]=3831552730`；检查 `title`、`visibility`、`time_updated`、`preview_url`，封面还需核对返回图片。该接口已验证可用，不需 API key，但不提供已验证的作者侧待审核诊断。网页访问仅作为页面提示的补充；需要作者登录的提示仍待核查。不能只凭 `Success` 宣称生效，当前核实结果统一见开发状态。
+上传后用官方匿名接口核对实际结果：向 `https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/` 发送 POST，表单为 `itemcount=1`、`publishedfileids[0]=3831552730`；检查 `title`、`visibility`、`time_updated`、`preview_url`、`hcontent_file` 和 `tags`，封面还需核对返回图片。该接口已验证可用，不需 API key，但不提供已验证的作者侧待审核诊断。网页访问仅作为页面提示的补充；需要作者登录的提示仍待核查。不能只凭 `Success` 宣称生效，当前核实结果统一见开发状态。
+
+每次发布必须完成以下检查，缺少下载或客户端证据时分别保留 `pending`，不能当作发布全部验收通过：
+
+1. 源码与上传副本的 `modinfo.lua` 版本一致，上传运行文件与成功验收版本逐项哈希一致。
+2. 公开接口的 `tags` 中恰好有一个 `version:<当前版本>`，不能保留旧版本标签；同时保留 `all_clients_require_mod` 等其他标签。分别保存的元数据不代表标签只影响网页展示。
+3. Steam 实际下载副本的版本与源码相同，全部运行文件与上传副本逐项哈希一致；本地手动安装副本不代替工坊下载验证。
+4. 客户端刷新工坊信息后，核对过期提示消失。Steam 日志返回 `OK` 或“没有文件变化”只证明下载请求完成，不能证明游戏内版本判断已经恢复。
+
+版本标签修复已于 2026-11-02 通过桌面 Steam 的 Steamworks API 验证：复用在线作者会话，以官方 Mod Tools 的 AppID `245850` 初始化，先检查 `ISteamUser::BLoggedOn()` 和条目作者匹配，再用 `ISteamUGC::StartItemUpdate(322330, 3831552730)`、`SetItemTags`、`SubmitItemUpdate` 提交完整的目标标签列表；回调 `SubmitItemUpdateResult_t` 必须返回 `OK`，随后再以公开接口读取核实。`SetItemTags` 替换整个标签列表，须保留其他现有标签。仅修标签时不调用内容、封面、标题或权限设置方法。无需 Web API key，也不导出桌面 Steam 登录凭据；不要同时另起 SteamCMD 登录挤掉桌面会话。当前客户端 Lua 的依据是安装包 `scripts/widgets/redux/modstab.lua` 中 `IsModOutOfDate` 的不等比较及 `DoUpdateAll` 的更新条件。
 
 若官方上传器报 `Error updating item`，先看 Steam 安装目录的 `logs/workshop_log.txt`。本机此次 `Getting Workshop info ... File Not Found` 实为桌面 Steam 会话断开：界面底部显示“无连接”，`ISteamUser::BLoggedOn()` 返回 `false`；恢复在线后上传与主封面替换成功。先退出 SteamCMD、保存并退出正在运行的游戏，再完整退出并重新登录桌面 Steam，确认“无连接”消失后重开上传器；只重开上传器无法恢复 Steam 会话。网页仍能访问、界面仍显示用户名，不等于 Steam API 在线。其他错误应根据新日志排查，勿把所有 `File Not Found` 都判为同一原因。
 

@@ -34,9 +34,19 @@
 
 2026-11-01 22:37 核查：原条目 [3831552730](https://steamcommunity.com/sharedfiles/filedetails/?id=3831552730) 标题为“321自用dp”，公开可见（`visibility=0`），未封禁。**主封面已更新并核实生效**：公开 API 返回新的 `preview_url`，远程图片与上传目录中的抽象几何 JPEG 逐字节一致，均为 25094 字节、SHA256 `1d152a3b04df3b1c7780b43b27622a59a03396bb9d647395f8c9e703a7aff5c1`。官方上传器日志记录 22:36:28 上传该封面并提交 `OK`；用户确认发布成功。最终记录为 `evidence_root/turf-research/workshop-final-closeout.json`。
 
-当前内容版本为 `0.1.4`：运行文件相较 `0.1.3` 仅 `modinfo.lua` 版本号变化，已重新完成完整验收、本地客户端部署及 SteamCMD 原条目更新。上传内容目录中的 546 个运行文件与成功验收一致。网页 `version:0.1.3` 是独立工坊标签，本轮未替用户修改；不能据此推断模组文件版本。工坊下载副本逐文件核对、其他玩家及匿名专服下载能力仍为 `pending`，不包含在本地 `verify` 的通过范围内。
+当前内容版本为 `0.1.4`：运行文件相较 `0.1.3` 仅 `modinfo.lua` 版本号变化，已重新完成完整验收、本地客户端部署及 SteamCMD 原条目更新。上传内容目录中的 546 个运行文件与成功验收一致。2026-11-02 已补做工坊下载副本验证：546 个文件与上传副本逐项哈希完全一致，无缺失、额外或不同文件；工坊版本标签也已修正为 `version:0.1.4`。其他玩家及匿名专服下载能力仍为 `pending`，不包含在本地 `verify` 的通过范围内。
 
-此次官方上传器的通用 `Error updating item` 对应 Steam 日志中的 `Getting Workshop info ... failed : File Not Found`。当时桌面 Steam 显示“无连接”，官方 `ISteamUser::BLoggedOn()` 返回 `false`；重开上传器仍失败。用户恢复桌面 Steam 在线后重新发布成功，日志与公开封面均已验证。故重试前应先确认桌面 Steam 在线；SteamCMD 登录与桌面 Steam 断线在本机同秒发生，避免同时使用同一账号的两套上传会话。旧客户端可能仍展示用户名和工坊页面，但不代表 Steam API 在线。诊断为 `evidence_root/turf-research/official-uploader-error-diagnosis.json`。这次恢复验证了最近上传错误的解决方式，不将更早的 SteamCMD“Success 但旧封面”一概归因为同一机制。
+### 2026-11-02 客户端持续提示更新的修复
+
+**原因**：SteamCMD 上传后的内容已为 `0.1.4`，工坊标签却仍为 `version:0.1.3`。此前发布收尾只核实上传成功和封面生效，漏检文件版本与标签一致性。标签虽与内容分别保存，仍参与客户端版本判断；当前游戏 build `761239` 的 `scripts/widgets/redux/modstab.lua` 中，`IsModOutOfDate` 对工坊版本与本地 `modinfo.version` 做不等比较，`DoUpdateAll` 也按不等条件请求更新。因此 Steam 在 19:19:32、19:21:35 返回下载 `OK`、零文件变化时，游戏仍可持续提示过期，清缓存或重复下载无法修正线上标签。
+
+**修复与核实**：复用在线作者的桌面 Steam 会话，通过 Steamworks `ISteamUGC::SetItemTags` 将原条目的标签改为 `all_clients_require_mod`、`version:0.1.4`；提交回调 `result=1`，公开接口回读与目标一致，内容 manifest `3565833413206012714`、封面、标题和可见性均保持不变。证据为 `evidence_root/turf-research/workshop-version-tag-fix-20261102.json`。修复只改变工坊元数据，未改运行源码或本地存档。正在运行的用户客户端未重启；刷新后过期提示消失仍为 `pending`，不能以公开接口通过代替客户端实测。
+
+**防复发**：根目录 `AGENTS.md` 已增加发布约束，具体检查与已验证 API 路径统一维护在 [发布说明](README.md#创意工坊发布与更新)。每次必须核对源码、上传副本、工坊唯一版本标签、实际下载副本四处一致，并保存运行文件哈希与客户端刷新证据；不得把上传 `Success`、封面生效或下载 `OK` 当作完整发布验证。
+
+### 2026-11-01 上传器断线故障（已恢复）
+
+当时官方上传器的通用 `Error updating item` 对应 Steam 日志中的 `Getting Workshop info ... failed : File Not Found`。桌面 Steam 显示“无连接”，官方 `ISteamUser::BLoggedOn()` 返回 `false`；重开上传器仍失败。用户恢复桌面 Steam 在线后重新发布成功，日志与公开封面均已验证。故重试前应先确认桌面 Steam 在线；SteamCMD 登录与桌面 Steam 断线在本机同秒发生，避免同时使用同一账号的两套上传会话。旧客户端可能仍展示用户名和工坊页面，但不代表 Steam API 在线。诊断为 `evidence_root/turf-research/official-uploader-error-diagnosis.json`。这次恢复验证了最近上传错误的解决方式，不将更早的 SteamCMD“Success 但旧封面”一概归因为同一机制。
 
 正式上传材料位于项目根目录 `workshop-upload/`：`turf-collection/`、`turf-collection-preview.jpg`、固定原条目 ID 的 `update-3831552730.vdf` 和 `上传说明.txt`；无需 ZIP。目录不纳入 Git，测试证据仍在项目外。此前封面上传失败、格式对照及升版本尝试的记录保留为历史诊断，不再作为当前阻塞项；未新建工坊条目或更改权限。
 
